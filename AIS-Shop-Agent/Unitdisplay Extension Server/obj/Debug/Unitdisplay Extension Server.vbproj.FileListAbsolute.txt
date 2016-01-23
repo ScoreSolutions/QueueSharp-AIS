@@ -1,0 +1,27 @@
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\Unitdisplay Extension Server.exe
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\Unitdisplay Extension Server.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\Unitdisplay Extension Server.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\Engine.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\ShLinqDB.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\ShParaDb.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\CenLinqDB.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\AMS.Profile.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\DirectX.Capture.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\CenParaDB.dll
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\CenLinqDB.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\CenLinqDB.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\ShParaDb.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\ShParaDb.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\Engine.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\Engine.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\ShLinqDB.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\ShLinqDB.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\CenParaDB.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\bin\Debug\CenParaDB.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\Unitdisplay_Extension_Server.frmMain.resources
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\Unitdisplay_Extension_Server.Resources.resources
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\Unitdisplay Extension Server.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\Unitdisplay Extension Server.exe
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\Unitdisplay Extension Server.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Unitdisplay Extension Server\obj\Debug\Unitdisplay Extension Server.pdb

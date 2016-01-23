@@ -1,0 +1,46 @@
+﻿Version 0.1.0.7
+แก้ไข WebService ที่เกี่ยวกับการ Gen Siebel Activity
+แก้ไข WebService Check Active DB สำหรับ Fail Over
+
+Version 0.1.0.8
+แก้ไขกรณีเรียก WebService ไปยัง Gateway โดยใช้ https;
+
+Version 0.1.0.9
+เพิ่มเติม Method สำหรับการดึงข้อมูล Master จากส่วนกลาง
+
+Version 0.1.0.10
+ให้มีการ Encrypt Password ในไฟล์ C:\Windows\QueueSharp.ini
+ให้สามารถดึง NetworkType 3G ได้
+
+Version 0.1.0.11
+แก้ไขเรื่องของการ Fail Over กรณีมีการดึงข้อมูลจาก Gateway
+
+Version 0.1.0.12
+แก้ไขตาม Defect วันที่ 29/03/2556
+แก้ไขกรณีเช็คข้อมูลการจองของ Shop อื่นๆ
+แก้ไขกรณี SMS ที่ไม่เรียงลำดับตามหน้าจอ Kiosk
+
+Version 0.1.1.0
+แก้ไขตาม Defect วันที่ 23/05/2556
+เพิ่ม Method UpdateAppointmentJobStatus เพื่ออัพเดทสถานะของการจอง จะได้ไม่ต้องพึ่งพาการ Gen Act จาก Siebel ซึ่งไม่เกิดประโยชน์อันใด
+
+Version 0.1.1.1
+แก้ Bug ตอน CreateSiebelActivity กรณีเบอร์ที่ Create Siebel ไม่ได้จะมี Error
+
+Version 0.1.1.2
+แก้ไข Defact ของวันที่ 2013-05-28
+
+Version 0.1.1.3
+แก้ไขกรณีที่คีออส ไม่ได้เช็คสถานะของการจองที่ Shop อื่น
+
+Version 1.0.0.0
+แก้ไขโดยการเพิ่ม Method สำหรับการจัดเก็บรูปภาพที่ Capture จาก Kiosk และ การแสดงรูปภาพที่มีอยู่แล้ว
+เพิ่ม Method สำหรับการดึงรูปภาพที่ต้องใช้ในการ Config Kiosk และ MainDisplay ซึ่งได้มาจาก WebConfig
+เพิ่ม Method สำหรับการ Gen Activity ในตอนกด Confirm
+
+Version 1.1.0.0
+แก้ไขการตรวจสอบเงื่อนไขสำหรับเบอร์ที่เป็นลูกค้า AIS โดยให้ตรวจสอบว่าจะต้องมี Segment และ Network Type ถึงจะเป็นลูกค้า AIS
+เพิ่มการ Create SMS Job เมื่อยืนยันการจอง
+
+Version 2.0.0.0
+แก้ไขการดึงข้อมูลจาก WebService สำหรับ GetCustomerProfile เพื่อให้อัพเดทข้อมูลในคอลัมน์ brand_name

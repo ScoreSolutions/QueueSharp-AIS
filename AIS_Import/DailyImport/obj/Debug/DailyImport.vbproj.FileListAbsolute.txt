@@ -1,0 +1,4 @@
+D:\MyProject\QueueSharp-AIS\AIS_Import\DailyImport\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\AIS_Import\DailyImport\obj\Debug\DailyImport.frmDailyImportCustomer.resources
+D:\MyProject\QueueSharp-AIS\AIS_Import\DailyImport\obj\Debug\DailyImport.Resources.resources
+D:\MyProject\QueueSharp-AIS\AIS_Import\DailyImport\obj\Debug\DailyImport.vbproj.GenerateResource.Cache

@@ -1,0 +1,9 @@
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\bin\Debug\AisCSI-ExportData.exe
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\bin\Debug\AisCSI-ExportData.pdb
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\bin\Debug\AisCSI-ExportData.xml
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\obj\Release\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\obj\Release\AisCSI_ExportData.Resources.resources
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\obj\Release\AisCSI-ExportData.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\obj\Release\AisCSI-ExportData.exe
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\obj\Release\AisCSI-ExportData.xml
+D:\MyProject\QueueSharp-AIS\AIS-HQ-Agent\AisCSI-ExportData\obj\Release\AisCSI-ExportData.pdb

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pieChart titlesColor="0xFFFFFF" xChart="0" yChart="160" wChart="320" hChart="160" nbDepth="30" nbMove="0.15" showLabels="TRUE" xLabels="150" yLabels="50" ttColor="0x000000" speed="0.8" synchonized="false" esWedge="Regular.easeIn" esMove="Regular.easeOut">
+  <serie name="Non-AIS" value="20" topColor="0x00CC00" lightColor="0x00CC00" frontColor="0x00FF33" sideColor="0x00FF33" />
+  <serie name="One-2-Call" value="20" topColor="0xFF414C" lightColor="0x9F161E" frontColor="0xEB1C24" sideColor="0x6B0206" />
+  <serie name="GSM Advance" value="20" topColor="0xFFCC33" lightColor="0xFFCC33" frontColor="0xFFFF66" sideColor="0xFFFF33" />
+  <serie name="Serenade" value="20" topColor="0x660066" lightColor="0x660066" frontColor="0x663366" sideColor="0x663366" />
+  <serie name="3G" value="20" topColor="0x0099CC" lightColor="0x0099CC" frontColor="0x00FFCC" sideColor="0x00FFCC" />
+</pieChart>

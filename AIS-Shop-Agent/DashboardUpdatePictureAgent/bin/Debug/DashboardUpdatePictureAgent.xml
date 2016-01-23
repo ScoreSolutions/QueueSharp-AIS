@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DashboardUpdatePictureAgent
+</name>
+</assembly>
+<members>
+<member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.#ctor">
+	<remarks/>
+</member><member name="E:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDCCompleted">
+	<remarks/>
+</member><member name="E:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileFromDCCompleted">
+	<remarks/>
+</member><member name="E:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDCCompleted">
+	<remarks/>
+</member><member name="E:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDCCompleted">
+	<remarks/>
+</member><member name="E:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatusCompleted">
+	<remarks/>
+</member><member name="E:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.ErrorMessageCompleted">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDC(System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDCAsync(System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDCAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileFromDC(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileFromDCAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileFromDCAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDC(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDCAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDCAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDC(System.String,System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDCAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDCAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatus(System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatusAsync(System.String)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatusAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.ErrorMessage">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.ErrorMessageAsync">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.ErrorMessageAsync(System.Object)">
+	<remarks/>
+</member><member name="M:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.EquipmentFileService">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetFileByteStreamFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DashboardUpdatePictureAgent.EquipmentFileService.GetFileByteStreamFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetFileByteStreamFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetFileFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DashboardUpdatePictureAgent.EquipmentFileService.GetFileFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetFileFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetFileInfoFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DashboardUpdatePictureAgent.EquipmentFileService.GetFileInfoFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetFileInfoFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetListFileInfoFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DashboardUpdatePictureAgent.EquipmentFileService.GetListFileInfoFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.GetListFileInfoFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.UpdateTransferStatusCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DashboardUpdatePictureAgent.EquipmentFileService.UpdateTransferStatusCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.UpdateTransferStatusCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.ErrorMessageCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DashboardUpdatePictureAgent.EquipmentFileService.ErrorMessageCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DashboardUpdatePictureAgent.EquipmentFileService.ErrorMessageCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

@@ -1,0 +1,14 @@
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\bin\Debug\Calendar.dll
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\bin\Debug\Calendar.pdb
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.Calendar.resources
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.dll
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.pdb
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\bin\Debug\Calendar.dll
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\bin\Debug\Calendar.pdb
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\ResolveAssemblyReference.cache
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.Calendar.resources
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.vbproj.GenerateResource.Cache
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.dll
+D:\_A\_AIS\Queuesharp-AIS\QueueSharp-AIS\QueueSharpCalendar\obj\Debug\Calendar.pdb

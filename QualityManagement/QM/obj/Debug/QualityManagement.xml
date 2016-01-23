@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+QualityManagement
+</name>
+</assembly>
+<members>
+<member name="M:QualityManagement.HostWebcam.InitializeHostWebcam(System.Int32,System.String)">
+	<summary>
+ สำหรับตรวจสอบความพร้อมของกล้องตัวแรก
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QualityManagement.HostWebcam.HostCue(System.String)">
+	<summary>
+ สำหรับเตรียมพร้อมก่อนเริ่มการบันทึก ช่วยทำให้การเรียก method start รวดเร็วขึ้น
+ </summary>
+</member><member name="M:QualityManagement.HostWebcam.HostStart">
+	<summary>
+ คำสั่งให้กล้องเริ่มการบันทึก
+ </summary>
+</member><member name="M:QualityManagement.HostWebcam.SaveFile(System.String,System.Byte[])">
+	<summary>
+ สำหรับบันทึกไฟล์วีดีโอ
+ </summary>
+	<param name="Filename">ชื่อ Path และ Filename Ex."C:\xxx.avi"</param>
+	<param name="byteData">ข้อมูลที่เป็น Byte Array</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QualityManagement.HostWebcam.FileToByteArray(System.String)">
+	<summary>
+ Convert Source File To Byte()
+ </summary>
+	<param name="_FileName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QualityManagement.QM.ConvertFLV(System.String,System.String,System.String)">
+	<summary>
+ รวมไฟล์เสียงและภาพโดยมี Output File เป็น FLV
+ </summary>
+	<param name="InputSoundFile">ตัวอย่างเช่น.C:\XXX.wav</param>
+	<param name="InputVideoFile">ตัวอย่างเช่น.C:\XXX.avi</param>
+	<param name="OutputFLVFile">ตัวอย่างเช่น.C:\XXX.flv</param>
+	<remarks></remarks>
+</member><member name="M:QualityManagement.GuestWebcam.InitializeGuestWebcam(System.Int32,System.String)">
+	<summary>
+ สำหรับตรวจสอบความพร้อมของกล้อง#2
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QualityManagement.GuestWebcam.GuestStart">
+	<summary>
+ คำสั่งให้กล้อง#2 เริ่มการบันทึก
+ </summary>
+</member><member name="M:QualityManagement.GuestWebcam.GuestStop">
+	<summary>
+ คำสั่งให้กล้อง#2 หยุดการบันทึก
+ </summary>
+</member><member name="M:QualityManagement.GuestWebcam.FileToByteArray(System.String)">
+	<summary>
+ Convert Source File To Byte()
+ </summary>
+	<param name="_FileName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QualityManagement.GuestWebcam.SaveFile(System.String,System.Byte[])">
+	<summary>
+ สำหรับบันทึกไฟล์วีดีโอ
+ </summary>
+	<param name="Filename">ชื่อ Path และ Filename Ex."C:\xxx.avi"</param>
+	<param name="byteData">ข้อมูลที่เป็น Byte Array</param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

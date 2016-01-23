@@ -1,0 +1,10 @@
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\bin\Debug\QMPreview.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\bin\Debug\QMPreview.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\bin\Debug\QMPreview.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\QMPreview.Form1.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\QMPreview.Resources.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\QMPreview.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\QMPreview.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\QMPreview.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMPreview\obj\Debug\QMPreview.pdb

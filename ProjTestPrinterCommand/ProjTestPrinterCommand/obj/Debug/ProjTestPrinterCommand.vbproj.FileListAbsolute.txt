@@ -1,0 +1,11 @@
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\bin\Debug\ProjTestPrinterCommand.exe
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\bin\Debug\ProjTestPrinterCommand.pdb
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\bin\Debug\ProjTestPrinterCommand.xml
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\bin\Debug\PC_Printer.dll
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ProjTestPrinterCommand.Form1.resources
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ProjTestPrinterCommand.Resources.resources
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ProjTestPrinterCommand.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ProjTestPrinterCommand.exe
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ProjTestPrinterCommand.xml
+D:\MyProject\QueueSharp-AIS\ProjTestPrinterCommand\ProjTestPrinterCommand\obj\Debug\ProjTestPrinterCommand.pdb

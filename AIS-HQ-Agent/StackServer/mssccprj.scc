@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[StackServer.vbproj]
+SCC_Aux_Path = "\\score-dev-main\SourceControl\QIS"
+SCC_Project_Name = "$/AIS-HQ-Agent/StackServer", BWBAAAAA

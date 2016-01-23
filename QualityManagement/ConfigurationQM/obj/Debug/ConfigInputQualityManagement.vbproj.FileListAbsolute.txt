@@ -1,0 +1,12 @@
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\bin\Debug\ConfigInput.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\bin\Debug\DirectX.Capture.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\bin\Debug\DShowNET.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ConfigInputQualityManagement.Form1.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ConfigInputQualityManagement.Resources.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ConfigInputQualityManagement.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ConfigInput.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ConfigInput.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\obj\Debug\ConfigInput.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\bin\Debug\ConfigInput.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\ConfigurationQM\bin\Debug\ConfigInput.xml

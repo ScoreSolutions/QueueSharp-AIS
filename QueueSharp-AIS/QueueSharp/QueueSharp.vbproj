@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8805E90B-0835-4E89-9729-2EC52A05B33A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QueueSharp.My.MyApplication</StartupObject>
+    <RootNamespace>QueueSharp</RootNamespace>
+    <AssemblyName>QueueSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>QSharp.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>0F3B98BC1808196F98FB93CCDFF68D5ADBCD811D</ManifestCertificateThumbprint>
+    <ManifestKeyFile>QueueSharp_TemporaryKey.pfx</ManifestKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <PublishUrl>D:\DeployQueueSharp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>0.1.19.6</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QueueSharp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QueueSharp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlexPilotti.FTPS.Client, Version=1.1.0.27735, Culture=neutral, PublicKeyToken=48316da1e84b328d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\QM\AlexPilotti.FTPS.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.Profile, Version=2.0.4374.32330, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CodeVendor.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DirectX.Capture, Version=1.0.4398.28155, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DShowNET, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.PrinterClassDll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="LeftJoin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="mRibbon, Version=1.0.2853.35963, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ScoreLicense, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Calendar, Version=1.0.4387.30818, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WindowsApplication1\WindowsApplication1\bin\Debug\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\frmConfigDeviceQueue.Designer.vb">
+      <DependentUpon>frmConfigDeviceQueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmConfigDeviceQueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmConfigPrinter.Designer.vb">
+      <DependentUpon>frmConfigPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmConfigPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmReprint.Designer.vb">
+      <DependentUpon>frmReprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmReprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmAppointmentCustomer.Designer.vb">
+      <DependentUpon>frmAppointmentCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmAppointmentCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmAwaitingCustomer.Designer.vb">
+      <DependentUpon>frmAwaitingCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmAwaitingCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmCustomerInfo.Designer.vb">
+      <DependentUpon>frmCustomerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmCustomerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmDailyHistory.Designer.vb">
+      <DependentUpon>frmDailyHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmDailyHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmAddServiceCustomer.designer.vb">
+      <DependentUpon>frmAddServiceCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmAddServiceCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmEditServiceCustomer.designer.vb">
+      <DependentUpon>frmEditServiceCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmEditServiceCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmEditService.designer.vb">
+      <DependentUpon>frmEditService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmEditService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmMoveQueue.designer.vb">
+      <DependentUpon>frmMoveQueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmMoveQueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerService\frmRoomStatus.Designer.vb">
+      <DependentUpon>frmRoomStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\frmRoomStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestWebcam.vb" />
+    <Compile Include="HostWebcam.vb" />
+    <Compile Include="Main\frmLicense.Designer.vb">
+      <DependentUpon>frmLicense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmLicense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterWebServiceModule.vb" />
+    <Compile Include="Master\frmAboutBox.Designer.vb">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmAboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmConfigDatabase.designer.vb">
+      <DependentUpon>frmConfigDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmConfigDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmAppointment.Designer.vb">
+      <DependentUpon>frmAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCustomerType.Designer.vb">
+      <DependentUpon>frmCustomerType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCustomerType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmErrorMessage.Designer.vb">
+      <DependentUpon>frmErrorMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmErrorMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmLocation.Designer.vb">
+      <DependentUpon>frmLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmConfigUnitDisplay.Designer.vb">
+      <DependentUpon>frmConfigUnitDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config\frmConfigUnitDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniReader.vb" />
+    <Compile Include="Master\frmCounter.Designer.vb">
+      <DependentUpon>frmCounter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCounter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmForce.Designer.vb">
+      <DependentUpon>frmForce.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmForce.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmGroupUser.Designer.vb">
+      <DependentUpon>frmGroupUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmGroupUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmHoldReason.Designer.vb">
+      <DependentUpon>frmHoldReason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmHoldReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMDSetting.Designer.vb">
+      <DependentUpon>frmMDSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMDSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmQSetting.Designer.vb">
+      <DependentUpon>frmQSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmQSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSetting.Designer.vb">
+      <DependentUpon>frmSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmLogoutReason.Designer.vb">
+      <DependentUpon>frmLogoutReason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLogoutReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmPriority.Designer.vb">
+      <DependentUpon>frmPriority.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmPriority.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmItemOrder.Designer.vb">
+      <DependentUpon>frmItemOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmItemOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSegment.Designer.vb">
+      <DependentUpon>frmSegment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSegment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmService.Designer.vb">
+      <DependentUpon>frmService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmServiceType.Designer.vb">
+      <DependentUpon>frmServiceType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmServiceType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSkill.Designer.vb">
+      <DependentUpon>frmSkill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSkill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStaffSMS.Designer.vb">
+      <DependentUpon>frmStaffSMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmStaffSMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmUser.Designer.vb">
+      <DependentUpon>frmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWorkFlow.Designer.vb">
+      <DependentUpon>frmWorkFlow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWorkFlow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthCalendar.Designer.vb">
+      <DependentUpon>MonthCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MonthCalendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QM.vb" />
+    <Compile Include="QueueModule.vb" />
+    <Compile Include="TDateControl.Designer.vb">
+      <DependentUpon>TDateControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TDateControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transection\frmTestForm.Designer.vb">
+      <DependentUpon>frmTestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmTestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmWeb.Designer.vb">
+      <DependentUpon>frmWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmDialogCustomerInfo.Designer.vb">
+      <DependentUpon>frmDialogCustomerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmDialogCustomerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmCompactView_B.Designer.vb">
+      <DependentUpon>frmCompactView_B.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmCompactView_B.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\FormFloatAllservice.Designer.vb">
+      <DependentUpon>FormFloatAllservice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\FormFloatAllservice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmCompactView_M.designer.vb">
+      <DependentUpon>frmCompactView_M.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmCompactView_M.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmCompactView_S.Designer.vb">
+      <DependentUpon>frmCompactView_S.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmCompactView_S.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmDialogYesNo.Designer.vb">
+      <DependentUpon>frmDialogYesNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmDialogYesNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmEndByService.designer.vb">
+      <DependentUpon>frmEndByService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmEndByService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmItemIndex.designer.vb">
+      <DependentUpon>frmItemIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmItemIndex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmMessage.Designer.vb">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmMessageCounter.Designer.vb">
+      <DependentUpon>frmMessageCounter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmMessageCounter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmReason.Designer.vb">
+      <DependentUpon>frmReason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmServiceQueue.designer.vb">
+      <DependentUpon>frmServiceQueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmServiceQueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmServiceCancel.designer.vb">
+      <DependentUpon>frmServiceCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmServiceCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmServiceConfirm.designer.vb">
+      <DependentUpon>frmServiceConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmServiceConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmUnitDisplay.Designer.vb">
+      <DependentUpon>frmUnitDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmUnitDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\frmWriteMessage.Designer.vb">
+      <DependentUpon>frmWriteMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transection\frmWriteMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transection\TaskBarNotifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TV\frmChannel.Designer.vb">
+      <DependentUpon>frmChannel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TV\frmChannel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TV\frmChannelSelect.Designer.vb">
+      <DependentUpon>frmChannelSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TV\frmChannelSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TV\frmEmergencyText.Designer.vb">
+      <DependentUpon>frmEmergencyText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TV\frmEmergencyText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TV\frmSchedulText.Designer.vb">
+      <DependentUpon>frmSchedulText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TV\frmSchedulText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\ShopWebServiceDisplay\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ShopWebServiceMain\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\frmConfigDeviceQueue.resx">
+      <DependentUpon>frmConfigDeviceQueue.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmConfigPrinter.resx">
+      <DependentUpon>frmConfigPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmReprint.resx">
+      <DependentUpon>frmReprint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmAppointmentCustomer.resx">
+      <DependentUpon>frmAppointmentCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmAwaitingCustomer.resx">
+      <DependentUpon>frmAwaitingCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmCustomerInfo.resx">
+      <DependentUpon>frmCustomerInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmDailyHistory.resx">
+      <DependentUpon>frmDailyHistory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmAddServiceCustomer.resx">
+      <DependentUpon>frmAddServiceCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmEditServiceCustomer.resx">
+      <DependentUpon>frmEditServiceCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmEditService.resx">
+      <DependentUpon>frmEditService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmMoveQueue.resx">
+      <DependentUpon>frmMoveQueue.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerService\frmRoomStatus.resx">
+      <DependentUpon>frmRoomStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmLicense.resx">
+      <DependentUpon>frmLicense.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmConfigDatabase.resx">
+      <DependentUpon>frmConfigDatabase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmAppointment.resx">
+      <DependentUpon>frmAppointment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCustomerType.resx">
+      <DependentUpon>frmCustomerType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmErrorMessage.resx">
+      <DependentUpon>frmErrorMessage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmLocation.resx">
+      <DependentUpon>frmLocation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmConfigUnitDisplay.resx">
+      <DependentUpon>frmConfigUnitDisplay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCounter.resx">
+      <DependentUpon>frmCounter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmForce.resx">
+      <DependentUpon>frmForce.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmGroupUser.resx">
+      <DependentUpon>frmGroupUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmHoldReason.resx">
+      <DependentUpon>frmHoldReason.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMDSetting.resx">
+      <DependentUpon>frmMDSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmQSetting.resx">
+      <DependentUpon>frmQSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSetting.resx">
+      <DependentUpon>frmSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmLogoutReason.resx">
+      <DependentUpon>frmLogoutReason.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmPriority.resx">
+      <DependentUpon>frmPriority.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmItemOrder.resx">
+      <DependentUpon>frmItemOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSegment.resx">
+      <DependentUpon>frmSegment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmService.resx">
+      <DependentUpon>frmService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmServiceType.resx">
+      <DependentUpon>frmServiceType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSkill.resx">
+      <DependentUpon>frmSkill.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmStaffSMS.resx">
+      <DependentUpon>frmStaffSMS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmUser.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWorkFlow.resx">
+      <DependentUpon>frmWorkFlow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthCalendar.resx">
+      <DependentUpon>MonthCalendar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TDateControl.resx">
+      <DependentUpon>TDateControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmTestForm.resx">
+      <DependentUpon>frmTestForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmWeb.resx">
+      <DependentUpon>frmWeb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmDialogCustomerInfo.resx">
+      <DependentUpon>frmDialogCustomerInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmCompactView_B.resx">
+      <DependentUpon>frmCompactView_B.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\FormFloatAllservice.resx">
+      <DependentUpon>FormFloatAllservice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmCompactView_M.resx">
+      <DependentUpon>frmCompactView_M.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmCompactView_S.resx">
+      <DependentUpon>frmCompactView_S.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmDialogYesNo.resx">
+      <DependentUpon>frmDialogYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmEndByService.resx">
+      <DependentUpon>frmEndByService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmItemIndex.resx">
+      <DependentUpon>frmItemIndex.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmMessage.resx">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmMessageCounter.resx">
+      <DependentUpon>frmMessageCounter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmReason.resx">
+      <DependentUpon>frmReason.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmServiceQueue.resx">
+      <DependentUpon>frmServiceQueue.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmServiceCancel.resx">
+      <DependentUpon>frmServiceCancel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmServiceConfirm.resx">
+      <DependentUpon>frmServiceConfirm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmUnitDisplay.resx">
+      <DependentUpon>frmUnitDisplay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\frmWriteMessage.resx">
+      <DependentUpon>frmWriteMessage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transection\TaskBarNotifier.resx">
+      <DependentUpon>TaskBarNotifier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TV\frmChannel.resx">
+      <DependentUpon>frmChannel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TV\frmChannelSelect.resx">
+      <DependentUpon>frmChannelSelect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TV\frmEmergencyText.resx">
+      <DependentUpon>frmEmergencyText.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TV\frmSchedulText.resx">
+      <DependentUpon>frmSchedulText.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QSharp.ico" />
+    <Content Include="ReleaseNote.txt" />
+    <None Include="Resources\webcam.png" />
+    <None Include="Resources\Refresh50.png" />
+    <None Include="Resources\Forword50.png" />
+    <None Include="Resources\Back50.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\CustomerInfo.png" />
+    <None Include="Resources\Top.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="app.config" />
+    <None Include="Resources\EndByService.png" />
+    <None Include="Resources\cancel.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\window_preferences.png" />
+    <None Include="Resources\Reprint.png" />
+    <None Include="Resources\Reprint.jpg" />
+    <None Include="Resources\Logout_button.png" />
+    <None Include="Resources\login-icon.png" />
+    <None Include="Resources\scroll_ok.png" />
+    <None Include="Resources\scroll_warning.png" />
+    <None Include="Resources\scroll_error.png" />
+    <None Include="Resources\Logo.gif" />
+    <None Include="Resources\BgColorIcon.png" />
+    <None Include="Resources\QSharp_popup_BG2.png" />
+    <None Include="Resources\QSharp_popup_BG1.png" />
+    <None Include="Resources\QSharp_popup_BG.png" />
+    <None Include="Resources\QSharp_popup_131.png" />
+    <None Include="Resources\QSharp_popup_121.png" />
+    <None Include="Resources\QSharp_popup_111.png" />
+    <None Include="Resources\QSharp_popup_101.png" />
+    <None Include="Resources\QSharp_popup_14_21.png" />
+    <None Include="Resources\QSharp_popup_14_2.png" />
+    <None Include="Resources\QSharp_popup_13.png" />
+    <None Include="Resources\QSharp_popup_12.png" />
+    <None Include="Resources\QSharp_popup_11.png" />
+    <None Include="Resources\QSharp_popup_10_21.png" />
+    <None Include="Resources\QSharp_popup_10_2.png" />
+    <None Include="Resources\QSharp_popup_10_2.gif" />
+    <None Include="Resources\QSharp_popup_10.png" />
+    <None Include="Resources\QSharp_popup_09_21.gif" />
+    <None Include="Resources\QSharp_popup_09_2.gif" />
+    <None Include="Resources\QSharp_popup_2_13.png" />
+    <None Include="Resources\endQ_2.png" />
+    <None Include="Resources\breakpoint_into.png" />
+    <None Include="Resources\Monitor Panther.png" />
+    <None Include="Resources\forbidden.png" />
+    <None Include="Resources\first_aid.png" />
+    <None Include="Resources\MsSQL.png" />
+    <None Include="Resources\pill_blue.png" />
+    <None Include="Resources\drug.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\rad.png" />
+    <None Include="Resources\bg.gif" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\Next.png" />
+    <None Include="Resources\Lock.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Login.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Web References\ShopWebServiceDisplay\AppointmentCheckBacklistResultPara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\CaptureImageResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\LDAPResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\SaveAppointmentJobPara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\SiebelResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\SMSResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbCustomerShParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbCustomertypeCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbGroupuserCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbHoldReasonCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbItemCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbLogoutReasonCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbSkillCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\AppointmentCheckBacklistResultPara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\CaptureImageResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\LDAPResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\SaveAppointmentJobPara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\SiebelResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\SMSResponsePara.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbCustomerShParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\WebServiceAPI.wsdl" />
+    <None Include="Web References\ShopWebServiceMain\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbCustomertypeCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbGroupuserCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbHoldReasonCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbItemCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbLogoutReasonCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbSkillCenParaDB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\WebServiceAPI.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vbproj">
+      <Project>{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueueSharpCalendar\Calendar.vbproj">
+      <Project>{EA0D3ECA-FE52-400D-8EC1-C463AC76809E}</Project>
+      <Name>Calendar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShLinqDB\ShLinqDB.vbproj">
+      <Project>{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}</Project>
+      <Name>ShLinqDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShParaDb\ShParaDb.vbproj">
+      <Project>{FF855063-DBE5-4F34-9FEE-9C732304EFA6}</Project>
+      <Name>ShParaDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.16.59.186/ShopWebservice/WebServiceAPI.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ShopWebServiceMain\</RelPath>
+      <UpdateFromURL>http://172.16.59.186/ShopWebservice/WebServiceAPI.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QueueSharp_GetCustomerProfile_WebServiceAPI</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.59.184/ShopWebService/WebServiceAPI.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ShopWebServiceDisplay\</RelPath>
+      <UpdateFromURL>http://172.16.59.184/ShopWebService/WebServiceAPI.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QueueSharp_GetCustomerProfileBackup_WebServiceAPI</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

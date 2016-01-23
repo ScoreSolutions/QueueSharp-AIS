@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MainDisplayUpdateVDOAgent
+</name>
+</assembly>
+<members>
+<member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.#ctor">
+	<remarks/>
+</member><member name="E:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDCCompleted">
+	<remarks/>
+</member><member name="E:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileFromDCCompleted">
+	<remarks/>
+</member><member name="E:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDCCompleted">
+	<remarks/>
+</member><member name="E:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDCCompleted">
+	<remarks/>
+</member><member name="E:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatusCompleted">
+	<remarks/>
+</member><member name="E:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.ErrorMessageCompleted">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDC(System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDCAsync(System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileByteStreamFromDCAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileFromDC(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileFromDCAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileFromDCAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDC(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDCAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetFileInfoFromDCAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDC(System.String,System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDCAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.GetListFileInfoFromDCAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatus(System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatusAsync(System.String)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.UpdateTransferStatusAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.ErrorMessage">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.ErrorMessageAsync">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.ErrorMessageAsync(System.Object)">
+	<remarks/>
+</member><member name="M:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.EquipmentFileService">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileByteStreamFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileByteStreamFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileByteStreamFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileInfoFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileInfoFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetFileInfoFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetListFileInfoFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MainDisplayUpdateVDOAgent.EquipmentFileService.GetListFileInfoFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.GetListFileInfoFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.UpdateTransferStatusCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MainDisplayUpdateVDOAgent.EquipmentFileService.UpdateTransferStatusCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.UpdateTransferStatusCompletedEventArgs">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.ErrorMessageCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MainDisplayUpdateVDOAgent.EquipmentFileService.ErrorMessageCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MainDisplayUpdateVDOAgent.EquipmentFileService.ErrorMessageCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

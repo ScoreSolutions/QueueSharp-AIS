@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6444FE0-9F90-4B22-959D-D0B9871C9319}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CenLinqDB</RootNamespace>
+    <AssemblyName>CenLinqDB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CenLinqDB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CenLinqDB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Utilities\IniReader.vb" />
+    <Compile Include="Common\Utilities\QisFaultDB.vb" />
+    <Compile Include="Common\Utilities\SqlDB.vb" />
+    <Compile Include="Common\Utilities\TransactionDB.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TABLE\LogErrorCenLinqDB.vb" />
+    <Compile Include="TABLE\LoginHistoryCenLinqDB.vb" />
+    <Compile Include="TABLE\LogTransCenLinqDB.vb" />
+    <Compile Include="TABLE\SysconfigCenLinqDB.vb" />
+    <Compile Include="TABLE\SysmenuCenLinqDB.vb" />
+    <Compile Include="TABLE\SysmoduleCenLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentBlacklistCenLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentEditJobCenLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentJobCenLinqDB.vb" />
+    <Compile Include="TABLE\TbBuildingCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgCounterCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgCounterCustomerTypeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgCounterCusttypeAllowCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgHoldReasonCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgItemCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgLogoutReasonCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgSkillCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgSwSchedKioskCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgSwSchedMaindisplayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgSwSchedQsharpCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgUserCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCfgUserSkillCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomerCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomerCorporateTypeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomerMappingLinq.vb" />
+    <Compile Include="TABLE\TbCustomerNetworkTypeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomerTempCenLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomertypeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbEmailBatchAlertCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterAttBacklistFileCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterAttBacklistMobileCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterDataCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterServiceCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterShopCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterStaffCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterTempDataCenLinqDB.vb" />
+    <Compile Include="TABLE\TbFilterTempTargetCenLinqDB.vb" />
+    <Compile Include="TABLE\TbGroupuserCenLinqDB.vb" />
+    <Compile Include="TABLE\TbHoldReasonCenLinqDB.vb" />
+    <Compile Include="TABLE\TbItemCenLinqDB.vb" />
+    <Compile Include="TABLE\TbItemGroupCenLinqDB.vb" />
+    <Compile Include="TABLE\TbLogCustomerDailyCenLinqDB.vb" />
+    <Compile Include="TABLE\TbLogoutReasonCenLinqDB.vb" />
+    <Compile Include="TABLE\TbMasterGroupuserCenLinqDB.vb" />
+    <Compile Include="TABLE\TbMasterGroupuserMenuCenLinqDB.vb" />
+    <Compile Include="TABLE\TbMasterShopMenuCenLinqDB.vb" />
+    <Compile Include="TABLE\TbMobileAppointActCenLinqDB.vb" />
+    <Compile Include="TABLE\TbNationalityCenLinqDB.vb" />
+    <Compile Include="TABLE\TbNotifyJoblistCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRegionCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentServiceDateCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopDateCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffYearCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiYearCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkYearCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentYearCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepIntervalPerformanceTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbReportIntervalTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbReportProcessLogCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityYearCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepStaffAttendanceCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepStaffAttendanceMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepStaffAttendanceWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepSummaryDailyReportCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepSummaryReportIntervalCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepSummaryReportStaffCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtAgentCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopYearCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillDateCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillTimeCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtStaffDayCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtStaffMonthCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtStaffWeekCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRoleCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRoleSysmenuCenLinqDB.vb" />
+    <Compile Include="TABLE\TbRoleUserCenLinqDB.vb" />
+    <Compile Include="TABLE\TbSegmentCenLinqDB.vb" />
+    <Compile Include="TABLE\TbShopCenLinqDB.vb" />
+    <Compile Include="TABLE\TbShopConfigCenLinqDB.vb" />
+    <Compile Include="TABLE\TbShopFileByteCenLinqDB.vb" />
+    <Compile Include="TABLE\TbShopFileScheduleCenLinqDB.vb" />
+    <Compile Include="TABLE\TbShopServiceAppointmentCenLinqDB.vb" />
+    <Compile Include="TABLE\TbSiebelActivityCategoryCenLinqDB.vb" />
+    <Compile Include="TABLE\TbSiebelActivitySubcategoryCenLinqDB.vb" />
+    <Compile Include="TABLE\TbSkillCenLinqDB.vb" />
+    <Compile Include="TABLE\TbSkillItemCenLinqDB.vb" />
+    <Compile Include="TABLE\TbStackServerEmailCenLinqDB.vb" />
+    <Compile Include="TABLE\TbStackServerLogCenLinqDB.vb" />
+    <Compile Include="TABLE\TbStackServerSmsCenLinqDB.vb" />
+    <Compile Include="TABLE\TbTempCompareTransactionCenLinqDB.vb" />
+    <Compile Include="TABLE\TbTitleCenLinqDB.vb" />
+    <Compile Include="TABLE\TbUserCenLinqDB.vb" />
+    <Compile Include="TABLE\TbUserShopCenLinqDB.vb" />
+    <Compile Include="TABLE\TwFilterBranchCenLinqDB.vb" />
+    <Compile Include="TABLE\TwFilterCenLinqDB.vb" />
+    <Compile Include="TABLE\TwFilterDataCenLinqDB.vb" />
+    <Compile Include="TABLE\TwFilterOrderTypeCenLinqDB.vb" />
+    <Compile Include="TABLE\TwFilterTempTargetCenLinqDB.vb" />
+    <Compile Include="TABLE\TwLocationCenLinqDB.vb" />
+    <Compile Include="TABLE\TwSffOrderTypeCenLinqDB.vb" />
+    <Compile Include="TABLE\TwSourceDataCenLinqDB.vb" />
+    <Compile Include="TABLE\TwSourceTextfileCenLinqDB.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CenParaDB\CenParaDB.vbproj">
+      <Project>{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}</Project>
+      <Name>CenParaDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

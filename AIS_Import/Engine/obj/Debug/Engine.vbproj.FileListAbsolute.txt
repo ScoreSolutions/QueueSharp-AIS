@@ -1,0 +1,9 @@
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\bin\Debug\Engine.dll
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\bin\Debug\Engine.pdb
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\bin\Debug\Engine.xml
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\obj\Debug\Engine.Resources.resources
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\obj\Debug\Engine.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\obj\Debug\Engine.dll
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\obj\Debug\Engine.xml
+D:\MyProject\QueueSharp-AIS\AIS_Import\Engine\obj\Debug\Engine.pdb

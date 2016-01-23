@@ -1,0 +1,14 @@
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\DalLib.dll
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\DalLib.pdb
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\DalLib.xml
+D:\My Documents\ScoreSolutions\DalLib\DalLib\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\ScoreSolutions\DalLib\DalLib\obj\Debug\DalLib.Resources.resources
+D:\My Documents\ScoreSolutions\DalLib\DalLib\obj\Debug\DalLib.vbproj.GenerateResource.Cache
+D:\My Documents\ScoreSolutions\DalLib\DalLib\obj\Debug\DalLib.dll
+D:\My Documents\ScoreSolutions\DalLib\DalLib\obj\Debug\DalLib.xml
+D:\My Documents\ScoreSolutions\DalLib\DalLib\obj\Debug\DalLib.pdb
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\GenerateVB.dll
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\GenerateVB.pdb
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\GenerateVB.xml
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\GenerateC.dll
+D:\My Documents\ScoreSolutions\DalLib\DalLib\bin\GenerateC.pdb

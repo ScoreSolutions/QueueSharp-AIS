@@ -1,0 +1,28 @@
+<publishData>
+  <publishTarget publishUrl="C:\QisTabletWebService\">
+    <file relUrl="bin/CenLinqDB.dll" publishTime="10/11/2015 17:17:44" />
+    <file relUrl="bin/QISTabletWebService.xml" publishTime="10/19/2015 23:37:11" />
+    <file relUrl="bin/ShParaDb.dll" publishTime="10/15/2015 18:56:24" />
+    <file relUrl="bin/CenLinqDB.xml" publishTime="10/11/2015 17:17:44" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="03/07/2014 09:39:48" />
+    <file relUrl="bin/Engine.pdb" publishTime="10/19/2015 23:36:37" />
+    <file relUrl="Web.config" publishTime="10/13/2015 16:27:32" />
+    <file relUrl="bin/QISTabletWebService.pdb" publishTime="10/19/2015 23:37:11" />
+    <file relUrl="TabletWebService.aspx" publishTime="09/30/2015 09:36:12" />
+    <file relUrl="bin/CenParaDB.xml" publishTime="10/11/2015 17:17:32" />
+    <file relUrl="bin/CenLinqDB.pdb" publishTime="10/11/2015 17:17:44" />
+    <file relUrl="bin/CenParaDB.dll" publishTime="10/11/2015 17:17:32" />
+    <file relUrl="bin/ShLinqDB.xml" publishTime="10/15/2015 18:56:25" />
+    <file relUrl="bin/DirectX.Capture.dll" publishTime="07/14/2014 14:30:47" />
+    <file relUrl="bin/Engine.dll" publishTime="10/19/2015 23:36:37" />
+    <file relUrl="bin/AMS.Profile.dll" publishTime="07/14/2014 14:28:20" />
+    <file relUrl="bin/QISTabletWebService.dll" publishTime="10/19/2015 23:37:11" />
+    <file relUrl="bin/Interop.SHDocVw.dll" publishTime="07/14/2014 14:30:43" />
+    <file relUrl="bin/ShLinqDB.dll" publishTime="10/15/2015 18:56:25" />
+    <file relUrl="bin/ShParaDb.xml" publishTime="10/15/2015 18:56:24" />
+    <file relUrl="bin/ShLinqDB.pdb" publishTime="10/15/2015 18:56:25" />
+    <file relUrl="bin/ShParaDb.pdb" publishTime="10/15/2015 18:56:24" />
+    <file relUrl="bin/Engine.xml" publishTime="10/19/2015 23:36:37" />
+    <file relUrl="bin/CenParaDB.pdb" publishTime="10/11/2015 17:17:32" />
+  </publishTarget>
+</publishData>

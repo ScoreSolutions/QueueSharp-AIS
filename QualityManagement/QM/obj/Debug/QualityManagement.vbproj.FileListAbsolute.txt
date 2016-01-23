@@ -1,0 +1,10 @@
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\bin\Debug\QualityManagement.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\bin\Debug\QualityManagement.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\bin\Debug\QualityManagement.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\QualityManagement.QM.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\QualityManagement.Resources.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\QualityManagement.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\QualityManagement.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\QualityManagement.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QM\obj\Debug\QualityManagement.pdb

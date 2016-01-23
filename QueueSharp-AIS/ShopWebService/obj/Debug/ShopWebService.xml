@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ShopWebService
+</name>
+</assembly>
+<members>
+<member name="M:ShopWebService.EquipmentWS.EquipmentFileService.#ctor">
+	<remarks/>
+</member><member name="E:ShopWebService.EquipmentWS.EquipmentFileService.GetFileFromDCCompleted">
+	<remarks/>
+</member><member name="E:ShopWebService.EquipmentWS.EquipmentFileService.UpdateTransferStatusCompleted">
+	<remarks/>
+</member><member name="E:ShopWebService.EquipmentWS.EquipmentFileService.ErrorMessageCompleted">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.GetFileFromDC(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.GetFileFromDCAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.GetFileFromDCAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.UpdateTransferStatus(System.String)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.UpdateTransferStatusAsync(System.String)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.UpdateTransferStatusAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.ErrorMessage">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.ErrorMessageAsync">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.ErrorMessageAsync(System.Object)">
+	<remarks/>
+</member><member name="M:ShopWebService.EquipmentWS.EquipmentFileService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.EquipmentFileService">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.GetFileFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:ShopWebService.EquipmentWS.GetFileFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.GetFileFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.UpdateTransferStatusCompletedEventHandler">
+	<remarks/>
+</member><member name="P:ShopWebService.EquipmentWS.UpdateTransferStatusCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.UpdateTransferStatusCompletedEventArgs">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.ErrorMessageCompletedEventHandler">
+	<remarks/>
+</member><member name="P:ShopWebService.EquipmentWS.ErrorMessageCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:ShopWebService.EquipmentWS.ErrorMessageCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

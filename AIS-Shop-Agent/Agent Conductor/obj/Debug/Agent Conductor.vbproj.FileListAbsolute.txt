@@ -1,0 +1,10 @@
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\bin\Debug\Agent Conductor.exe
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\bin\Debug\Agent Conductor.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\bin\Debug\Agent Conductor.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\Agent_Conductor.frmMain.resources
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\Agent_Conductor.Resources.resources
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\Agent Conductor.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\Agent Conductor.exe
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\Agent Conductor.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Agent Conductor\obj\Debug\Agent Conductor.pdb

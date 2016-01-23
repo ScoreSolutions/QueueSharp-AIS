@@ -1,0 +1,123 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QueueSharp", "QueueSharp\QueueSharp.vbproj", "{8805E90B-0835-4E89-9729-2EC52A05B33A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{8BD06C60-BBB2-455E-BF3D-9386C8A97B0A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Kiosk", "Kiosk\Kiosk.vbproj", "{F5507141-3F9D-4290-998B-CB5FEC0E50BF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ShopWebService", "ShopWebService\ShopWebService.vbproj", "{2EC20492-6CB3-4580-8B89-67DDA192F736}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Engine", "Engine\Engine.vbproj", "{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ShLinqDB", "ShLinqDB\ShLinqDB.vbproj", "{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ShParaDb", "ShParaDb\ShParaDb.vbproj", "{FF855063-DBE5-4F34-9FEE-9C732304EFA6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Calendar", "QueueSharpCalendar\Calendar.vbproj", "{EA0D3ECA-FE52-400D-8EC1-C463AC76809E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UpdateQueueSharp", "UpdateQueueSharp\UpdateQueueSharp.vbproj", "{CDB8D6A4-7A39-4702-9907-9CF4951AB886}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CenLinqDB", "..\RefObj\CenLinqDB\CenLinqDB.vbproj", "{D6444FE0-9F90-4B22-959D-D0B9871C9319}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CenParaDB", "..\RefObj\CenParaDB\CenParaDB.vbproj", "{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KioskElo", "KioskElo\KioskElo.vbproj", "{0F54C568-0652-4409-BBFD-C0BE2B4F0647}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ShopWebQM", "ShopWebQM\", "{5E15C567-36E4-44A2-88BF-5BE7EDDA1D36}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFramework = "3.5"
+		ProjectReferences = "{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}|Engine.dll;{D6444FE0-9F90-4B22-959D-D0B9871C9319}|CenLinqDB.dll;{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}|CenParaDB.dll;{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}|ShLinqDB.dll;{FF855063-DBE5-4F34-9FEE-9C732304EFA6}|ShParaDb.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ShopWebQM"
+		Debug.AspNetCompiler.PhysicalPath = "ShopWebQM\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ShopWebQM\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ShopWebQM"
+		Release.AspNetCompiler.PhysicalPath = "ShopWebQM\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ShopWebQM\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1601"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QISTabletWebService", "QISTabletWebService\QISTabletWebService.vbproj", "{71A89ED0-4D68-4D96-9A2C-52B1F9A81ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8805E90B-0835-4E89-9729-2EC52A05B33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8805E90B-0835-4E89-9729-2EC52A05B33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8805E90B-0835-4E89-9729-2EC52A05B33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8805E90B-0835-4E89-9729-2EC52A05B33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD06C60-BBB2-455E-BF3D-9386C8A97B0A}.Debug|Any CPU.ActiveCfg = Debug
+		{8BD06C60-BBB2-455E-BF3D-9386C8A97B0A}.Release|Any CPU.ActiveCfg = Release
+		{F5507141-3F9D-4290-998B-CB5FEC0E50BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5507141-3F9D-4290-998B-CB5FEC0E50BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5507141-3F9D-4290-998B-CB5FEC0E50BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5507141-3F9D-4290-998B-CB5FEC0E50BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC20492-6CB3-4580-8B89-67DDA192F736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC20492-6CB3-4580-8B89-67DDA192F736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC20492-6CB3-4580-8B89-67DDA192F736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC20492-6CB3-4580-8B89-67DDA192F736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88AF6C2-3C34-46D9-8083-9AE1D4613B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF855063-DBE5-4F34-9FEE-9C732304EFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF855063-DBE5-4F34-9FEE-9C732304EFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF855063-DBE5-4F34-9FEE-9C732304EFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF855063-DBE5-4F34-9FEE-9C732304EFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0D3ECA-FE52-400D-8EC1-C463AC76809E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0D3ECA-FE52-400D-8EC1-C463AC76809E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0D3ECA-FE52-400D-8EC1-C463AC76809E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0D3ECA-FE52-400D-8EC1-C463AC76809E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB8D6A4-7A39-4702-9907-9CF4951AB886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB8D6A4-7A39-4702-9907-9CF4951AB886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB8D6A4-7A39-4702-9907-9CF4951AB886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB8D6A4-7A39-4702-9907-9CF4951AB886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6444FE0-9F90-4B22-959D-D0B9871C9319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6444FE0-9F90-4B22-959D-D0B9871C9319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6444FE0-9F90-4B22-959D-D0B9871C9319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6444FE0-9F90-4B22-959D-D0B9871C9319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F54C568-0652-4409-BBFD-C0BE2B4F0647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F54C568-0652-4409-BBFD-C0BE2B4F0647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F54C568-0652-4409-BBFD-C0BE2B4F0647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F54C568-0652-4409-BBFD-C0BE2B4F0647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E15C567-36E4-44A2-88BF-5BE7EDDA1D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E15C567-36E4-44A2-88BF-5BE7EDDA1D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E15C567-36E4-44A2-88BF-5BE7EDDA1D36}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E15C567-36E4-44A2-88BF-5BE7EDDA1D36}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{71A89ED0-4D68-4D96-9A2C-52B1F9A81ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A89ED0-4D68-4D96-9A2C-52B1F9A81ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A89ED0-4D68-4D96-9A2C-52B1F9A81ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A89ED0-4D68-4D96-9A2C-52B1F9A81ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = ..
+	EndGlobalSection
+EndGlobal

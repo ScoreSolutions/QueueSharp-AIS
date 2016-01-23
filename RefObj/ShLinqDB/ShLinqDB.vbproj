@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C05271C5-84AC-42EB-B61C-34051A627AAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShLinqDB</RootNamespace>
+    <AssemblyName>ShLinqDB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ShLinqDB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ShLinqDB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Utilities\SqlDB.vb" />
+    <Compile Include="Common\Utilities\TransactionDB.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TABLE\TbAppointmentCustomerShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentItemShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentScheduleShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentServiceShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentSlotShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentTimeShLinqDB.vb" />
+    <Compile Include="TABLE\TbAppointmentUserShLinqDB.vb" />
+    <Compile Include="TABLE\TbAvgUserServicetimeShLinqDB.vb" />
+    <Compile Include="TABLE\TbCaptureBinaryShLinqDB.vb" />
+    <Compile Include="TABLE\TbCaptureLogShLinqDB.vb" />
+    <Compile Include="TABLE\TbCaptureTempShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeAllowHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeAllowShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterQueueHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterQueueShLinqDB.vb" />
+    <Compile Include="TABLE\TbCounterShLinqDB.vb" />
+    <Compile Include="TABLE\TbCsiShLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomerImageShLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomerShLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomertypeHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbCustomertypeShLinqDB.vb" />
+    <Compile Include="TABLE\TbDailyAppoinmentShLinqDB.vb" />
+    <Compile Include="TABLE\TbDashboardSettingShLinqDB.vb" />
+    <Compile Include="TABLE\TbErrorLogShLinqDB.vb" />
+    <Compile Include="TABLE\TbForceScheduleShLinqDB.vb" />
+    <Compile Include="TABLE\TbGroupuserHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbGroupuserMenuHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbGroupuserMenuShLinqDB.vb" />
+    <Compile Include="TABLE\TbGroupuserShLinqDB.vb" />
+    <Compile Include="TABLE\TbHoldReasonHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbHoldReasonShLinqDB.vb" />
+    <Compile Include="TABLE\TbItemCounterHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbItemCounterShLinqDB.vb" />
+    <Compile Include="TABLE\TbItemHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbItemPriorityHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbItemPriorityShLinqDB.vb" />
+    <Compile Include="TABLE\TbItemShLinqDB.vb" />
+    <Compile Include="TABLE\TbLocationShLinqDB.vb" />
+    <Compile Include="TABLE\TbLogfileHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbLogfileShLinqDB.vb" />
+    <Compile Include="TABLE\TbLogHoldShLinqDB.vb" />
+    <Compile Include="TABLE\TbLogLoginShLinqDB.vb" />
+    <Compile Include="TABLE\TbLogoutReasonHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbLogoutReasonShLinqDB.vb" />
+    <Compile Include="TABLE\TbMapingCustomerShLinqDB.vb" />
+    <Compile Include="TABLE\TbMenuShLinqDB.vb" />
+    <Compile Include="TABLE\TbMessageCounterShLinqDB.vb" />
+    <Compile Include="TABLE\TbMessageShLinqDB.vb" />
+    <Compile Include="TABLE\TbQmTransferLogShLinqDB.vb" />
+    <Compile Include="TABLE\TbSegmentHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbSegmentShLinqDB.vb" />
+    <Compile Include="TABLE\TbSettingHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbSettingShLinqDB.vb" />
+    <Compile Include="TABLE\TbSkillHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbSkillItemHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbSkillItemShLinqDB.vb" />
+    <Compile Include="TABLE\TbSkillShLinqDB.vb" />
+    <Compile Include="TABLE\TbSlotShLinqDB.vb" />
+    <Compile Include="TABLE\TbSpeakerShLinqDB.vb" />
+    <Compile Include="TABLE\TbStaffSmsConfigShLinqDB.vb" />
+    <Compile Include="TABLE\TbStatusShLinqDB.vb" />
+    <Compile Include="TABLE\TbTitleShLinqDB.vb" />
+    <Compile Include="TABLE\TbTypeShLinqDB.vb" />
+    <Compile Include="TABLE\TbUnitdisplayShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserActionShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserItemShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserServiceLogShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserServiceScheduleShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserShowserviceShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserSkillHistoryShLinqDB.vb" />
+    <Compile Include="TABLE\TbUserSkillShLinqDB.vb" />
+    <Compile Include="VIEW\VwAgentShLinqDB.vb" />
+    <Compile Include="VIEW\VwAvailableCounterShLinqDB.vb" />
+    <Compile Include="VIEW\VwAvgServiceTimeShLinqDB.vb" />
+    <Compile Include="VIEW\VwAvgTimeShLinqDB.vb" />
+    <Compile Include="VIEW\VwAwaitingCustomerShLinqDB.vb" />
+    <Compile Include="VIEW\VwCapacityShLinqDB.vb" />
+    <Compile Include="VIEW\VwCounterQueueShLinqDB.vb" />
+    <Compile Include="VIEW\VwCustomerShLinqDB.vb" />
+    <Compile Include="VIEW\VwQBeforeAfterShLinqDB.vb" />
+    <Compile Include="VIEW\VwWaitingCustomerByServiceAndCustomerTypeShLinqDB.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShParaDB\ShParaDB.vbproj">
+      <Project>{4F74C595-515B-466A-A70E-5A9B99E6A12C}</Project>
+      <Name>ShParaDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

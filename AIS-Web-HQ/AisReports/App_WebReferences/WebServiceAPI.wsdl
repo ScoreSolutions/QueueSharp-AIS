@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetCustomerProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerProfileResult" type="tns:TbCustomerShParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbCustomerShParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="TITLE_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="F_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="L_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MOBILE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MOBILE_STATUS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEGMENT_LEVEL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIRTH_DATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CATEGORY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_BALANCE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTACT_CLASS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERVICE_YEAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CHUM_SCORE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PREFER_LANG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_CODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NETWORK_TYPE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_NAME_EN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_DESC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_DESC_TH2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_DESC_EN2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RESPONSE_MSG" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LDAPAuth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPAuthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LDAPAuthResult" type="tns:LDAPResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LDAPResponsePara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RESULT" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="RESPONSE_MSG" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ShopSendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppointmentTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShopSendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShopSendSMSResult" type="tns:SMSResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SMSResponsePara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RESULT" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR_RESPONSE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckBlackList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBlackListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckBlackListResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCustomerProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="LDAPAuthSoapIn">
+    <wsdl:part name="parameters" element="tns:LDAPAuth" />
+  </wsdl:message>
+  <wsdl:message name="LDAPAuthSoapOut">
+    <wsdl:part name="parameters" element="tns:LDAPAuthResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShopSendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:ShopSendSMS" />
+  </wsdl:message>
+  <wsdl:message name="ShopSendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:ShopSendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckBlackListSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckBlackList" />
+  </wsdl:message>
+  <wsdl:message name="CheckBlackListSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckBlackListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceAPISoap">
+    <wsdl:operation name="GetCustomerProfile">
+      <wsdl:input message="tns:GetCustomerProfileSoapIn" />
+      <wsdl:output message="tns:GetCustomerProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LDAPAuth">
+      <wsdl:input message="tns:LDAPAuthSoapIn" />
+      <wsdl:output message="tns:LDAPAuthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShopSendSMS">
+      <wsdl:input message="tns:ShopSendSMSSoapIn" />
+      <wsdl:output message="tns:ShopSendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBlackList">
+      <wsdl:input message="tns:CheckBlackListSoapIn" />
+      <wsdl:output message="tns:CheckBlackListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceAPISoap" type="tns:WebServiceAPISoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomerProfile">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPAuth">
+      <soap:operation soapAction="http://tempuri.org/LDAPAuth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopSendSMS">
+      <soap:operation soapAction="http://tempuri.org/ShopSendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBlackList">
+      <soap:operation soapAction="http://tempuri.org/CheckBlackList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceAPISoap12" type="tns:WebServiceAPISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomerProfile">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPAuth">
+      <soap12:operation soapAction="http://tempuri.org/LDAPAuth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopSendSMS">
+      <soap12:operation soapAction="http://tempuri.org/ShopSendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBlackList">
+      <soap12:operation soapAction="http://tempuri.org/CheckBlackList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceAPI">
+    <wsdl:port name="WebServiceAPISoap" binding="tns:WebServiceAPISoap">
+      <soap:address location="http://172.16.59.192/ShopWebService/WebServiceAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceAPISoap12" binding="tns:WebServiceAPISoap12">
+      <soap12:address location="http://172.16.59.192/ShopWebService/WebServiceAPI.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

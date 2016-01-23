@@ -1,0 +1,13 @@
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\OMLinqWS.dll.config
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\OMLinqWS.dll
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\OMLinqWS.pdb
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\OMLinqWS.xml
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\CenParaDB.dll
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\CenParaDB.pdb
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\bin\Debug\CenParaDB.xml
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\obj\Debug\ResolveAssemblyReference.cache
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\obj\Debug\OMLinqWS.Resources.resources
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\obj\Debug\OMLinqWS.vbproj.GenerateResource.Cache
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\obj\Debug\OMLinqWS.dll
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\obj\Debug\OMLinqWS.xml
+D:\_A\_AIS\Queuesharp-AIS\AIS-HQ-Agent\OMLinqWS\obj\Debug\OMLinqWS.pdb

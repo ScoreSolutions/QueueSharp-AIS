@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+StackServer
+</name>
+</assembly>
+<members>
+<member name="M:StackServer.FaultMngService.FaultManagementService.#ctor">
+	<remarks/>
+</member><member name="E:StackServer.FaultMngService.FaultManagementService.SendFileToDCCompleted">
+	<remarks/>
+</member><member name="E:StackServer.FaultMngService.FaultManagementService.LoadFileFromDCCompleted">
+	<remarks/>
+</member><member name="E:StackServer.FaultMngService.FaultManagementService.SendAlarmCompleted">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.SendFileToDC(System.Byte[],System.String,System.String)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.SendFileToDCAsync(System.Byte[],System.String,System.String)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.SendFileToDCAsync(System.Byte[],System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.LoadFileFromDC(System.String)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.LoadFileFromDCAsync(System.String)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.LoadFileFromDCAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.SendAlarm(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.SendAlarmAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.SendAlarmAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:StackServer.FaultMngService.FaultManagementService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.FaultManagementService">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.SendFileToDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:StackServer.FaultMngService.SendFileToDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.SendFileToDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.LoadFileFromDCCompletedEventHandler">
+	<remarks/>
+</member><member name="P:StackServer.FaultMngService.LoadFileFromDCCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.LoadFileFromDCCompletedEventArgs">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.SendAlarmCompletedEventHandler">
+	<remarks/>
+</member><member name="P:StackServer.FaultMngService.SendAlarmCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:StackServer.FaultMngService.SendAlarmCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

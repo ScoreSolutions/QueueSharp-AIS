@@ -1,0 +1,14 @@
+﻿QueueSharp V0.1.19.2
+แก้ไข ISSUE เกี่ยวกับการ Update Siebel Activity สำหรับคิวที่มีการจอง
+
+QueueSharp V0.1.19.3
+แก้ไขเรื่อง Fail Over
+
+QueueSharp V0.1.19.4
+แก้ไขเรื่องการดึงข้อมูลผ่าน WebService ด้วย https
+
+QueueSharp V0.1.19.5
+แก้ไขเรื่องการดึงข้อมูลพื้นฐานจากส่วนกลาง ผ่าน WebService
+
+QueueSharp V0.1.19.6
+แก้ไข Algorithm ในการ Encrypt Password ให้เป็น AES

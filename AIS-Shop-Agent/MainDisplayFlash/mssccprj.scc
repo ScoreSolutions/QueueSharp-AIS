@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[MainDisplayFlash.sln]
+SCC_Aux_Path = "\\score-dev-main\SourceControl\QIS"
+SCC_Project_Name = "$/AIS-Shop-Agent/MainDisplayFlash", EICAAAAA
+
+[MainDisplayFlash.vbproj]
+SCC_Aux_Path = "\\score-dev-main\SourceControl\QIS"
+SCC_Project_Name = "$/AIS-Shop-Agent/MainDisplayFlash", EICAAAAA

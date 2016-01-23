@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E8DB1DD-6E69-4BB3-93E0-053BBB7E2188}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CenParaDB</RootNamespace>
+    <AssemblyName>CenParaDB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CenParaDB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CenParaDB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appointment\AppointmentCheckBacklistResultPara.vb" />
+    <Compile Include="Appointment\CustomerWebAppointmentPara.vb" />
+    <Compile Include="Appointment\LastShopRegisterPara.vb" />
+    <Compile Include="Appointment\InsertAppointmentResultPara.vb" />
+    <Compile Include="Appointment\EditAppointmentResultPara.vb" />
+    <Compile Include="Appointment\MobileActionResultPara.vb" />
+    <Compile Include="Appointment\SaveAppointmentJobPara.vb" />
+    <Compile Include="Appointment\SiebelReqPara.vb" />
+    <Compile Include="CSI\SiebelReqPara.vb" />
+    <Compile Include="Appointment\SiebelResponsePara.vb" />
+    <Compile Include="Common\LoginSessionPara.vb" />
+    <Compile Include="Common\TmpFileUploadPara.vb" />
+    <Compile Include="Common\UserProfilePara.vb" />
+    <Compile Include="Common\Utilities\Constant.vb" />
+    <Compile Include="Common\Utilities\MessageResources.vb" />
+    <Compile Include="CSI\SiebelResponsePara.vb" />
+    <Compile Include="GateWay\ATSRResultPara.vb" />
+    <Compile Include="GateWay\LDAPResponsePara.vb" />
+    <Compile Include="GateWay\SMSResponsePara.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OMWS\GetEmployeeProfileByUsernamePara.vb" />
+    <Compile Include="ReportCriteria\AverageServiceTimeWithKPIPara.vb" />
+    <Compile Include="ReportCriteria\AverageServiceTimeWithKPI_byStaffPara.vb" />
+    <Compile Include="ReportCriteria\CapacityReportByShopPara.vb" />
+    <Compile Include="ReportCriteria\AppointmentReportByShopPara.vb" />
+    <Compile Include="ReportCriteria\AppointmentReportByServicePara.vb" />
+    <Compile Include="ReportCriteria\CustByCategoryPara.vb" />
+    <Compile Include="ReportCriteria\StaffTransactionPara.vb" />
+    <Compile Include="ReportCriteria\CustByNetworkTypePara.vb" />
+    <Compile Include="ReportCriteria\CustBySegmentPara.vb" />
+    <Compile Include="ReportCriteria\CustByWaitingTimePara.vb" />
+    <Compile Include="ReportCriteria\ProductivityPara.vb" />
+    <Compile Include="ReportCriteria\StaffAttendancePara.vb" />
+    <Compile Include="ReportCriteria\WaitingTimeHandlingTimeByAgentPara.vb" />
+    <Compile Include="TABLE\LogErrorCenParaDB.vb" />
+    <Compile Include="TABLE\LoginHistoryCenParaDB.vb" />
+    <Compile Include="TABLE\LogTransCenParaDB.vb" />
+    <Compile Include="TABLE\SysconfigCenParaDB.vb" />
+    <Compile Include="TABLE\SysmenuCenParaDB.vb" />
+    <Compile Include="TABLE\SysmoduleCenParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentBlacklistCenParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentEditJobCenParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentJobCenParaDB.vb" />
+    <Compile Include="TABLE\TbBuildingCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgCounterCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgCounterCustomerTypeCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgCounterCusttypeAllowCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgHoldReasonCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgItemCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgLogoutReasonCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgSkillCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgSwSchedKioskCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgSwSchedMaindisplayCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgSwSchedQsharpCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgUserCenParaDB.vb" />
+    <Compile Include="TABLE\TbCfgUserSkillCenParaDB.vb" />
+    <Compile Include="TABLE\TbCustomerCenParaDB.vb" />
+    <Compile Include="TABLE\TbCustomerCorporateTypeCenParaDB.vb" />
+    <Compile Include="TABLE\TbCustomerMappingPara.vb" />
+    <Compile Include="TABLE\TbCustomerNetworkTypeCenParaDB.vb" />
+    <Compile Include="TABLE\TbCustomerTempCenParaDB.vb" />
+    <Compile Include="TABLE\TbCustomertypeCenParaDB.vb" />
+    <Compile Include="TABLE\TbEmailBatchAlertCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterAttBacklistFileCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterAttBacklistMobileCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterDataCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterServiceCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterShopCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterStaffCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterTempDataCenParaDB.vb" />
+    <Compile Include="TABLE\TbFilterTempTargetCenParaDB.vb" />
+    <Compile Include="TABLE\TbGroupuserCenParaDB.vb" />
+    <Compile Include="TABLE\TbHoldReasonCenParaDB.vb" />
+    <Compile Include="TABLE\TbItemCenParaDB.vb" />
+    <Compile Include="TABLE\TbItemGroupCenParaDB.vb" />
+    <Compile Include="TABLE\TbLogCustomerDailyCenParaDB.vb" />
+    <Compile Include="TABLE\TbLogoutReasonCenParaDB.vb" />
+    <Compile Include="TABLE\TbMasterGroupuserCenParaDB.vb" />
+    <Compile Include="TABLE\TbMasterGroupuserMenuCenParaDB.vb" />
+    <Compile Include="TABLE\TbMasterShopMenuCenParaDB.vb" />
+    <Compile Include="TABLE\TbMobileAppointActCenParaDB.vb" />
+    <Compile Include="TABLE\TbNationalityCenParaDB.vb" />
+    <Compile Include="TABLE\TbNotifyJoblistCenParaDB.vb" />
+    <Compile Include="TABLE\TbRegionCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentServiceDateCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopDateCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAppointmentShopWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiStaffYearCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepAvgServiceTimeKpiYearCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCapacityShopWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustCategoryWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustNetworkYearCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepCustSegmentYearCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepIntervalPerformanceTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbReportIntervalTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbReportProcessLogCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepProductivityYearCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepStaffAttendanceCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepStaffAttendanceMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepStaffAttendanceWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepSummaryDailyReportCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepSummaryReportIntervalCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepSummaryReportStaffCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtAgentCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtShopYearCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillDateCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillTimeCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtSkillWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtStaffDayCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtStaffMonthCenParaDB.vb" />
+    <Compile Include="TABLE\TbRepWtHtStaffWeekCenParaDB.vb" />
+    <Compile Include="TABLE\TbRoleCenParaDB.vb" />
+    <Compile Include="TABLE\TbRoleSysmenuCenParaDB.vb" />
+    <Compile Include="TABLE\TbRoleUserCenParaDB.vb" />
+    <Compile Include="TABLE\TbSegmentCenParaDB.vb" />
+    <Compile Include="TABLE\TbShopCenParaDB.vb" />
+    <Compile Include="TABLE\TbShopConfigCenParaDB.vb" />
+    <Compile Include="TABLE\TbShopFileByteCenParaDB.vb" />
+    <Compile Include="TABLE\TbShopFileScheduleCenParaDB.vb" />
+    <Compile Include="TABLE\TbShopServiceAppointmentCenParaDB.vb" />
+    <Compile Include="TABLE\TbSiebelActivityCategoryCenParaDB.vb" />
+    <Compile Include="TABLE\TbSiebelActivitySubcategoryCenParaDB.vb" />
+    <Compile Include="TABLE\TbSkillCenParaDB.vb" />
+    <Compile Include="TABLE\TbSkillItemCenParaDB.vb" />
+    <Compile Include="TABLE\TbStackServerEmailCenParaDB.vb" />
+    <Compile Include="TABLE\TbStackServerLogCenParaDB.vb" />
+    <Compile Include="TABLE\TbStackServerSmsCenParaDB.vb" />
+    <Compile Include="TABLE\TbTempCompareTransactionCenParaDB.vb" />
+    <Compile Include="TABLE\TbTitleCenParaDB.vb" />
+    <Compile Include="TABLE\TbUserCenParaDB.vb" />
+    <Compile Include="TABLE\TbUserShopCenParaDB.vb" />
+    <Compile Include="TABLE\TwFilterBranchCenParaDB.vb" />
+    <Compile Include="TABLE\TwFilterCenParaDB.vb" />
+    <Compile Include="TABLE\TwFilterDataCenParaDB.vb" />
+    <Compile Include="TABLE\TwFilterOrderTypeCenParaDB.vb" />
+    <Compile Include="TABLE\TwFilterTempTargetCenParaDB.vb" />
+    <Compile Include="TABLE\TwLocationCenParaDB.vb" />
+    <Compile Include="TABLE\TwSffOrderTypeCenParaDB.vb" />
+    <Compile Include="TABLE\TwSourceDataCenParaDB.vb" />
+    <Compile Include="TABLE\TwSourceTextfileCenParaDB.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

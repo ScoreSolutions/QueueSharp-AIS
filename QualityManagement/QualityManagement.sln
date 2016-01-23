@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QualityManagement", "QM\QualityManagement.vbproj", "{F730ED6C-FFCE-49F1-856A-968516D5EBD4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConfigInputQualityManagement", "ConfigurationQM\ConfigInputQualityManagement.vbproj", "{FD96D57F-1191-4483-95FB-590D0CD52877}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QMPreview", "QMPreview\QMPreview.vbproj", "{492994EE-B142-4650-B257-A8E0817037D4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestForm", "TestForm\TestForm.vbproj", "{51F5D9D0-404A-427B-BD91-57C70EDD8121}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QMSchedule", "QMSchedule\QMSchedule.vbproj", "{13D45483-FBA4-49EB-B5B2-469377106AE7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QMFTPBackup", "QMFTPBackup\QMFTPBackup.vbproj", "{843E06C9-88D8-4774-8B69-78A72D4B56C0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QMTransferLog", "QMTransferLog\QMTransferLog.vbproj", "{2AD8C88D-885D-40F0-AC2C-20E017E40459}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F730ED6C-FFCE-49F1-856A-968516D5EBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F730ED6C-FFCE-49F1-856A-968516D5EBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F730ED6C-FFCE-49F1-856A-968516D5EBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F730ED6C-FFCE-49F1-856A-968516D5EBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD96D57F-1191-4483-95FB-590D0CD52877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD96D57F-1191-4483-95FB-590D0CD52877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD96D57F-1191-4483-95FB-590D0CD52877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD96D57F-1191-4483-95FB-590D0CD52877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492994EE-B142-4650-B257-A8E0817037D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492994EE-B142-4650-B257-A8E0817037D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492994EE-B142-4650-B257-A8E0817037D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492994EE-B142-4650-B257-A8E0817037D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F5D9D0-404A-427B-BD91-57C70EDD8121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F5D9D0-404A-427B-BD91-57C70EDD8121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F5D9D0-404A-427B-BD91-57C70EDD8121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F5D9D0-404A-427B-BD91-57C70EDD8121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D45483-FBA4-49EB-B5B2-469377106AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D45483-FBA4-49EB-B5B2-469377106AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D45483-FBA4-49EB-B5B2-469377106AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D45483-FBA4-49EB-B5B2-469377106AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843E06C9-88D8-4774-8B69-78A72D4B56C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843E06C9-88D8-4774-8B69-78A72D4B56C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843E06C9-88D8-4774-8B69-78A72D4B56C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843E06C9-88D8-4774-8B69-78A72D4B56C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD8C88D-885D-40F0-AC2C-20E017E40459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD8C88D-885D-40F0-AC2C-20E017E40459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD8C88D-885D-40F0-AC2C-20E017E40459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD8C88D-885D-40F0-AC2C-20E017E40459}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

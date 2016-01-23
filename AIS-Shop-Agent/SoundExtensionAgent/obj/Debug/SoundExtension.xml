@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SoundExtension
+</name>
+</assembly>
+<members>
+<member name="P:SoundExtension.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SoundExtension.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SoundExtension.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SoundExtension.SoundModule.SpeakOut(System.String,System.String)">
+	<param name="argTxt">คือ ชุดตัวเลข หรือตัวอักษรที่ต้องการให้ออกเสียง
+     
+           หรือ สัญลักษณ์แทนประโยคต่างๆ เช่น
+           ^1 = ขอเชิญคิวหมายเลข
+           ^2 = รับบริการที่ห้อง
+           ^3 = ค่ะ
+ </param>
+	<param name="argLang">ระบุภาษาที่จะให้ออกเสียง โดย th=ภาษาไทย, en=ภาษาอังกฤษ</param>
+</member>
+</members>
+</doc>

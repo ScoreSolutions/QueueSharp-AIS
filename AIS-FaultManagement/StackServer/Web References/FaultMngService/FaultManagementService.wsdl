@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendFileToDC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileByte" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendFileToDCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendFileToDCResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadFileFromDC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadFileFromDCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadFileFromDCResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendAlarm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SysLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HostIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HostName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AlarmType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AlarmName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Severity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AlarmValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FlagClear" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AlarmMethod" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendAlarmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendAlarmResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendFileToDCSoapIn">
+    <wsdl:part name="parameters" element="tns:SendFileToDC" />
+  </wsdl:message>
+  <wsdl:message name="SendFileToDCSoapOut">
+    <wsdl:part name="parameters" element="tns:SendFileToDCResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadFileFromDCSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadFileFromDC" />
+  </wsdl:message>
+  <wsdl:message name="LoadFileFromDCSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadFileFromDCResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendAlarmSoapIn">
+    <wsdl:part name="parameters" element="tns:SendAlarm" />
+  </wsdl:message>
+  <wsdl:message name="SendAlarmSoapOut">
+    <wsdl:part name="parameters" element="tns:SendAlarmResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FaultManagementServiceSoap">
+    <wsdl:operation name="SendFileToDC">
+      <wsdl:input message="tns:SendFileToDCSoapIn" />
+      <wsdl:output message="tns:SendFileToDCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFileFromDC">
+      <wsdl:input message="tns:LoadFileFromDCSoapIn" />
+      <wsdl:output message="tns:LoadFileFromDCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAlarm">
+      <wsdl:input message="tns:SendAlarmSoapIn" />
+      <wsdl:output message="tns:SendAlarmSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FaultManagementServiceSoap" type="tns:FaultManagementServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendFileToDC">
+      <soap:operation soapAction="http://tempuri.org/SendFileToDC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFileFromDC">
+      <soap:operation soapAction="http://tempuri.org/LoadFileFromDC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAlarm">
+      <soap:operation soapAction="http://tempuri.org/SendAlarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FaultManagementServiceSoap12" type="tns:FaultManagementServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendFileToDC">
+      <soap12:operation soapAction="http://tempuri.org/SendFileToDC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFileFromDC">
+      <soap12:operation soapAction="http://tempuri.org/LoadFileFromDC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAlarm">
+      <soap12:operation soapAction="http://tempuri.org/SendAlarm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FaultManagementService">
+    <wsdl:port name="FaultManagementServiceSoap" binding="tns:FaultManagementServiceSoap">
+      <soap:address location="http://localhost:49929/WebServiceAPI/FaultManagementService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FaultManagementServiceSoap12" binding="tns:FaultManagementServiceSoap12">
+      <soap12:address location="http://localhost:49929/WebServiceAPI/FaultManagementService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

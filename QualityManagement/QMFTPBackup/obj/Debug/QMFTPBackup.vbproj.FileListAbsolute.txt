@@ -1,0 +1,11 @@
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\bin\Debug\QMFTPBackup.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\bin\Debug\QMFTPBackup.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\bin\Debug\QMFTPBackup.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\bin\Debug\AlexPilotti.FTPS.Client.dll
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\QMFTPBackup.frmQMFTPBackup.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\QMFTPBackup.Resources.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\QMFTPBackup.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\QMFTPBackup.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\QMFTPBackup.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMFTPBackup\obj\Debug\QMFTPBackup.pdb

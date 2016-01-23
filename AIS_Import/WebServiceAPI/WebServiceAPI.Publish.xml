@@ -1,0 +1,13 @@
+<publishData>
+  <publishTarget publishUrl="D:\WebServiceAPI\">
+    <file relUrl="bin/Engine.pdb" publishTime="03/23/2012 08:20:46" />
+    <file relUrl="bin/Engine.xml" publishTime="03/23/2012 08:20:46" />
+    <file relUrl="Web.config" publishTime="02/21/2012 17:28:13" />
+    <file relUrl="bin/WebServiceAPI.xml" publishTime="03/23/2012 08:27:11" />
+    <file relUrl="bin/WebServiceAPI.pdb" publishTime="03/23/2012 08:27:11" />
+    <file relUrl="ImportCustomerProfile.aspx" publishTime="02/12/2012 22:36:45" />
+    <file relUrl="bin/Engine.dll" publishTime="03/23/2012 08:20:46" />
+    <file relUrl="CustomerProfile.asmx" publishTime="02/01/2012 14:55:27" />
+    <file relUrl="bin/WebServiceAPI.dll" publishTime="03/23/2012 08:27:11" />
+  </publishTarget>
+</publishData>

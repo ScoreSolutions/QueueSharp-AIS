@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="KioskElo_ShopWebServiceMain_WebServiceAPI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ShopWebService/WebServiceAPI.asmx</Value>
+    </Setting>
+    <Setting Name="KioskElo_ShopWebServiceDisplay_WebServiceAPI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://127.0.0.1/ShopWebService/WebServiceAPI.asmx</Value>
+    </Setting>
+    <Setting Name="KioskElo_ShopWebServiceMain1_WebServiceAPI" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ShopWebService/WebServiceAPI.asmx</Value>
+    </Setting>
+    <Setting Name="KioskElo_akkarawatp_WebServiceAPI" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ShopWebService/WebServiceAPI.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

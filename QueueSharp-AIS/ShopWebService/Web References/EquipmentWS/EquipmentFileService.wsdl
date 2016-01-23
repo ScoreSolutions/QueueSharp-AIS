@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetFileFromDC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EventDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ShopAbb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TargetType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileFromDCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileFromDCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTransferStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileScheduleID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTransferStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTransferStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ErrorMessage">
+        <s:complexType />
+      </s:element>
+      <s:element name="ErrorMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetFileFromDCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileFromDC" />
+  </wsdl:message>
+  <wsdl:message name="GetFileFromDCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileFromDCResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransferStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTransferStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransferStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTransferStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ErrorMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:ErrorMessage" />
+  </wsdl:message>
+  <wsdl:message name="ErrorMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:ErrorMessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EquipmentFileServiceSoap">
+    <wsdl:operation name="GetFileFromDC">
+      <wsdl:input message="tns:GetFileFromDCSoapIn" />
+      <wsdl:output message="tns:GetFileFromDCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <wsdl:input message="tns:UpdateTransferStatusSoapIn" />
+      <wsdl:output message="tns:UpdateTransferStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErrorMessage">
+      <wsdl:input message="tns:ErrorMessageSoapIn" />
+      <wsdl:output message="tns:ErrorMessageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EquipmentFileServiceSoap" type="tns:EquipmentFileServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFileFromDC">
+      <soap:operation soapAction="http://tempuri.org/GetFileFromDC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateTransferStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErrorMessage">
+      <soap:operation soapAction="http://tempuri.org/ErrorMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquipmentFileServiceSoap12" type="tns:EquipmentFileServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFileFromDC">
+      <soap12:operation soapAction="http://tempuri.org/GetFileFromDC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTransferStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErrorMessage">
+      <soap12:operation soapAction="http://tempuri.org/ErrorMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EquipmentFileService">
+    <wsdl:port name="EquipmentFileServiceSoap" binding="tns:EquipmentFileServiceSoap">
+      <soap:address location="http://localhost:52074/WebServiceAPI/EquipmentFileService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquipmentFileServiceSoap12" binding="tns:EquipmentFileServiceSoap12">
+      <soap12:address location="http://localhost:52074/WebServiceAPI/EquipmentFileService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F54C568-0652-4409-BBFD-C0BE2B4F0647}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KioskElo.My.MyApplication</StartupObject>
+    <RootNamespace>KioskElo</RootNamespace>
+    <AssemblyName>KioskElo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>touch screen kiosk.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KioskElo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KioskElo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.Profile, Version=2.0.4374.32330, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral" />
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CodeVendor.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DirectShowLib-2005, Version=2.0.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL" />
+    <Reference Include="DShowNET, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral" />
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ScoreLicense, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebCam_Capture, Version=1.0.2395.24959, Culture=neutral" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialog\frmDialogAppointment.Designer.vb">
+      <DependentUpon>frmDialogAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmDialogAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmDialogBeforeClose.Designer.vb">
+      <DependentUpon>frmDialogBeforeClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmDialogBeforeClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmDialogConfirmPrint.Designer.vb">
+      <DependentUpon>frmDialogConfirmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmDialogConfirmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmDialogMsg.Designer.vb">
+      <DependentUpon>frmDialogMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmDialogMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmKiosCapture.Designer.vb">
+      <DependentUpon>frmKiosCapture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmKiosCapture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmWait.Designer.vb">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lang.vb" />
+    <Compile Include="Main\Display.Designer.vb">
+      <DependentUpon>Display.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Display.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmVDO.Designer.vb">
+      <DependentUpon>frmVDO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmVDO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmAppointment.Designer.vb">
+      <DependentUpon>frmAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmChooseService.Designer.vb">
+      <DependentUpon>frmChooseService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmChooseService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmErrorMessage.Designer.vb">
+      <DependentUpon>frmErrorMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmErrorMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniReader.vb" />
+    <Compile Include="Main\frmRegister.Designer.vb">
+      <DependentUpon>frmRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmScreenServer.Designer.vb">
+      <DependentUpon>frmScreenServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmScreenServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\TaskBarNotifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\WebCam.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sound.vb" />
+    <Compile Include="TouchPad.Designer.vb">
+      <DependentUpon>TouchPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TouchPad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Web References\ShopWebServiceDisplay\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ShopWebServiceMain\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialog\frmDialogAppointment.resx">
+      <DependentUpon>frmDialogAppointment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmDialogBeforeClose.resx">
+      <DependentUpon>frmDialogBeforeClose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmDialogConfirmPrint.resx">
+      <DependentUpon>frmDialogConfirmPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmDialogMsg.resx">
+      <DependentUpon>frmDialogMsg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmKiosCapture.resx">
+      <DependentUpon>frmKiosCapture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmWait.resx">
+      <DependentUpon>frmWait.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Display.resx">
+      <DependentUpon>Display.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmVDO.resx">
+      <DependentUpon>frmVDO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmAppointment.resx">
+      <DependentUpon>frmAppointment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmChooseService.resx">
+      <DependentUpon>frmChooseService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmErrorMessage.resx">
+      <DependentUpon>frmErrorMessage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmRegister.resx">
+      <DependentUpon>frmRegister.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmScreenServer.resx">
+      <DependentUpon>frmScreenServer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\TaskBarNotifier.resx">
+      <DependentUpon>TaskBarNotifier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchPad.resx">
+      <DependentUpon>TouchPad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="bin\Debug\Kiosk\0.png" />
+    <None Include="bin\Debug\Kiosk\2.png" />
+    <None Include="bin\Debug\Kiosk\3.png" />
+    <None Include="bin\Debug\Kiosk\4.png" />
+    <None Include="bin\Debug\Kiosk\5.png" />
+    <None Include="bin\Debug\Kiosk\6.png" />
+    <None Include="bin\Debug\Kiosk\7.png" />
+    <None Include="bin\Debug\Kiosk\8.png" />
+    <None Include="bin\Debug\Kiosk\9.png" />
+    <None Include="bin\Debug\Kiosk\Appointment_EN.png" />
+    <None Include="bin\Debug\Kiosk\Appointment_TH.png" />
+    <None Include="bin\Debug\Kiosk\btn1.png" />
+    <None Include="bin\Debug\Kiosk\btnApp_EN.png" />
+    <None Include="bin\Debug\Kiosk\btnApp_TH.png" />
+    <None Include="bin\Debug\Kiosk\btnBack_EN.png" />
+    <None Include="bin\Debug\Kiosk\btnBack_TH.png" />
+    <None Include="bin\Debug\Kiosk\btnMain_TH.png" />
+    <None Include="bin\Debug\Kiosk\btnOK_EN.png" />
+    <None Include="bin\Debug\Kiosk\btnOK_TH.png" />
+    <None Include="bin\Debug\Kiosk\btnUpdate_EN.png" />
+    <None Include="bin\Debug\Kiosk\btnUpdate_TH.png" />
+    <None Include="bin\Debug\Kiosk\btnVDO_EN.png" />
+    <None Include="bin\Debug\Kiosk\btnVDO_TH.png" />
+    <None Include="bin\Debug\Kiosk\ChooseService_EN.png" />
+    <None Include="bin\Debug\Kiosk\ChooseService_TH.png" />
+    <None Include="bin\Debug\Kiosk\EG.png" />
+    <None Include="bin\Debug\Kiosk\msg.png" />
+    <None Include="bin\Debug\Kiosk\Register_EN.png" />
+    <None Include="bin\Debug\Kiosk\Register_TH.png" />
+    <None Include="bin\Debug\Kiosk\TH.png" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\0.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\Appointment_EN.png" />
+    <None Include="Resources\Appointment_TH.png" />
+    <None Include="Resources\btmMain_EN.png" />
+    <None Include="Resources\btmMain_TH.png" />
+    <None Include="Resources\btnAppointment_EN.png" />
+    <None Include="Resources\btnAppointment_TH.png" />
+    <None Include="Resources\btnBack_EN.png" />
+    <None Include="Resources\btnBack_TH.png" />
+    <None Include="Resources\btnEdit_EN.png" />
+    <None Include="Resources\btnEdit_TH.png" />
+    <None Include="Resources\btnOK_EN.png" />
+    <None Include="Resources\btnOK_TH.png" />
+    <None Include="Resources\msg.png" />
+    <None Include="Resources\Register_EN.png" />
+    <None Include="Resources\Register_TH.png" />
+    <None Include="Resources\btnBack_TH1.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\EN.png" />
+    <None Include="Resources\TH.png" />
+    <None Include="Resources\Kiosk_regis_Eng.png" />
+    <None Include="Resources\ChooseService_eng.png" />
+    <None Include="Resources\Kiosk_Appoint_ENG.png" />
+    <None Include="Resources\Kiosk_Appoint_TH.png" />
+    <None Include="Resources\ChooseService copy.png" />
+    <None Include="Resources\Kiosk copy.png" />
+    <None Include="Resources\Kiosk_ChooseService_TH.png" />
+    <None Include="Resources\Kiosk_Regis_TH.png" />
+    <None Include="Resources\Kiosk_Eng.png" />
+    <None Include="Resources\Kiosk_TH.png" />
+    <None Include="Resources\ChooseService_En.png" />
+    <None Include="Resources\ChooseService_TH.png" />
+    <None Include="Resources\Kiosk_03 copy.png" />
+    <None Include="Resources\Appoint_EN.png" />
+    <None Include="Resources\Appoint_TH.png" />
+    <None Include="Resources\header_q_en.gif" />
+    <None Include="Resources\header_q_th.gif" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\navigate_left.png" />
+    <None Include="Resources\navigate_right.png" />
+    <None Include="Resources\GB 1366-768.png" />
+    <None Include="Resources\16.png" />
+    <None Include="Resources\23.png" />
+    <None Include="Resources\25.png" />
+    <None Include="Resources\24.png" />
+    <None Include="Resources\22.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\18.png" />
+    <None Include="Resources\19.png" />
+    <None Include="Resources\20.png" />
+    <None Include="Resources\26.png" />
+    <None Include="Resources\Untitled-11.png" />
+    <None Include="Resources\27.png" />
+    <None Include="Resources\32.png" />
+    <None Include="Resources\GB 1366-7681.png" />
+    <None Include="Resources\30.png" />
+    <None Include="Resources\Untitled-12.png" />
+    <None Include="Resources\28.png" />
+    <None Include="Resources\33.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\13.png" />
+    <None Include="Resources\14.png" />
+    <None Include="Resources\111.png" />
+    <None Include="Resources\121.png" />
+    <None Include="Resources\131.png" />
+    <None Include="Resources\141.png" />
+    <None Include="Resources\15.png" />
+    <None Include="Resources\44.png" />
+    <None Include="Resources\55.png" />
+    <None Include="Resources\จองคิว.png" />
+    <None Include="Resources\Untitled-3.png" />
+    <None Include="Resources\btnEdit_Eng.png" />
+    <None Include="Resources\btnMain_Eng.png" />
+    <None Include="Resources\btnOK_Eng.png" />
+    <None Include="Resources\txtNoQ_Eng.png" />
+    <None Include="Resources\txtReserveQ_Eng.png" />
+    <None Include="Resources\txtServices_Eng.png" />
+    <None Include="Resources\txtTitle_Eng.png" />
+    <None Include="Resources\txtWaitingQ_Eng.png" />
+    <None Include="Resources\btnAppointment_Eng.png" />
+    <None Include="Resources\btnBack_Eng.png" />
+    <None Include="Resources\txtWaitingTime_Eng.png" />
+    <None Include="Resources\Logo3G_Eng.jpg" />
+    <None Include="Resources\Logo3G_Tha.jpg" />
+    <None Include="Resources\back_en.gif" />
+    <None Include="Resources\capture.gif" />
+    <None Include="Resources\close.gif" />
+    <None Include="Resources\EN-template-capture.png" />
+    <None Include="Resources\ok_en.gif" />
+    <None Include="Resources\ok_th.gif" />
+    <None Include="Resources\previous-01.jpg" />
+    <None Include="Resources\re-capture.gif" />
+    <None Include="Resources\template-01.png" />
+    <None Include="Resources\template-02.png" />
+    <None Include="Resources\TH-template-capture.gif" />
+    <None Include="Web References\ShopWebServiceDisplay\AppointmentCheckBacklistResultPara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\CaptureImageResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\LDAPResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\SaveAppointmentJobPara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\SiebelResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\SMSResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbCustomerShParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbCustomertypeCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbGroupuserCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbHoldReasonCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbItemCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbLogoutReasonCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\TbSkillCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceDisplay\WebServiceAPI.wsdl" />
+    <None Include="Web References\ShopWebServiceMain\AppointmentCheckBacklistResultPara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\CaptureImageResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\LDAPResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\SaveAppointmentJobPara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\SiebelResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\SMSResponsePara1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbCustomerShParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbCustomertypeCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbGroupuserCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbHoldReasonCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbItemCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbLogoutReasonCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\TbSkillCenParaDB1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ShopWebServiceMain\WebServiceAPI.wsdl" />
+    <Content Include="bin\Debug\Images\logo.jpg" />
+    <Content Include="bin\Debug\Images\logo_kiosk.png" />
+    <Content Include="touch screen kiosk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vbproj">
+      <Project>{84F1C5F3-07A6-4523-8EE1-DDF2F4EBBCB2}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShParaDb\ShParaDb.vbproj">
+      <Project>{FF855063-DBE5-4F34-9FEE-9C732304EFA6}</Project>
+      <Name>ShParaDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/ShopWebService/WebServiceAPI.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ShopWebServiceDisplay\</RelPath>
+      <UpdateFromURL>http://localhost/ShopWebService/WebServiceAPI.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>KioskElo_akkarawatp_WebServiceAPI</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/ShopWebService/WebServiceAPI.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ShopWebServiceMain\</RelPath>
+      <UpdateFromURL>http://localhost/ShopWebService/WebServiceAPI.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>KioskElo_ShopWebServiceMain1_WebServiceAPI</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

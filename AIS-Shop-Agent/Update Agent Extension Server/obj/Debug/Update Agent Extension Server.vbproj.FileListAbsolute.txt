@@ -1,0 +1,10 @@
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\bin\Debug\Update Agent Extension Server.exe
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\bin\Debug\Update Agent Extension Server.pdb
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\bin\Debug\Update Agent Extension Server.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\Update_Agent_Extension_Server.frmMain.resources
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\Update_Agent_Extension_Server.Resources.resources
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\Update Agent Extension Server.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\Update Agent Extension Server.exe
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\Update Agent Extension Server.xml
+D:\MyProject\QueueSharp-AIS\AIS-Shop-Agent\Update Agent Extension Server\obj\Debug\Update Agent Extension Server.pdb

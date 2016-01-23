@@ -1,0 +1,12 @@
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\bin\Debug\QMSchedule.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\bin\Debug\AlexPilotti.FTPS.Client.dll
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\bin\Debug\AMS.Profile.dll
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\QMSchedule.frmScheduleQM.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\QMSchedule.Resources.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\QMSchedule.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\QMSchedule.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\QMSchedule.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\obj\Debug\QMSchedule.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\bin\Debug\QMSchedule.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\QMSchedule\bin\Debug\QMSchedule.xml

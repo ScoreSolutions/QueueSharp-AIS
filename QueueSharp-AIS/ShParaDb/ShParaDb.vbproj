@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF855063-DBE5-4F34-9FEE-9C732304EFA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShParaDb</RootNamespace>
+    <AssemblyName>ShParaDb</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ShParaDb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ShParaDb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\LoginSessionPara.vb" />
+    <Compile Include="TabletWebService\TabletAddServicePara.vb" />
+    <Compile Include="TabletWebService\TabletCallingQueuePara.vb" />
+    <Compile Include="TabletWebService\TabletConfirmQueue.vb" />
+    <Compile Include="TabletWebService\TabletLogonUserPara.vb" />
+    <Compile Include="Common\TmpFileUploadPara.vb" />
+    <Compile Include="Common\UserProfilePara.vb" />
+    <Compile Include="Common\Utilities\Constant.vb" />
+    <Compile Include="Common\Utilities\MessageResources.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ShopWebService\CaptureImageResponsePara.vb" />
+    <Compile Include="ShopWebService\LDAPResponsePara.vb" />
+    <Compile Include="ShopWebService\SiebelResponsePara.vb" />
+    <Compile Include="ShopWebService\SiebelReqPara.vb" />
+    <Compile Include="ShopWebService\SMSResponsePara.vb" />
+    <Compile Include="TABLE\TbAppointmentCustomerShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentItemShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentScheduleShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentServiceShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentSlotShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentTimeShParaDB.vb" />
+    <Compile Include="TABLE\TbAppointmentUserShParaDB.vb" />
+    <Compile Include="TABLE\TbAvgUserServicetimeShParaDB.vb" />
+    <Compile Include="TABLE\TbCaptureBinaryShParaDB.vb" />
+    <Compile Include="TABLE\TbCaptureLogShParaDB.vb" />
+    <Compile Include="TABLE\TbCaptureTempShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeAllowHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeAllowShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterCustomertypeShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterQueueHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterQueueShParaDB.vb" />
+    <Compile Include="TABLE\TbCounterShParaDB.vb" />
+    <Compile Include="TABLE\TbCsiShParaDB.vb" />
+    <Compile Include="TABLE\TbCustomerImageShParaDB.vb" />
+    <Compile Include="TABLE\TbCustomerShParaDB.vb" />
+    <Compile Include="TABLE\TbCustomertypeHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbCustomertypeShParaDB.vb" />
+    <Compile Include="TABLE\TbDailyAppoinmentShParaDB.vb" />
+    <Compile Include="TABLE\TbDashboardSettingShParaDB.vb" />
+    <Compile Include="TABLE\TbErrorLogShParaDB.vb" />
+    <Compile Include="TABLE\TbForceScheduleShParaDB.vb" />
+    <Compile Include="TABLE\TbGroupuserHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbGroupuserMenuHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbGroupuserMenuShParaDB.vb" />
+    <Compile Include="TABLE\TbGroupuserShParaDB.vb" />
+    <Compile Include="TABLE\TbHoldReasonHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbHoldReasonShParaDB.vb" />
+    <Compile Include="TABLE\TbItemCounterHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbItemCounterShParaDB.vb" />
+    <Compile Include="TABLE\TbItemHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbItemPriorityHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbItemPriorityShParaDB.vb" />
+    <Compile Include="TABLE\TbItemShParaDB.vb" />
+    <Compile Include="TABLE\TbLocationShParaDB.vb" />
+    <Compile Include="TABLE\TbLogfileHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbLogfileShParaDB.vb" />
+    <Compile Include="TABLE\TbLogHoldShParaDB.vb" />
+    <Compile Include="TABLE\TbLogLoginShParaDB.vb" />
+    <Compile Include="TABLE\TbLogoutReasonHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbLogoutReasonShParaDB.vb" />
+    <Compile Include="TABLE\TbMapingCustomerShParaDB.vb" />
+    <Compile Include="TABLE\TbMenuShParaDB.vb" />
+    <Compile Include="TABLE\TbMessageCounterShParaDB.vb" />
+    <Compile Include="TABLE\TbMessageShParaDB.vb" />
+    <Compile Include="TABLE\TbQmTransferLogShParaDB.vb" />
+    <Compile Include="TABLE\TbSegmentHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbSegmentShParaDB.vb" />
+    <Compile Include="TABLE\TbSettingHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbSettingShParaDB.vb" />
+    <Compile Include="TABLE\TbSkillHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbSkillItemHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbSkillItemShParaDB.vb" />
+    <Compile Include="TABLE\TbSkillShParaDB.vb" />
+    <Compile Include="TABLE\TbSlotShParaDB.vb" />
+    <Compile Include="TABLE\TbSpeakerShParaDB.vb" />
+    <Compile Include="TABLE\TbStaffSmsConfigShParaDB.vb" />
+    <Compile Include="TABLE\TbStatusShParaDB.vb" />
+    <Compile Include="TABLE\TbTitleShParaDB.vb" />
+    <Compile Include="TABLE\TbTypeShParaDB.vb" />
+    <Compile Include="TABLE\TbUnitdisplayShParaDB.vb" />
+    <Compile Include="TABLE\TbUserActionShParaDB.vb" />
+    <Compile Include="TABLE\TbUserHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbUserItemShParaDB.vb" />
+    <Compile Include="TABLE\TbUserServiceLogShParaDB.vb" />
+    <Compile Include="TABLE\TbUserServiceScheduleShParaDB.vb" />
+    <Compile Include="TABLE\TbUserShowserviceShParaDB.vb" />
+    <Compile Include="TABLE\TbUserShParaDB.vb" />
+    <Compile Include="TABLE\TbUserSkillHistoryShParaDB.vb" />
+    <Compile Include="TABLE\TbUserSkillShParaDB.vb" />
+    <Compile Include="VIEW\VwAvgServiceTimeShParaDB.vb" />
+    <Compile Include="VIEW\VwQBeforeAfterShParaDB.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

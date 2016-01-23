@@ -1,0 +1,70 @@
+﻿<%@ Master Language="VB" CodeFile="Gsm.master.vb" Inherits="Gsm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Web Appointment V0.0.1.0</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        .style1
+        {
+            width: 39px;
+        }
+        .style2
+        {
+            width: 39px;
+            height: 55px;
+        }
+        .style3
+        {
+            height: 55px;
+        }
+        .style4
+        {
+            width: 250px;
+            height: 603px;
+        }
+        .style5
+        {
+            height: 603px;
+        }
+    </style>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Bin/jquery.min.js")%>"></script>
+  </head>
+    
+<body>
+    <form id="form1" runat="server">
+  <div  style="vertical-align:top; width:760px; height: 640px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="style5"  >
+                                    <asp:Panel ID="Panel2" runat="server" Height="593px"  
+                                        style="margin-bottom: 40px" Width="760px" >
+                                        <table style="width:100%; height: 640px; " border="0" cellpadding="0" 
+                                            cellspacing="0" >
+                                            
+                                            <tr>
+                                                <td style="vertical-align:top;" class="style1" >
+                                                    &nbsp;</td>
+                                                <td style="height:400px; vertical-align:top;">
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </asp:Panel>
+                                </td>
+                            </tr>
+                         </table>
+                  
+        
+       
+    </div>
+    </form>
+
+
+</body>
+</html>
+

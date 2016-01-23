@@ -1,0 +1,12 @@
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharp\bin\Debug\QIS.exe
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharp\bin\Debug\QIS.pdb
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\QueueSharp\bin\Debug\QIS.xml
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.frmTestForm.resources
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.frmUpdate.resources
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.frmWait.resources
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.Resources.resources
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\UpdateQueueSharp.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.exe
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.xml
+D:\MyProject\QueueSharp-AIS\QueueSharp-AIS\UpdateQueueSharp\obj\Debug\QIS.pdb

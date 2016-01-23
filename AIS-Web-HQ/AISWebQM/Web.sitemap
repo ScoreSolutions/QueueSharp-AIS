@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Home"  description="">
+      <!--<siteMapNode url="" title="System Settings"  description="">
+        <siteMapNode url="equipment.aspx" title="Equipment"  description=""/>
+        <siteMapNode url="" title="Appointment"  description="">
+          <siteMapNode url="policy.aspx" title="Policies"  description=""/>
+          <siteMapNode url="" title="Generate Time Slot"  description=""/>
+        </siteMapNode>
+      </siteMapNode>-->
+        <!--<siteMapNode url="QMuser.aspx" title="Manage QM User"  description=""/>-->
+        <siteMapNode url="QM.aspx" title="Quality Monitoring"  description=""/>
+     
+      <!--<siteMapNode url="" title="Dashboard"  description="">
+        <siteMapNode url="a.aspx" title="Dashboard Display"  description=""/>
+        <siteMapNode url="DashboardSetting.aspx" title="Dashboard Setting"  description=""/>
+      </siteMapNode>-->
+          <!--<siteMapNode url="logbyshop.aspx" title="View Agent"  description="">
+            <siteMapNode url="vdo.aspx" title="Service Detail"  description=""/>
+          </siteMapNode>
+        </siteMapNode>-->
+       
+          <!--<siteMapNode url="" title="Master Settings"  description="">
+            <siteMapNode url="config.aspx" title="Customer Type"  description=""/>
+            <siteMapNode url="segment.aspx" title="Segment"  description=""/>
+            <siteMapNode url="counter.aspx" title="Counter"  description=""/>
+            <siteMapNode url="services.aspx" title="Services"  description=""/>
+            <siteMapNode url="group_user.aspx" title="Group User"  description=""/>
+            <siteMapNode url="skill.aspx" title="Skill"  description=""/>
+            <siteMapNode url="user.aspx" title="User"  description="" />
+            <siteMapNode url="logout_reason.aspx" title="Logout Reason"  description=""/>
+            <siteMapNode url="hold_reason.aspx" title="Hold Reason"  description=""/>
+          </siteMapNode>-->
+        <siteMapNode url="logout.aspx" title="Logout"  description=""/>
+      </siteMapNode>
+    
+</siteMap>

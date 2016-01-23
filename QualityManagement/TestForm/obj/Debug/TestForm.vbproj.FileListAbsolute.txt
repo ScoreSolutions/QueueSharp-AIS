@@ -1,0 +1,14 @@
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\bin\Debug\AlexPilotti.FTPS.Client.dll
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.frmTestFTPFolder.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.frmTestPictureHTTPS.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.Resources.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\bin\Debug\TestForm.exe
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\bin\Debug\TestForm.pdb
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\bin\Debug\TestForm.xml
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.frmTestFile.resources
+D:\MyProject\QueueSharp-AIS\QualityManagement\TestForm\obj\Debug\TestForm.frmTestSetDateModify.resources

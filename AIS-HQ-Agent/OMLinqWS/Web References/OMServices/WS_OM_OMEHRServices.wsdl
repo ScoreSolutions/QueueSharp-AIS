@@ -1,0 +1,4335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetEmployeeProfile_SummaryReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfile_SummaryReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfile_SummaryReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_LogK2_ChangeApprover_Input_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_LogK2_ChangeApprover_Input_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_LogK2_ChangeApprover_Input_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllemployeeunderApprover_Input_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pinManager" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="positionManager" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllemployeeunderApprover_Input_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllemployeeunderApprover_Input_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN_MultiPosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN_MultiPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmployeeProfileByPIN_MultiPositionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_EmpProfile_Time_ChangeApprover_Input_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_EmpProfile_Time_ChangeApprover_Input_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_EmpProfile_Time_ChangeApprover_Input_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChangeApproverK2_Summary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChangeApproverK2_SummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChangeApproverK2_SummaryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_LogK2_ChangeApprover_Detail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Log_Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_LogK2_ChangeApprover_DetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_LogK2_ChangeApprover_DetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgInfobyOrgCode_IN_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgInfobyOrgCode_IN_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrgInfobyOrgCode_IN_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN_Input_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN_Input_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmployeeProfileByPIN_Input_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_Log_OM_TransForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_Log_OM_TransFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_Log_OM_TransFormResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listOrganize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LowerOrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HigherOrgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listOrganizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listOrganizeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listOrganizeLower">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Level" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listOrganizeLowerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listOrganizeLowerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCostCenter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Costcenter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCostCenterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCostCenterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrganizeLowerByListOrg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrganizeLowerByListOrgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOrganizeLowerByListOrgResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listOrganizeUpper">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Level" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listOrganizeUpperResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listOrganizeUpperResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CHECKMANAGER">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="POSITION" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CHECKMANAGERResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CHECKMANAGERResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetManagerByOrgCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetManagerByOrgCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetManagerByOrgCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgPersInfoByBossPostID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PIN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BossPosition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Organization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Job" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgPersInfoByBossPostIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrgPersInfoByBossPostIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgPersInfoByOrgHRMPIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PIN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Organization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Job" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgPersInfoByOrgHRMPINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrgPersInfoByOrgHRMPINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgPersInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Organization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Job" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgPersInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrgPersInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployee_By_CompanyCode_Name_PIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Pin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployee_By_CompanyCode_Name_PINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmployee_By_CompanyCode_Name_PINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllOrgInfobyEmpID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllOrgInfobyEmpIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllOrgInfobyEmpIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgInfobyOrgCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrgInfobyOrgCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrgInfobyOrgCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPinsbyOrgCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPinsbyOrgCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPinsbyOrgCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStaffCountByPositionID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStaffCountByPositionIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStaffCountByPositionIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPG">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllPGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPGResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApprover">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApproverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStaffCountbyOrgCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStaffCountbyOrgCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStaffCountbyOrgCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrganizationName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrganizationNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrganizationNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyByOrgCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyByOrgCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyByOrgCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeIDByEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeIDByEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeIDByEmailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListEmployeePositionAndOrganization">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userStamp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListEmployeePositionAndOrganizationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListEmployeePositionAndOrganizationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllPinsUnderOrgCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixPin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vPin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixPinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllPinsUnderOrgCodeByPrefixPinResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllPinsUnderOrgCodeByPrefixEmailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixThaiName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vThName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixThaiNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllPinsUnderOrgCodeByPrefixThaiNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixThaiSurName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vThSurname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeByPrefixThaiSurNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllPinsUnderOrgCodeByPrefixThaiSurNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vPin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPositionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchOrgInfoByOrgCodeOrOrgDesc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vCompanyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchOrgInfoByOrgCodeOrOrgDescResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchOrgInfoByOrgCodeOrOrgDescResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchOrgInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vCompanyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vOrgDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchOrgInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchOrgInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTemporaryPinByNewPin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTemporaryPinByNewPinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListTemporaryPinByNewPinResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCompany">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCompanyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vPin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrganization">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgdesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrganizationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrganizationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmployeeProfileByPINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmployeeProfileByPINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproverProfileByPIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproverProfileByPINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApproverProfileByPINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixEngName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empEngName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixEngNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixEngNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixEngLastName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empEngLastName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixEngLastNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixEngLastNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixThaiName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empThaiName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixThaiNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixThaiNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixThaiLastName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empThaiLastName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixThaiLastNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixThaiLastNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixEmailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixPin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empPin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixPinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixPinResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixOrgcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empOrgcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixOrgcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixOrgcodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixOrgname">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empOrgname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixOrgnameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixOrgnameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixOrgdesc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empOrgdesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByPrefixOrgdescResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByPrefixOrgdescResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByEmailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllApprover">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="position" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllApproverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllApproverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListEmployeeUnderApprover">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListEmployeeUnderApproverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListEmployeeUnderApproverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJobKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJobKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJobKeyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEmpDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="co" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="engName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="engSurName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="thName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="thSurName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nickName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="job" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userStamp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TelNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ManagerName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEmpDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchEmpDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Search_Employee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Employee_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Emp_Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Emp_Last_Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ENGEmp_Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ENGEmp_Last_Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Org_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Org_Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Search_EmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Search_EmployeeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_ActingApprover">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_ActingApproverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_ActingApproverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrganizeByOrganizeLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrganizeLevel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrganizeCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrganizeByOrganizeLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOrganizeByOrganizeLevelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEmployeeOrg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="employeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enSurName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="thName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="thSurName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buhname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dpname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="positiondesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="positionid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMPLOYEETYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMPLOYEEGROUP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEmployeeOrgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchEmployeeOrgResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_LineApproverPositionAVPUP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Pin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="List_LineApproverPositionAVPUPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="List_LineApproverPositionAVPUPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrganizeLevelByCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrganizeLevel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrganizeLevelByCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOrganizeLevelByCompanyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByUsername">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileByUsernameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileByUsernameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListLineOrganizeByOrganizeCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListLineOrganizeByOrganizeCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListLineOrganizeByOrganizeCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrgDescByPrefix">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrgDescByPrefixResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOrgDescByPrefixResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListGradeDescByPrefix">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gradeDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListGradeDescByPrefixResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListGradeDescByPrefixResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmpForFingerScan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmpForFingerScanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmpForFingerScanResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmpForFingerScanResigned">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmpForFingerScanResignedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmpForFingerScanResignedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmpResigned">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListEmpResignedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListEmpResignedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeReNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllPinsUnderOrgCodeReNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllPinsUnderOrgCodeReNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckEmpResigned">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckEmpResignedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckEmpResignedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAllEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllEmployeeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEepForOM1">
+        <s:complexType />
+      </s:element>
+      <s:element name="getEepForOM1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getEepForOM1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListMovementBYDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListMovementBYDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListMovementBYDateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProvidentFundBYPin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProvidentFundBYPinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProvidentFundBYPinResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileForStaffPackagesBYPIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Pin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileForStaffPackagesBYPINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileForStaffPackagesBYPINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileForStaffPackagesBYUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeProfileForStaffPackagesBYUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeProfileForStaffPackagesBYUserNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListALLMovementBYDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListALLMovementBYDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListALLMovementBYDateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllEmployeeProfileForITAM">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListAllEmployeeProfileForITAMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllEmployeeProfileForITAMResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetEmployeeProfile_SummaryReportSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfile_SummaryReport" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfile_SummaryReportSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfile_SummaryReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_LogK2_ChangeApprover_Input_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_LogK2_ChangeApprover_Input_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Get_LogK2_ChangeApprover_Input_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_LogK2_ChangeApprover_Input_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllemployeeunderApprover_Input_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllemployeeunderApprover_Input_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ListAllemployeeunderApprover_Input_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllemployeeunderApprover_Input_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPIN_MultiPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN_MultiPosition" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPIN_MultiPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN_MultiPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_EmpProfile_Time_ChangeApprover_Input_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:List_EmpProfile_Time_ChangeApprover_Input_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="List_EmpProfile_Time_ChangeApprover_Input_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:List_EmpProfile_Time_ChangeApprover_Input_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChangeApproverK2_SummarySoapIn">
+    <wsdl:part name="parameters" element="tns:GetChangeApproverK2_Summary" />
+  </wsdl:message>
+  <wsdl:message name="GetChangeApproverK2_SummarySoapOut">
+    <wsdl:part name="parameters" element="tns:GetChangeApproverK2_SummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_LogK2_ChangeApprover_DetailSoapIn">
+    <wsdl:part name="parameters" element="tns:List_LogK2_ChangeApprover_Detail" />
+  </wsdl:message>
+  <wsdl:message name="List_LogK2_ChangeApprover_DetailSoapOut">
+    <wsdl:part name="parameters" element="tns:List_LogK2_ChangeApprover_DetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgInfobyOrgCode_IN_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrgInfobyOrgCode_IN_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgInfobyOrgCode_IN_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrgInfobyOrgCode_IN_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPIN_Input_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN_Input_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPIN_Input_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN_Input_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN_Input_DataSetByPowerSearch" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN_Input_DataSetByPowerSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_Log_OM_TransFormSoapIn">
+    <wsdl:part name="parameters" element="tns:List_Log_OM_TransForm" />
+  </wsdl:message>
+  <wsdl:message name="List_Log_OM_TransFormSoapOut">
+    <wsdl:part name="parameters" element="tns:List_Log_OM_TransFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="listOrganizeSoapIn">
+    <wsdl:part name="parameters" element="tns:listOrganize" />
+  </wsdl:message>
+  <wsdl:message name="listOrganizeSoapOut">
+    <wsdl:part name="parameters" element="tns:listOrganizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="listOrganizeLowerSoapIn">
+    <wsdl:part name="parameters" element="tns:listOrganizeLower" />
+  </wsdl:message>
+  <wsdl:message name="listOrganizeLowerSoapOut">
+    <wsdl:part name="parameters" element="tns:listOrganizeLowerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCostCenterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCostCenter" />
+  </wsdl:message>
+  <wsdl:message name="GetCostCenterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCostCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOrganizeLowerByListOrgSoapIn">
+    <wsdl:part name="parameters" element="tns:ListOrganizeLowerByListOrg" />
+  </wsdl:message>
+  <wsdl:message name="ListOrganizeLowerByListOrgSoapOut">
+    <wsdl:part name="parameters" element="tns:ListOrganizeLowerByListOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="listOrganizeUpperSoapIn">
+    <wsdl:part name="parameters" element="tns:listOrganizeUpper" />
+  </wsdl:message>
+  <wsdl:message name="listOrganizeUpperSoapOut">
+    <wsdl:part name="parameters" element="tns:listOrganizeUpperResponse" />
+  </wsdl:message>
+  <wsdl:message name="CHECKMANAGERSoapIn">
+    <wsdl:part name="parameters" element="tns:CHECKMANAGER" />
+  </wsdl:message>
+  <wsdl:message name="CHECKMANAGERSoapOut">
+    <wsdl:part name="parameters" element="tns:CHECKMANAGERResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetManagerByOrgCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetManagerByOrgCode" />
+  </wsdl:message>
+  <wsdl:message name="GetManagerByOrgCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetManagerByOrgCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgPersInfoByBossPostIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrgPersInfoByBossPostID" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgPersInfoByBossPostIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrgPersInfoByBossPostIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgPersInfoByOrgHRMPINSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrgPersInfoByOrgHRMPIN" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgPersInfoByOrgHRMPINSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrgPersInfoByOrgHRMPINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgPersInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrgPersInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgPersInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrgPersInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployee_By_CompanyCode_Name_PINSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmployee_By_CompanyCode_Name_PIN" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployee_By_CompanyCode_Name_PINSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmployee_By_CompanyCode_Name_PINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllOrgInfobyEmpIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllOrgInfobyEmpID" />
+  </wsdl:message>
+  <wsdl:message name="GetAllOrgInfobyEmpIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllOrgInfobyEmpIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgInfobyOrgCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrgInfobyOrgCode" />
+  </wsdl:message>
+  <wsdl:message name="GetOrgInfobyOrgCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrgInfobyOrgCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPinsbyOrgCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPinsbyOrgCode" />
+  </wsdl:message>
+  <wsdl:message name="ListPinsbyOrgCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPinsbyOrgCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStaffCountByPositionIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStaffCountByPositionID" />
+  </wsdl:message>
+  <wsdl:message name="GetStaffCountByPositionIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStaffCountByPositionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPGSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPG" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPGSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPGResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApproverSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApprover" />
+  </wsdl:message>
+  <wsdl:message name="GetApproverSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStaffCountbyOrgCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStaffCountbyOrgCode" />
+  </wsdl:message>
+  <wsdl:message name="GetStaffCountbyOrgCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStaffCountbyOrgCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrganizationNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrganizationName" />
+  </wsdl:message>
+  <wsdl:message name="GetOrganizationNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrganizationNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyByOrgCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyByOrgCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyByOrgCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyByOrgCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeIDByEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeIDByEmail" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeIDByEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeIDByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListEmployeePositionAndOrganizationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListEmployeePositionAndOrganization" />
+  </wsdl:message>
+  <wsdl:message name="GetListEmployeePositionAndOrganizationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListEmployeePositionAndOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCode" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixPinSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixPin" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixPinSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixEmail" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixThaiNameSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixThaiName" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixThaiNameSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixThaiNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixThaiSurNameSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixThaiSurName" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeByPrefixThaiSurNameSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeByPrefixThaiSurNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPosition" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchOrgInfoByOrgCodeOrOrgDescSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchOrgInfoByOrgCodeOrOrgDesc" />
+  </wsdl:message>
+  <wsdl:message name="SearchOrgInfoByOrgCodeOrOrgDescSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchOrgInfoByOrgCodeOrOrgDescResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchOrgInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchOrgInfo" />
+  </wsdl:message>
+  <wsdl:message name="SearchOrgInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchOrgInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListTemporaryPinByNewPinSoapIn">
+    <wsdl:part name="parameters" element="tns:ListTemporaryPinByNewPin" />
+  </wsdl:message>
+  <wsdl:message name="ListTemporaryPinByNewPinSoapOut">
+    <wsdl:part name="parameters" element="tns:ListTemporaryPinByNewPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCompany" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrganizationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrganization" />
+  </wsdl:message>
+  <wsdl:message name="GetOrganizationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPINSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPIN" />
+  </wsdl:message>
+  <wsdl:message name="ListEmployeeProfileByPINSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmployeeProfileByPINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApproverProfileByPINSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApproverProfileByPIN" />
+  </wsdl:message>
+  <wsdl:message name="GetApproverProfileByPINSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApproverProfileByPINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixEngNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixEngName" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixEngNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixEngNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixEngLastNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixEngLastName" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixEngLastNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixEngLastNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixThaiNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixThaiName" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixThaiNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixThaiNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixThaiLastNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixThaiLastName" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixThaiLastNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixThaiLastNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixEmail" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixPinSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixPin" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixPinSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixOrgcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixOrgcode" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixOrgcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixOrgcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixOrgnameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixOrgname" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixOrgnameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixOrgnameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixOrgdescSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixOrgdesc" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByPrefixOrgdescSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByPrefixOrgdescResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByEmail" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllApproverSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllApprover" />
+  </wsdl:message>
+  <wsdl:message name="ListAllApproverSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListEmployeeUnderApproverSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListEmployeeUnderApprover" />
+  </wsdl:message>
+  <wsdl:message name="GetListEmployeeUnderApproverSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListEmployeeUnderApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJobKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetJobKey" />
+  </wsdl:message>
+  <wsdl:message name="GetJobKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetJobKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchEmpDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchEmpDetail" />
+  </wsdl:message>
+  <wsdl:message name="SearchEmpDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchEmpDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Search_EmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:Search_Employee" />
+  </wsdl:message>
+  <wsdl:message name="Search_EmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:Search_EmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_ActingApproverSoapIn">
+    <wsdl:part name="parameters" element="tns:List_ActingApprover" />
+  </wsdl:message>
+  <wsdl:message name="List_ActingApproverSoapOut">
+    <wsdl:part name="parameters" element="tns:List_ActingApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOrganizeByOrganizeLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:ListOrganizeByOrganizeLevel" />
+  </wsdl:message>
+  <wsdl:message name="ListOrganizeByOrganizeLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:ListOrganizeByOrganizeLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchEmployeeOrgSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchEmployeeOrg" />
+  </wsdl:message>
+  <wsdl:message name="SearchEmployeeOrgSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchEmployeeOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="List_LineApproverPositionAVPUPSoapIn">
+    <wsdl:part name="parameters" element="tns:List_LineApproverPositionAVPUP" />
+  </wsdl:message>
+  <wsdl:message name="List_LineApproverPositionAVPUPSoapOut">
+    <wsdl:part name="parameters" element="tns:List_LineApproverPositionAVPUPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOrganizeLevelByCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:ListOrganizeLevelByCompany" />
+  </wsdl:message>
+  <wsdl:message name="ListOrganizeLevelByCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:ListOrganizeLevelByCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByUsernameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByUsername" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileByUsernameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileByUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListLineOrganizeByOrganizeCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListLineOrganizeByOrganizeCode" />
+  </wsdl:message>
+  <wsdl:message name="ListLineOrganizeByOrganizeCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListLineOrganizeByOrganizeCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOrgDescByPrefixSoapIn">
+    <wsdl:part name="parameters" element="tns:ListOrgDescByPrefix" />
+  </wsdl:message>
+  <wsdl:message name="ListOrgDescByPrefixSoapOut">
+    <wsdl:part name="parameters" element="tns:ListOrgDescByPrefixResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListGradeDescByPrefixSoapIn">
+    <wsdl:part name="parameters" element="tns:ListGradeDescByPrefix" />
+  </wsdl:message>
+  <wsdl:message name="ListGradeDescByPrefixSoapOut">
+    <wsdl:part name="parameters" element="tns:ListGradeDescByPrefixResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmpForFingerScanSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmpForFingerScan" />
+  </wsdl:message>
+  <wsdl:message name="ListEmpForFingerScanSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmpForFingerScanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmpForFingerScanResignedSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmpForFingerScanResigned" />
+  </wsdl:message>
+  <wsdl:message name="ListEmpForFingerScanResignedSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmpForFingerScanResignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListEmpResignedSoapIn">
+    <wsdl:part name="parameters" element="tns:ListEmpResigned" />
+  </wsdl:message>
+  <wsdl:message name="ListEmpResignedSoapOut">
+    <wsdl:part name="parameters" element="tns:ListEmpResignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeReNewSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeReNew" />
+  </wsdl:message>
+  <wsdl:message name="ListAllPinsUnderOrgCodeReNewSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllPinsUnderOrgCodeReNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckEmpResignedSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckEmpResigned" />
+  </wsdl:message>
+  <wsdl:message name="CheckEmpResignedSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckEmpResignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllEmployee" />
+  </wsdl:message>
+  <wsdl:message name="getAllEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEepForOM1SoapIn">
+    <wsdl:part name="parameters" element="tns:getEepForOM1" />
+  </wsdl:message>
+  <wsdl:message name="getEepForOM1SoapOut">
+    <wsdl:part name="parameters" element="tns:getEepForOM1Response" />
+  </wsdl:message>
+  <wsdl:message name="getListMovementBYDateSoapIn">
+    <wsdl:part name="parameters" element="tns:getListMovementBYDate" />
+  </wsdl:message>
+  <wsdl:message name="getListMovementBYDateSoapOut">
+    <wsdl:part name="parameters" element="tns:getListMovementBYDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProvidentFundBYPinSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProvidentFundBYPin" />
+  </wsdl:message>
+  <wsdl:message name="GetProvidentFundBYPinSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProvidentFundBYPinResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileForStaffPackagesBYPINSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileForStaffPackagesBYPIN" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileForStaffPackagesBYPINSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileForStaffPackagesBYPINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileForStaffPackagesBYUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileForStaffPackagesBYUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeProfileForStaffPackagesBYUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeProfileForStaffPackagesBYUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListALLMovementBYDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListALLMovementBYDate" />
+  </wsdl:message>
+  <wsdl:message name="GetListALLMovementBYDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListALLMovementBYDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllEmployeeProfileForITAMSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllEmployeeProfileForITAM" />
+  </wsdl:message>
+  <wsdl:message name="ListAllEmployeeProfileForITAMSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllEmployeeProfileForITAMResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_OM_OMEHRServicesSoap">
+    <wsdl:operation name="GetEmployeeProfile_SummaryReport">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Employee profile  : more than 1 but less than 400 records(PIN).</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfile_SummaryReportSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfile_SummaryReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_LogK2_ChangeApprover_Input_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get_LogK2_ChangeApprover_Input_DataSet</wsdl:documentation>
+      <wsdl:input message="tns:Get_LogK2_ChangeApprover_Input_DataSetSoapIn" />
+      <wsdl:output message="tns:Get_LogK2_ChangeApprover_Input_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllemployeeunderApprover_Input_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ListAllemployeeunderApprover_Input_DataSet</wsdl:documentation>
+      <wsdl:input message="tns:ListAllemployeeunderApprover_Input_DataSetSoapIn" />
+      <wsdl:output message="tns:ListAllemployeeunderApprover_Input_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_MultiPosition">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ListEmployeeProfileByPIN_MultiPosition</wsdl:documentation>
+      <wsdl:input message="tns:ListEmployeeProfileByPIN_MultiPositionSoapIn" />
+      <wsdl:output message="tns:ListEmployeeProfileByPIN_MultiPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_EmpProfile_Time_ChangeApprover_Input_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List_EmpProfile_Time_ChangeApprover_Input_DataSet</wsdl:documentation>
+      <wsdl:input message="tns:List_EmpProfile_Time_ChangeApprover_Input_DataSetSoapIn" />
+      <wsdl:output message="tns:List_EmpProfile_Time_ChangeApprover_Input_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeApproverK2_Summary">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GetChangeApproverK2_Summary</wsdl:documentation>
+      <wsdl:input message="tns:GetChangeApproverK2_SummarySoapIn" />
+      <wsdl:output message="tns:GetChangeApproverK2_SummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_LogK2_ChangeApprover_Detail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List_LogK2_ChangeApprover_Detail</wsdl:documentation>
+      <wsdl:input message="tns:List_LogK2_ChangeApprover_DetailSoapIn" />
+      <wsdl:output message="tns:List_LogK2_ChangeApprover_DetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgInfobyOrgCode_IN_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GetOrgInfobyOrgCode_IN_DataSet</wsdl:documentation>
+      <wsdl:input message="tns:GetOrgInfobyOrgCode_IN_DataSetSoapIn" />
+      <wsdl:output message="tns:GetOrgInfobyOrgCode_IN_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_Input_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ListEmployeeProfileByPIN_InputDataSet Col Validate 'Pin','THFIRSTNAME','THLASTNAME' </wsdl:documentation>
+      <wsdl:input message="tns:ListEmployeeProfileByPIN_Input_DataSetSoapIn" />
+      <wsdl:output message="tns:ListEmployeeProfileByPIN_Input_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ListEmployeeProfileByPIN_Input_DataSetByPowerSearch</wsdl:documentation>
+      <wsdl:input message="tns:ListEmployeeProfileByPIN_Input_DataSetByPowerSearchSoapIn" />
+      <wsdl:output message="tns:ListEmployeeProfileByPIN_Input_DataSetByPowerSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_Log_OM_TransForm">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Log OM TransForm</wsdl:documentation>
+      <wsdl:input message="tns:List_Log_OM_TransFormSoapIn" />
+      <wsdl:output message="tns:List_Log_OM_TransFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listOrganize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Organization</wsdl:documentation>
+      <wsdl:input message="tns:listOrganizeSoapIn" />
+      <wsdl:output message="tns:listOrganizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listOrganizeLower">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Organization Lower</wsdl:documentation>
+      <wsdl:input message="tns:listOrganizeLowerSoapIn" />
+      <wsdl:output message="tns:listOrganizeLowerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get CostCenter </wsdl:documentation>
+      <wsdl:input message="tns:GetCostCenterSoapIn" />
+      <wsdl:output message="tns:GetCostCenterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeLowerByListOrg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Organization Lower Input Parameter DataSet require column Orgid</wsdl:documentation>
+      <wsdl:input message="tns:ListOrganizeLowerByListOrgSoapIn" />
+      <wsdl:output message="tns:ListOrganizeLowerByListOrgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listOrganizeUpper">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Organization Upper</wsdl:documentation>
+      <wsdl:input message="tns:listOrganizeUpperSoapIn" />
+      <wsdl:output message="tns:listOrganizeUpperSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CHECKMANAGER">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check manager</wsdl:documentation>
+      <wsdl:input message="tns:CHECKMANAGERSoapIn" />
+      <wsdl:output message="tns:CHECKMANAGERSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerByOrgCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Manager By Organization Code</wsdl:documentation>
+      <wsdl:input message="tns:GetManagerByOrgCodeSoapIn" />
+      <wsdl:output message="tns:GetManagerByOrgCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfoByBossPostID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get organization Info By Boss Position ID</wsdl:documentation>
+      <wsdl:input message="tns:GetOrgPersInfoByBossPostIDSoapIn" />
+      <wsdl:output message="tns:GetOrgPersInfoByBossPostIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfoByOrgHRMPIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get organization Info By Organization HRM PIN</wsdl:documentation>
+      <wsdl:input message="tns:GetOrgPersInfoByOrgHRMPINSoapIn" />
+      <wsdl:output message="tns:GetOrgPersInfoByOrgHRMPINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get organization Info </wsdl:documentation>
+      <wsdl:input message="tns:GetOrgPersInfoSoapIn" />
+      <wsdl:output message="tns:GetOrgPersInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployee_By_CompanyCode_Name_PIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ListEmployee_By_CompanyCode Or Name OrPIN  Ex. ListEmployee_By_CompanyCode_Name_PIN('','','AIS') or ListEmployee_By_CompanyCode_Name_PIN('','','AI') </wsdl:documentation>
+      <wsdl:input message="tns:ListEmployee_By_CompanyCode_Name_PINSoapIn" />
+      <wsdl:output message="tns:ListEmployee_By_CompanyCode_Name_PINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrgInfobyEmpID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get organization information by empID</wsdl:documentation>
+      <wsdl:input message="tns:GetAllOrgInfobyEmpIDSoapIn" />
+      <wsdl:output message="tns:GetAllOrgInfobyEmpIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgInfobyOrgCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get organization information by orgcode</wsdl:documentation>
+      <wsdl:input message="tns:GetOrgInfobyOrgCodeSoapIn" />
+      <wsdl:output message="tns:GetOrgInfobyOrgCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPinsbyOrgCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List pins that belong to the organization by orgcode</wsdl:documentation>
+      <wsdl:input message="tns:ListPinsbyOrgCodeSoapIn" />
+      <wsdl:output message="tns:ListPinsbyOrgCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffCountByPositionID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get StaffCount From OM_GEN_STAFFCOUNT By PositionID</wsdl:documentation>
+      <wsdl:input message="tns:GetStaffCountByPositionIDSoapIn" />
+      <wsdl:output message="tns:GetStaffCountByPositionIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPG">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All of PG</wsdl:documentation>
+      <wsdl:input message="tns:GetAllPGSoapIn" />
+      <wsdl:output message="tns:GetAllPGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprover">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Approver from Employee</wsdl:documentation>
+      <wsdl:input message="tns:GetApproverSoapIn" />
+      <wsdl:output message="tns:GetApproverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffCountbyOrgCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Orgcode Profile And Staff Count By OrgCode</wsdl:documentation>
+      <wsdl:input message="tns:GetStaffCountbyOrgCodeSoapIn" />
+      <wsdl:output message="tns:GetStaffCountbyOrgCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get OrganizationName Able to input multiple OrgCode Ex. GetOrganizationName(50013906,50013914) or GetOrganizationName(50013906)</wsdl:documentation>
+      <wsdl:input message="tns:GetOrganizationNameSoapIn" />
+      <wsdl:output message="tns:GetOrganizationNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyByOrgCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Company By OrgCode</wsdl:documentation>
+      <wsdl:input message="tns:GetCompanyByOrgCodeSoapIn" />
+      <wsdl:output message="tns:GetCompanyByOrgCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeIDByEmail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeID By Email</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeIDByEmailSoapIn" />
+      <wsdl:output message="tns:GetEmployeeIDByEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePositionAndOrganization">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeePosition And Organization. Able to input multiple userid[userstamp] as must has separate. Ex. GetListEmployeePositionAndOrganization(ladawanv) or GetListEmployeePositionAndOrganization(ladawanv,nuttanuy)</wsdl:documentation>
+      <wsdl:input message="tns:GetListEmployeePositionAndOrganizationSoapIn" />
+      <wsdl:output message="tns:GetListEmployeePositionAndOrganizationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All EmployeeID Under OrgCode </wsdl:documentation>
+      <wsdl:input message="tns:ListAllPinsUnderOrgCodeSoapIn" />
+      <wsdl:output message="tns:ListAllPinsUnderOrgCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixPin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All EmployeeID Under OrgCode by PrefixPin </wsdl:documentation>
+      <wsdl:input message="tns:ListAllPinsUnderOrgCodeByPrefixPinSoapIn" />
+      <wsdl:output message="tns:ListAllPinsUnderOrgCodeByPrefixPinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixEmail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All EmployeeID Under OrgCode by PrefixEmail </wsdl:documentation>
+      <wsdl:input message="tns:ListAllPinsUnderOrgCodeByPrefixEmailSoapIn" />
+      <wsdl:output message="tns:ListAllPinsUnderOrgCodeByPrefixEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixThaiName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All EmployeeID Under OrgCode by PrefixThaiName </wsdl:documentation>
+      <wsdl:input message="tns:ListAllPinsUnderOrgCodeByPrefixThaiNameSoapIn" />
+      <wsdl:output message="tns:ListAllPinsUnderOrgCodeByPrefixThaiNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixThaiSurName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All EmployeeID Under OrgCode by PrefixThaiSurname </wsdl:documentation>
+      <wsdl:input message="tns:ListAllPinsUnderOrgCodeByPrefixThaiSurNameSoapIn" />
+      <wsdl:output message="tns:ListAllPinsUnderOrgCodeByPrefixThaiSurNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPosition">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All Position By PIN </wsdl:documentation>
+      <wsdl:input message="tns:GetAllPositionSoapIn" />
+      <wsdl:output message="tns:GetAllPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrgInfoByOrgCodeOrOrgDesc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Organization information By Company Code and (Org Name or OrgCode)</wsdl:documentation>
+      <wsdl:input message="tns:SearchOrgInfoByOrgCodeOrOrgDescSoapIn" />
+      <wsdl:output message="tns:SearchOrgInfoByOrgCodeOrOrgDescSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrgInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Organization information By Company Code and Org Name</wsdl:documentation>
+      <wsdl:input message="tns:SearchOrgInfoSoapIn" />
+      <wsdl:output message="tns:SearchOrgInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListTemporaryPinByNewPin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get List TemporaryPin Able to input multiple pin as must has separate. Ex.ListEmployeeProfileByPIN(“00007851”) or ListEmployeeProfileByPIN(“00007851”,”00020389”).</wsdl:documentation>
+      <wsdl:input message="tns:ListTemporaryPinByNewPinSoapIn" />
+      <wsdl:output message="tns:ListTemporaryPinByNewPinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All Company Data,have employee in ehr</wsdl:documentation>
+      <wsdl:input message="tns:GetAllCompanySoapIn" />
+      <wsdl:output message="tns:GetAllCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Employee Profile</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganization">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Organization Detail</wsdl:documentation>
+      <wsdl:input message="tns:GetOrganizationSoapIn" />
+      <wsdl:output message="tns:GetOrganizationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List for EmployeeProfile by PIN And Organization. Able to input multiple pin as must has separate. Ex.ListEmployeeProfileByPIN(“00007851”) or ListEmployeeProfileByPIN(“00007851”,”00020389”).</wsdl:documentation>
+      <wsdl:input message="tns:ListEmployeeProfileByPINSoapIn" />
+      <wsdl:output message="tns:ListEmployeeProfileByPINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverProfileByPIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get ApproverProfile by PIN And Organization. Able to input single pin only.</wsdl:documentation>
+      <wsdl:input message="tns:GetApproverProfileByPINSoapIn" />
+      <wsdl:output message="tns:GetApproverProfileByPINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEngName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix English Name. Recommend using for AutoComplete Text. Able to input single prefix English name only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixEngNameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixEngNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEngLastName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix English lastname. Recommend using for AutoComplete Text. Able to input single prefix English lastname only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixEngLastNameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixEngLastNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixThaiName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix Thai Name. Recommend using for AutoComplete Text. Able to input single prefix Thai name only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixThaiNameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixThaiNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixThaiLastName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix Thai lastname. Recommend using for AutoComplete Text. Able to input single prefix Thai lastname only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixThaiLastNameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixThaiLastNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEmail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix email. Recommend using for AutoComplete Text. Able to input single prefix email only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixEmailSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixPin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix pin. Recommend using for AutoComplete Text. Able to input single prefix pin only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixPinSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixPinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgcode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix Organization code. Recommend using for AutoComplete Text. Able to input single prefix Organization code only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixOrgcodeSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixOrgcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgname">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix Organization name. Recommend using for AutoComplete Text. Able to input single Organization name only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixOrgnameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixOrgnameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgdesc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Prefix Organization description. Recommend using for AutoComplete Text. Able to input single Organization description only. </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByPrefixOrgdescSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByPrefixOrgdescSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByEmail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By Email Ex. 'ladawanv%' or 'ladawanv@ais.co.th' </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByEmailSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllApprover">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List All Alll Approver By pin,postition </wsdl:documentation>
+      <wsdl:input message="tns:ListAllApproverSoapIn" />
+      <wsdl:output message="tns:ListAllApproverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeeUnderApprover">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Employee Profile Under Approver </wsdl:documentation>
+      <wsdl:input message="tns:GetListEmployeeUnderApproverSoapIn" />
+      <wsdl:output message="tns:GetListEmployeeUnderApproverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Job Key</wsdl:documentation>
+      <wsdl:input message="tns:GetJobKeySoapIn" />
+      <wsdl:output message="tns:GetJobKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmpDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Employee Detail  </wsdl:documentation>
+      <wsdl:input message="tns:SearchEmpDetailSoapIn" />
+      <wsdl:output message="tns:SearchEmpDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Employee">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Employee ID,Employee Name,Employee SurName,Org ID,OrgName </wsdl:documentation>
+      <wsdl:input message="tns:Search_EmployeeSoapIn" />
+      <wsdl:output message="tns:Search_EmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_ActingApprover">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List for Acting Approver by PIN And Prosition. (Input DataSet Column PIN,PrositionID)</wsdl:documentation>
+      <wsdl:input message="tns:List_ActingApproverSoapIn" />
+      <wsdl:output message="tns:List_ActingApproverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeByOrganizeLevel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Organize By company Code organizecode and organizeLevel</wsdl:documentation>
+      <wsdl:input message="tns:ListOrganizeByOrganizeLevelSoapIn" />
+      <wsdl:output message="tns:ListOrganizeByOrganizeLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployeeOrg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Detail Employee</wsdl:documentation>
+      <wsdl:input message="tns:SearchEmployeeOrgSoapIn" />
+      <wsdl:output message="tns:SearchEmployeeOrgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="List_LineApproverPositionAVPUP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Line Approver For Position AVP UP  By Pin And Position ID</wsdl:documentation>
+      <wsdl:input message="tns:List_LineApproverPositionAVPUPSoapIn" />
+      <wsdl:output message="tns:List_LineApproverPositionAVPUPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeLevelByCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List OrganizeLevel by CompanyCode</wsdl:documentation>
+      <wsdl:input message="tns:ListOrganizeLevelByCompanySoapIn" />
+      <wsdl:output message="tns:ListOrganizeLevelByCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByUsername">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile By username or userstamp Ex. 'ladawanv' </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileByUsernameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileByUsernameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListLineOrganizeByOrganizeCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ListLine's Organize By Organize's Code</wsdl:documentation>
+      <wsdl:input message="tns:ListLineOrganizeByOrganizeCodeSoapIn" />
+      <wsdl:output message="tns:ListLineOrganizeByOrganizeCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOrgDescByPrefix">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List OrgDesc By Prefix of OrgDesc. Recommend using for AutoComplete Text. Able to input single and multiple prefix. Ex.ListGradeDescByPrefix(“Per”)</wsdl:documentation>
+      <wsdl:input message="tns:ListOrgDescByPrefixSoapIn" />
+      <wsdl:output message="tns:ListOrgDescByPrefixSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListGradeDescByPrefix">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List GradeDesc By Prefix of GradeDesc. Recommend using for AutoComplete Text. Able to input single and multiple prefix. Ex.ListGradeDescByPrefix(“Advanc”) </wsdl:documentation>
+      <wsdl:input message="tns:ListGradeDescByPrefixSoapIn" />
+      <wsdl:output message="tns:ListGradeDescByPrefixSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpForFingerScan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Employee For Finger Scan.Input Date(mm/dd/yyyy). Ex.ListEmpForFingerScan('01/01/2001') </wsdl:documentation>
+      <wsdl:input message="tns:ListEmpForFingerScanSoapIn" />
+      <wsdl:output message="tns:ListEmpForFingerScanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpForFingerScanResigned">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Employee For Finger Scan Resigned.Input Date(mm/dd/yyyy). Ex.ListEmpForFingerScan('01/01/2001') </wsdl:documentation>
+      <wsdl:input message="tns:ListEmpForFingerScanResignedSoapIn" />
+      <wsdl:output message="tns:ListEmpForFingerScanResignedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpResigned">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Employee Resigned.Input Date(mm/dd/yyyy). Ex.ListEmpForFingerScan('01/01/2001') </wsdl:documentation>
+      <wsdl:input message="tns:ListEmpResignedSoapIn" />
+      <wsdl:output message="tns:ListEmpResignedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeReNew">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List Employee IN OrgCode.Input OrgCode. Ex.ListAllPinsUnderOrgCodeReNew('50025383') </wsdl:documentation>
+      <wsdl:input message="tns:ListAllPinsUnderOrgCodeReNewSoapIn" />
+      <wsdl:output message="tns:ListAllPinsUnderOrgCodeReNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmpResigned">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">...</wsdl:documentation>
+      <wsdl:input message="tns:CheckEmpResignedSoapIn" />
+      <wsdl:output message="tns:CheckEmpResignedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllEmployee">
+      <wsdl:input message="tns:getAllEmployeeSoapIn" />
+      <wsdl:output message="tns:getAllEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEepForOM1">
+      <wsdl:input message="tns:getEepForOM1SoapIn" />
+      <wsdl:output message="tns:getEepForOM1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListMovementBYDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get List Data Action Movement By Date  : StartDate = 2007-05-25(yyyy-mm-dd) , EndDate = 2007-05-29(yyyy-mm-dd) </wsdl:documentation>
+      <wsdl:input message="tns:getListMovementBYDateSoapIn" />
+      <wsdl:output message="tns:getListMovementBYDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProvidentFundBYPin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get ProvidentFund By Pin  : Pin = '00034857' </wsdl:documentation>
+      <wsdl:input message="tns:GetProvidentFundBYPinSoapIn" />
+      <wsdl:output message="tns:GetProvidentFundBYPinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileForStaffPackagesBYPIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile For StaffPackagesB By Pin  : Pin = '00034857' </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileForStaffPackagesBYPINSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileForStaffPackagesBYPINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileForStaffPackagesBYUserName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get EmployeeProfile For StaffPackagesB By UserName  : Pin = 'jaturonn' </wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeProfileForStaffPackagesBYUserNameSoapIn" />
+      <wsdl:output message="tns:GetEmployeeProfileForStaffPackagesBYUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListALLMovementBYDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get List All Data Action Movement By Date  : StartDate = 2007-05-25(yyyy-mm-dd) , EndDate = 2007-05-29(yyyy-mm-dd) </wsdl:documentation>
+      <wsdl:input message="tns:GetListALLMovementBYDateSoapIn" />
+      <wsdl:output message="tns:GetListALLMovementBYDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllEmployeeProfileForITAM">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">List All  Empployee Profile for ITAM </wsdl:documentation>
+      <wsdl:input message="tns:ListAllEmployeeProfileForITAMSoapIn" />
+      <wsdl:output message="tns:ListAllEmployeeProfileForITAMSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_OM_OMEHRServicesSoap" type="tns:WS_OM_OMEHRServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEmployeeProfile_SummaryReport">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfile_SummaryReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LogK2_ChangeApprover_Input_DataSet">
+      <soap:operation soapAction="http://tempuri.org/Get_LogK2_ChangeApprover_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllemployeeunderApprover_Input_DataSet">
+      <soap:operation soapAction="http://tempuri.org/ListAllemployeeunderApprover_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_MultiPosition">
+      <soap:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN_MultiPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_EmpProfile_Time_ChangeApprover_Input_DataSet">
+      <soap:operation soapAction="http://tempuri.org/List_EmpProfile_Time_ChangeApprover_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeApproverK2_Summary">
+      <soap:operation soapAction="http://tempuri.org/GetChangeApproverK2_Summary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_LogK2_ChangeApprover_Detail">
+      <soap:operation soapAction="http://tempuri.org/List_LogK2_ChangeApprover_Detail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgInfobyOrgCode_IN_DataSet">
+      <soap:operation soapAction="http://tempuri.org/GetOrgInfobyOrgCode_IN_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_Input_DataSet">
+      <soap:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearch">
+      <soap:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN_Input_DataSetByPowerSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_Log_OM_TransForm">
+      <soap:operation soapAction="http://tempuri.org/List_Log_OM_TransForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listOrganize">
+      <soap:operation soapAction="http://tempuri.org/listOrganize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listOrganizeLower">
+      <soap:operation soapAction="http://tempuri.org/listOrganizeLower" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <soap:operation soapAction="http://tempuri.org/GetCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeLowerByListOrg">
+      <soap:operation soapAction="http://tempuri.org/ListOrganizeLowerByListOrg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listOrganizeUpper">
+      <soap:operation soapAction="http://tempuri.org/listOrganizeUpper" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CHECKMANAGER">
+      <soap:operation soapAction="http://tempuri.org/CHECKMANAGER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerByOrgCode">
+      <soap:operation soapAction="http://tempuri.org/GetManagerByOrgCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfoByBossPostID">
+      <soap:operation soapAction="http://tempuri.org/GetOrgPersInfoByBossPostID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfoByOrgHRMPIN">
+      <soap:operation soapAction="http://tempuri.org/GetOrgPersInfoByOrgHRMPIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfo">
+      <soap:operation soapAction="http://tempuri.org/GetOrgPersInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployee_By_CompanyCode_Name_PIN">
+      <soap:operation soapAction="http://tempuri.org/ListEmployee_By_CompanyCode_Name_PIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrgInfobyEmpID">
+      <soap:operation soapAction="http://tempuri.org/GetAllOrgInfobyEmpID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgInfobyOrgCode">
+      <soap:operation soapAction="http://tempuri.org/GetOrgInfobyOrgCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPinsbyOrgCode">
+      <soap:operation soapAction="http://tempuri.org/ListPinsbyOrgCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffCountByPositionID">
+      <soap:operation soapAction="http://tempuri.org/GetStaffCountByPositionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPG">
+      <soap:operation soapAction="http://tempuri.org/GetAllPG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprover">
+      <soap:operation soapAction="http://tempuri.org/GetApprover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffCountbyOrgCode">
+      <soap:operation soapAction="http://tempuri.org/GetStaffCountbyOrgCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationName">
+      <soap:operation soapAction="http://tempuri.org/GetOrganizationName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyByOrgCode">
+      <soap:operation soapAction="http://tempuri.org/GetCompanyByOrgCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeIDByEmail">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeIDByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePositionAndOrganization">
+      <soap:operation soapAction="http://tempuri.org/GetListEmployeePositionAndOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCode">
+      <soap:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixPin">
+      <soap:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixPin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixEmail">
+      <soap:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixThaiName">
+      <soap:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixThaiName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixThaiSurName">
+      <soap:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixThaiSurName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPosition">
+      <soap:operation soapAction="http://tempuri.org/GetAllPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrgInfoByOrgCodeOrOrgDesc">
+      <soap:operation soapAction="http://tempuri.org/SearchOrgInfoByOrgCodeOrOrgDesc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrgInfo">
+      <soap:operation soapAction="http://tempuri.org/SearchOrgInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTemporaryPinByNewPin">
+      <soap:operation soapAction="http://tempuri.org/ListTemporaryPinByNewPin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCompany">
+      <soap:operation soapAction="http://tempuri.org/GetAllCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfile">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganization">
+      <soap:operation soapAction="http://tempuri.org/GetOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN">
+      <soap:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverProfileByPIN">
+      <soap:operation soapAction="http://tempuri.org/GetApproverProfileByPIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEngName">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixEngName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEngLastName">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixEngLastName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixThaiName">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixThaiName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixThaiLastName">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixThaiLastName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEmail">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixPin">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixPin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgcode">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixOrgcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgname">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixOrgname" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgdesc">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixOrgdesc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByEmail">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllApprover">
+      <soap:operation soapAction="http://tempuri.org/ListAllApprover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeeUnderApprover">
+      <soap:operation soapAction="http://tempuri.org/GetListEmployeeUnderApprover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobKey">
+      <soap:operation soapAction="http://tempuri.org/GetJobKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmpDetail">
+      <soap:operation soapAction="http://tempuri.org/SearchEmpDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Employee">
+      <soap:operation soapAction="http://tempuri.org/Search_Employee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_ActingApprover">
+      <soap:operation soapAction="http://tempuri.org/List_ActingApprover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeByOrganizeLevel">
+      <soap:operation soapAction="http://tempuri.org/ListOrganizeByOrganizeLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployeeOrg">
+      <soap:operation soapAction="http://tempuri.org/SearchEmployeeOrg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_LineApproverPositionAVPUP">
+      <soap:operation soapAction="http://tempuri.org/List_LineApproverPositionAVPUP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeLevelByCompany">
+      <soap:operation soapAction="http://tempuri.org/ListOrganizeLevelByCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByUsername">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileByUsername" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListLineOrganizeByOrganizeCode">
+      <soap:operation soapAction="http://tempuri.org/ListLineOrganizeByOrganizeCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrgDescByPrefix">
+      <soap:operation soapAction="http://tempuri.org/ListOrgDescByPrefix" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListGradeDescByPrefix">
+      <soap:operation soapAction="http://tempuri.org/ListGradeDescByPrefix" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpForFingerScan">
+      <soap:operation soapAction="http://tempuri.org/ListEmpForFingerScan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpForFingerScanResigned">
+      <soap:operation soapAction="http://tempuri.org/ListEmpForFingerScanResigned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpResigned">
+      <soap:operation soapAction="http://tempuri.org/ListEmpResigned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeReNew">
+      <soap:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeReNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmpResigned">
+      <soap:operation soapAction="http://tempuri.org/CheckEmpResigned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllEmployee">
+      <soap:operation soapAction="http://tempuri.org/getAllEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEepForOM1">
+      <soap:operation soapAction="http://tempuri.org/getEepForOM1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListMovementBYDate">
+      <soap:operation soapAction="http://tempuri.org/getListMovementBYDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProvidentFundBYPin">
+      <soap:operation soapAction="http://tempuri.org/GetProvidentFundBYPin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileForStaffPackagesBYPIN">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileForStaffPackagesBYPIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileForStaffPackagesBYUserName">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeProfileForStaffPackagesBYUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListALLMovementBYDate">
+      <soap:operation soapAction="http://tempuri.org/GetListALLMovementBYDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllEmployeeProfileForITAM">
+      <soap:operation soapAction="http://tempuri.org/ListAllEmployeeProfileForITAM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_OM_OMEHRServicesSoap12" type="tns:WS_OM_OMEHRServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEmployeeProfile_SummaryReport">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfile_SummaryReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_LogK2_ChangeApprover_Input_DataSet">
+      <soap12:operation soapAction="http://tempuri.org/Get_LogK2_ChangeApprover_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllemployeeunderApprover_Input_DataSet">
+      <soap12:operation soapAction="http://tempuri.org/ListAllemployeeunderApprover_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_MultiPosition">
+      <soap12:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN_MultiPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_EmpProfile_Time_ChangeApprover_Input_DataSet">
+      <soap12:operation soapAction="http://tempuri.org/List_EmpProfile_Time_ChangeApprover_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeApproverK2_Summary">
+      <soap12:operation soapAction="http://tempuri.org/GetChangeApproverK2_Summary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_LogK2_ChangeApprover_Detail">
+      <soap12:operation soapAction="http://tempuri.org/List_LogK2_ChangeApprover_Detail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgInfobyOrgCode_IN_DataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetOrgInfobyOrgCode_IN_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_Input_DataSet">
+      <soap12:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN_Input_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN_Input_DataSetByPowerSearch">
+      <soap12:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN_Input_DataSetByPowerSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_Log_OM_TransForm">
+      <soap12:operation soapAction="http://tempuri.org/List_Log_OM_TransForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listOrganize">
+      <soap12:operation soapAction="http://tempuri.org/listOrganize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listOrganizeLower">
+      <soap12:operation soapAction="http://tempuri.org/listOrganizeLower" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCostCenter">
+      <soap12:operation soapAction="http://tempuri.org/GetCostCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeLowerByListOrg">
+      <soap12:operation soapAction="http://tempuri.org/ListOrganizeLowerByListOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listOrganizeUpper">
+      <soap12:operation soapAction="http://tempuri.org/listOrganizeUpper" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CHECKMANAGER">
+      <soap12:operation soapAction="http://tempuri.org/CHECKMANAGER" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerByOrgCode">
+      <soap12:operation soapAction="http://tempuri.org/GetManagerByOrgCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfoByBossPostID">
+      <soap12:operation soapAction="http://tempuri.org/GetOrgPersInfoByBossPostID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfoByOrgHRMPIN">
+      <soap12:operation soapAction="http://tempuri.org/GetOrgPersInfoByOrgHRMPIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgPersInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetOrgPersInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployee_By_CompanyCode_Name_PIN">
+      <soap12:operation soapAction="http://tempuri.org/ListEmployee_By_CompanyCode_Name_PIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrgInfobyEmpID">
+      <soap12:operation soapAction="http://tempuri.org/GetAllOrgInfobyEmpID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgInfobyOrgCode">
+      <soap12:operation soapAction="http://tempuri.org/GetOrgInfobyOrgCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPinsbyOrgCode">
+      <soap12:operation soapAction="http://tempuri.org/ListPinsbyOrgCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffCountByPositionID">
+      <soap12:operation soapAction="http://tempuri.org/GetStaffCountByPositionID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPG">
+      <soap12:operation soapAction="http://tempuri.org/GetAllPG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprover">
+      <soap12:operation soapAction="http://tempuri.org/GetApprover" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffCountbyOrgCode">
+      <soap12:operation soapAction="http://tempuri.org/GetStaffCountbyOrgCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationName">
+      <soap12:operation soapAction="http://tempuri.org/GetOrganizationName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyByOrgCode">
+      <soap12:operation soapAction="http://tempuri.org/GetCompanyByOrgCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeIDByEmail">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeIDByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeePositionAndOrganization">
+      <soap12:operation soapAction="http://tempuri.org/GetListEmployeePositionAndOrganization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCode">
+      <soap12:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixPin">
+      <soap12:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixPin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixEmail">
+      <soap12:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixThaiName">
+      <soap12:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixThaiName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeByPrefixThaiSurName">
+      <soap12:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeByPrefixThaiSurName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPosition">
+      <soap12:operation soapAction="http://tempuri.org/GetAllPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrgInfoByOrgCodeOrOrgDesc">
+      <soap12:operation soapAction="http://tempuri.org/SearchOrgInfoByOrgCodeOrOrgDesc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrgInfo">
+      <soap12:operation soapAction="http://tempuri.org/SearchOrgInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTemporaryPinByNewPin">
+      <soap12:operation soapAction="http://tempuri.org/ListTemporaryPinByNewPin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCompany">
+      <soap12:operation soapAction="http://tempuri.org/GetAllCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfile">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganization">
+      <soap12:operation soapAction="http://tempuri.org/GetOrganization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmployeeProfileByPIN">
+      <soap12:operation soapAction="http://tempuri.org/ListEmployeeProfileByPIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverProfileByPIN">
+      <soap12:operation soapAction="http://tempuri.org/GetApproverProfileByPIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEngName">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixEngName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEngLastName">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixEngLastName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixThaiName">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixThaiName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixThaiLastName">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixThaiLastName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixEmail">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixPin">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixPin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgcode">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixOrgcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgname">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixOrgname" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByPrefixOrgdesc">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByPrefixOrgdesc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByEmail">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllApprover">
+      <soap12:operation soapAction="http://tempuri.org/ListAllApprover" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployeeUnderApprover">
+      <soap12:operation soapAction="http://tempuri.org/GetListEmployeeUnderApprover" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobKey">
+      <soap12:operation soapAction="http://tempuri.org/GetJobKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmpDetail">
+      <soap12:operation soapAction="http://tempuri.org/SearchEmpDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Employee">
+      <soap12:operation soapAction="http://tempuri.org/Search_Employee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_ActingApprover">
+      <soap12:operation soapAction="http://tempuri.org/List_ActingApprover" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeByOrganizeLevel">
+      <soap12:operation soapAction="http://tempuri.org/ListOrganizeByOrganizeLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployeeOrg">
+      <soap12:operation soapAction="http://tempuri.org/SearchEmployeeOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="List_LineApproverPositionAVPUP">
+      <soap12:operation soapAction="http://tempuri.org/List_LineApproverPositionAVPUP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrganizeLevelByCompany">
+      <soap12:operation soapAction="http://tempuri.org/ListOrganizeLevelByCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileByUsername">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileByUsername" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListLineOrganizeByOrganizeCode">
+      <soap12:operation soapAction="http://tempuri.org/ListLineOrganizeByOrganizeCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrgDescByPrefix">
+      <soap12:operation soapAction="http://tempuri.org/ListOrgDescByPrefix" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListGradeDescByPrefix">
+      <soap12:operation soapAction="http://tempuri.org/ListGradeDescByPrefix" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpForFingerScan">
+      <soap12:operation soapAction="http://tempuri.org/ListEmpForFingerScan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpForFingerScanResigned">
+      <soap12:operation soapAction="http://tempuri.org/ListEmpForFingerScanResigned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListEmpResigned">
+      <soap12:operation soapAction="http://tempuri.org/ListEmpResigned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllPinsUnderOrgCodeReNew">
+      <soap12:operation soapAction="http://tempuri.org/ListAllPinsUnderOrgCodeReNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmpResigned">
+      <soap12:operation soapAction="http://tempuri.org/CheckEmpResigned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllEmployee">
+      <soap12:operation soapAction="http://tempuri.org/getAllEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEepForOM1">
+      <soap12:operation soapAction="http://tempuri.org/getEepForOM1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListMovementBYDate">
+      <soap12:operation soapAction="http://tempuri.org/getListMovementBYDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProvidentFundBYPin">
+      <soap12:operation soapAction="http://tempuri.org/GetProvidentFundBYPin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileForStaffPackagesBYPIN">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileForStaffPackagesBYPIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeProfileForStaffPackagesBYUserName">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeProfileForStaffPackagesBYUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListALLMovementBYDate">
+      <soap12:operation soapAction="http://tempuri.org/GetListALLMovementBYDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllEmployeeProfileForITAM">
+      <soap12:operation soapAction="http://tempuri.org/ListAllEmployeeProfileForITAM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_OM_OMEHRServices">
+    <wsdl:port name="WS_OM_OMEHRServicesSoap" binding="tns:WS_OM_OMEHRServicesSoap">
+      <soap:address location="http://test-omservices.ais.co.th/ExternalServices/WS_OM_OMEHRServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_OM_OMEHRServicesSoap12" binding="tns:WS_OM_OMEHRServicesSoap12">
+      <soap12:address location="http://test-omservices.ais.co.th/ExternalServices/WS_OM_OMEHRServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

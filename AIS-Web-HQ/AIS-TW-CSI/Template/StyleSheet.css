@@ -1,0 +1,1034 @@
+﻿
+
+/* reload all browser */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+html {
+	height:100%;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+	background:url(../Images/bg/sky.png) repeat-x;
+	font:0.75em/1 Tahoma;
+}
+a
+{
+    color: #454545;
+    text-decoration: none; /*background: inherit; color: #454545; text-decoration: none;*/
+}
+#left a
+{
+    border-bottom: #fff 1px;
+}
+#right a
+{
+    border-bottom: #000 1px;
+    font-weight: bold; /*border-bottom: #000 1px dotted;*/
+}
+a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+p
+{
+    margin: 0px;
+    padding: 0px !important;
+    padding: 5px 10px 5px 10px;
+}
+h1
+{
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px 10px 0px 10px;
+    font: 20px "Courier New" , Courier, monospace;
+}
+h2
+{
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font: 18px "Courier New" , Courier, monospace;
+    color: #666666;
+}
+h1 a
+{
+    background: inherit;
+    color: #000;
+    text-decoration: none;
+}
+h2 a
+{
+    background: inherit;
+    color: #666666;
+    text-decoration: none;
+}
+
+#wrapper
+{
+    margin: 10px auto !important;
+    width: 1000px !important;
+    background-image: url(../Images/xxx.png) !important;
+    background-repeat: repeat-y !important;
+}
+
+/*
+#wrapper {margin-left:auto;margin-right:auto;
+margin-top:0;
+padding-top:0px;
+text-align:left;
+position:relative;
+width:1000px;
+background-color:#FFFFFF !important;}
+*/
+
+#header
+{
+    color: #333; /* width: 1018px !important; padding: 8px;*/
+    float: left;
+    height: 112px;
+    margin: 0;
+    background-color: #dbe6ec;
+    background-image: url(../Images/bannerBOIlogo2.jpg);
+    background-repeat: no-repeat;
+}
+
+.HeaderX
+{
+    height: 179px;
+    /*background-image: url(../Images/pageHeader.jpg); */
+    background-image: url(../Images/MtlHeader.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    font: bold 13px Tahoma;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+#navigation
+{
+    float: left;
+    width: 902px;
+    color: #333;
+    padding: 0 10px;
+    border-bottom: 3px solid #66ccff;
+    margin: 0 0 0 0;
+    background-color: #FFFFFF;
+}
+#navigation ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-weight: bold;
+    float: right;
+}
+#navigation ul li
+{
+    list-style: none;
+    display: inline;
+    float: left;
+    width: 150px;
+    height: 35px;
+    padding: 0;
+    line-height: 35px;
+    font-size: 13px;
+    margin: 0 3px 0 3px;
+}
+#navigation ul li a
+{
+    height: 35px;
+    width: 150px;
+    float: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #6c7b83;
+    text-align: center;
+    background: url(images/menu_bt.jpg) no-repeat center 0%;
+}
+#navigation ul li a:hover
+{
+    height: 35px;
+    width: 150px;
+    text-decoration: none;
+    color: #68c2ef;
+}
+#navigation ul li a.current
+{
+    height: 35px;
+    width: 150px;
+    float: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #66ccff;
+    background: url(images/menu_bt.jpg) no-repeat center 0%;
+}
+#leftcolumn
+{
+    color: #333;
+    margin: 0 0 0 0;
+    padding: 0px;
+    min-height: 350px;
+    width: 202px;
+    float: left;
+}
+.leftnav
+{
+    width: 195px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.leftnav li h2
+{
+    margin: 0;
+    height: 25px;
+    color: #5f9b1e;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+.leftnav li ul
+{
+    line-height: normal;
+    list-style-type: none;
+    display: list-item;
+}
+.leftnav li li
+{
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 1em;
+}
+.leftnav li a
+{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #53a5ce;
+}
+.leftnav li a:hover
+{
+    border: none;
+    padding-left: 10px;
+}
+
+#rightcolumn
+{
+    color: #333;
+    margin: 0 0 0 0;
+    padding: 10px;
+    min-height: 350px;
+    width: 202px;
+    float: left;
+}
+.ads p
+{
+    font-family: verdana;
+    font-size: 1em;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    text-align: justify;
+    padding-right: 10px;
+}
+.ads
+{
+    width: 190px;
+    height: 600px !important;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.ads h4
+{
+    background-color: #5f9b1e;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 0.8em;
+    padding-bottom: 2px;
+    text-decoration: underline;
+}
+.ads h3
+{
+    font-family: verdana;
+    font-size: 1em;
+    padding-top: 30px;
+    padding-left: 3px;
+    padding-bottom: 5px;
+    color: #5f9b1e;
+    text-decoration: underline;
+}
+.ads a
+{
+    margin-right: 25px;
+    margin-bottom: 2px;
+    color: #53a5ce;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 3px;
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+#footer
+{
+    width: 902px !important;
+    clear: both;
+    color: #333;
+    background: #dbe6ec;
+    margin: 0 0 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu li a
+{
+    height: 32px;
+    voice-family: "\"}\"";
+    voice-family: inherit;
+    height: 25px;
+    text-decoration: none;
+}
+
+#menu li a:link, #menu li a:visited
+{
+    color: #1010d4;
+    display: block;
+    background: url(images/v3.jpg);
+    background-repeat: no-repeat;
+    padding: 8px 0 0 10px;
+}
+
+#menu li a:hover
+{
+    color: #1010d4;
+    background: url(images/v3.jpg) 0 -32px;
+    background-repeat: no-repeat;
+    padding: 8px 0 0 10px;
+}
+
+#menu li a:active
+{
+    color: #1010d4;
+    background: url(images/v3.jpg) 0 -64px;
+    background-repeat: no-repeat;
+    padding: 8px 0 0 10px;
+}
+#left
+{
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin: 0px;
+    width: 200px;
+    float: left;
+    background: #fff;
+    height: 800px;
+}
+.manuLeft
+{
+    border: 0px;
+}
+.Lheader
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width: 170px;
+    height: 27px;
+    margin: 2px;
+    padding-top: 12px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    background: url(images/Menu/btnManuLeft.png);
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+    color: #fff;
+}
+.Lheader a:hover
+{
+    color: #003366;
+    background: none;
+}
+
+.subheaderMenu
+{
+    width: 150px;
+    height: 15px;
+    border: 0px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    padding-left: 35px; /*background: #EBF1F3;*/
+    font-size: 12px;
+    border-top: 0px;
+    border-right: 0px;
+    text-align: left;
+}
+.subheaderMenu a
+{
+    color: #003366;
+    background: none;
+}
+.subheaderMenu a:hover
+{
+    color: #29ABE2;
+    background: none;
+}
+
+.logo
+{
+    padding: 10px 0px 5px 0px;
+    width: 1003px;
+    height: 140px;
+}
+.form
+{
+    width: 100%; /*height: 800px;*/
+}
+.form
+{
+    width: 100%; /*height: 800px;*/
+}
+.mainMenu
+{
+    padding: 0px;
+    margin: 0px; /*width: 1018px;*/
+    clear: both;
+    height: 27px;
+    font-size: 12px;
+    background: #3b5998;
+    float: left;
+}
+.TextView
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+    color: #7d129c;
+    background-color: #EEEEEE;
+    vertical-align: baseline;
+    border: #EEEEEE 2px solid;
+}
+
+.TextBox
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    height: 18px;
+    border: 1px solid #9597aa;
+    color: #454547;
+    padding-right: 5px;
+}
+
+.t_tablestyle
+{
+    table-layout: fixed;
+    border-width: 1px;
+    border-top: thin outset;
+    border-bottom: thin outset;
+    border-right: thin outset;
+    border-left: thin outset;
+    padding: 2px;
+}
+.t_headtext
+{
+    font-weight: bold;
+    color: #491364;
+    background-image: url(../Images/header_table_bg.png);
+    background-repeat: repeat-x;
+    background-color: #e4cafe;
+    height: 25px;
+}
+.t_headsort
+{
+    font-weight: bold;
+    color: #491364;
+    background-image: url(../Images/header_table_bg.png);
+    background-repeat: repeat-x;
+    background-color: #e4cafe;
+    height: 25px;
+    text-decoration: underline;
+}
+.t_alt_bg
+{
+    background-color: #ecd9f6;
+}
+
+/* Controls */
+.zTextbox
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+.zTextbox-View
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    color: #7d129c;
+    background-color: #EEEEEE;
+    vertical-align: baseline;
+    border: #EEEEEE 2px solid;
+}
+.zTextboxR
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    text-align: right;
+}
+.zTextboxR-View
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    color: #7d129c;
+    background-color: #EEEEEE;
+    vertical-align: baseline;
+    border: #EEEEEE 2px solid;
+    text-align: right;
+}
+.zComboBox
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+.zButton
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    height: 22px;
+}
+.zHidden
+{
+    display: none;
+}
+.zRemark
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+    color: Red;
+}
+.water
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    color: Silver;
+}
+
+
+
+/* modal Popup */
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+.modalPopup
+{
+    background-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+}
+.modalPopupInsideCombo
+{
+   position:inherit;
+}
+.modalPopupSearch
+{
+    background-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width: 800px;
+    height: 600px;
+    overflow: scroll;
+}
+.popupControl
+{
+    background-color: #AAD4FF;
+    position: absolute;
+    visibility: hidden;
+    border-style: solid;
+    border-color: Black;
+    border-width: 2px;
+}
+
+/*GridViewCSS Soft Grey Style*/
+.GridViewStyle
+{
+    font-family: Arial, Sans-Serif;
+    font-size: small;
+    table-layout: auto;
+    border-collapse: collapse;
+    border: 3px solid #FFFFFF;
+}
+/*Header and Pager styles*/
+.HeaderStyle, .PagerStyle
+{
+    color: #FFFFFF;
+    background-color: #8CB927;
+    border: 3px solid #FFFFFF;
+}
+.HeaderStyle th
+{
+    padding: 5px;
+}
+.HeaderStyle a
+{
+    text-decoration:none;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    background-color: #8CB927;
+    border: 1px solid #8CB927;
+}
+.PagerStyle table
+{
+    text-align: center;
+    margin: auto;
+}
+.PagerStyle table td
+{
+    border: 0px;
+    padding: 5px;
+}
+.PagerStyle td
+{
+    border-top: #91a7b4 1px solid;
+}
+.PagerStyle a
+{
+    color: #16387c;
+    text-decoration: none;
+    padding: 2px 10px 2px 10px;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #91a7b4;
+    border-bottom: solid 1px #91a7b4;
+    border-left: solid 1px #fff;
+}
+.PagerStyle span
+{
+    font-weight: bold;
+    color: #16387c;
+    text-decoration: none;
+    padding: 2px 10px 2px 10px;
+}
+/*RowStyles*/
+
+.RowStyle td
+{
+    border: 1px solid #FFFFFF;
+    padding: 2px;
+    background-color: #FFFFFF;
+    font-size:10pt;
+}
+.AltRowStyle td
+{
+    background-color: #E8E8E8;
+    border: 2px solid #FFFFFF;
+    padding: 2px;
+    font-size:10pt;
+}
+.SelectedRowStyle td
+{
+    background-color: #fcb814;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+.popHead
+{
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #8CB927;
+    font-weight: bold;
+}
+
+.onProgress
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+    width: 100px;
+    filter: alpha(opacity=70);
+}
+
+.lbUser
+{
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    margin: 0px;
+    float: right;
+    height: 24px;
+    font: bold 13px Tahoma;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: right;
+    color: #FFFFFF;
+}
+.MemuHead
+{
+
+    width: 200px;
+    float: left;
+    height: 24px;
+    font-size: 12px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+}
+.MemuHeadContent
+{
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    width: 220px;
+    float: left;
+    height: 24px;
+    font-size: 12px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+}
+.mGrid
+{
+    width: 100%;
+    background-color: #edeff4;
+    margin: 5px 0 10px 0;
+    border: solid 1px #3b5998;
+    border-collapse: collapse;
+}
+.mGrid td
+{
+    padding: 2px;
+    border: solid 1px #3b5998;
+    color: #464646; /*text-align:center;*/
+}
+.mGrid th
+{
+    padding: 4px 2px;
+    color: #fff;
+    background: #627aad; /*url(../Images/og_head.png) repeat-x top;*/
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+.mGrid .alt
+{
+    background-position: #FFFFFF;
+    background: #FFFFFF;
+}
+.mGrid .pgr
+{
+    background: #3b5998 /*url(../Images/og_foot.png) repeat-x top;*/;
+}
+.mGrid .pgr table
+{
+    margin: 5px 0;
+}
+.mGrid .pgr td
+{
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #666;
+    font-weight: bold;
+    color: #000;
+    line-height: 12px;
+}
+.mGrid .pgr a
+{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mGrid .pgr a:hover
+{
+    color: #000;
+    text-decoration: blink;
+    font-weight: bold;
+}
+.CssBtn
+{
+    font: bold 13px Tahoma;
+    height: 26px;
+    background-color: #ec008c;
+    color: #ffffff;
+    cursor: hand;
+    cursor: pointer;
+}
+.Csslbl
+{
+    color: #8CB927;
+    text-decoration: none;
+    padding: 1px;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 12px;
+    line-height: normal;
+    font-family: Tahoma;
+}
+.CssLink
+{
+    color: #3b5998;
+    text-decoration: underline;
+    vertical-align: middle;
+    padding: 1px;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: normal;
+    font-family: Tahoma;
+}
+
+.CssHead
+{
+    color: #88B526;
+    font-size: 16pt;
+    text-decoration: none;
+    vertical-align: top;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 35px;
+    font-family: Tahoma;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.CssSubHead
+{
+    text-decoration: none;
+    vertical-align: middle;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 14px;
+    line-height: normal;
+    font-family: Tahoma;
+    height:25px;
+    background-color: #E7EDDA;
+    font-weight:bold;
+}
+
+
+/*AutoComplete flyout */
+.autocomplete_completionListElement
+{
+    margin: 0px !important;
+    background-color: inherit;
+    color: windowtext;
+    border: buttonshadow;
+    border-width: 1px;
+    border-style: solid;
+    cursor: 'default';
+    overflow: auto;
+    text-align: left;
+    list-style-type: none;
+}
+
+/* AutoComplete highlighted item */
+.autocomplete_highlightedListItem
+{
+    background-color: #ffff99;
+    color: black;
+    padding: 1px;
+}
+
+/* AutoComplete item */
+.autocomplete_listItem
+{
+    background-color: window;
+    color: windowtext;
+    padding: 1px;
+}
+
+
+
+/* For Combobox Auto Complete */
+.hjsel_select
+{
+    border: solid 1px #e0e0e0;
+    border-top: solid 1px #abadb3;
+    background: #fff;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.hjsel_txtbox
+{
+    border: solid 1px #fff;
+    margin-left: 2px;
+}
+
+.hjsel_options
+{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    border: solid 1px #888;
+    border-width: 1px 1px 1px 2px;
+    border-color: #888 #000 #000 #888; /* 	Remove comments and modify to gain control over dropdown display 	///////////////////////////////////////////////////////////////////// 	max-height: 200px; 	_height: 200px; 	min-width: 400px; 	overflow: auto; 	/////////////////////////////////////////////////////////////////// */
+}
+
+.hjsel_options ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.hjsel_options li
+{
+    list-style: none;
+    padding: 0 3px;
+}
+
+.hjsel_options_hover
+{
+    background: Highlight;
+    color: HighlightText;
+    cursor: pointer;
+}
+
+.hjsel_ddImage
+{
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.hjsel_ddCancel
+{
+    cursor: pointer;
+    margin: 0 5px 1px 0;
+}
+
+/*  For dd accordion */
+
+.arrowlistmenu{
+    width: 600px; /*width of accordion menu*/
+}
+
+.arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
+    font: bold 14px Arial;
+    color: #2f3e74;
+    /*background: black url(titlebar.png) repeat-x center left;
+    margin-bottom: 10px; /*bottom spacing between header and rest of content*/
+    text-transform: uppercase;
+    padding: 4px 0 4px 10px; /*header text is indented 10px*/
+    /*cursor: hand;
+    cursor: pointer;*/
+}
+
+.arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
+    background-image: url(titlebar-active.png);
+}
+
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+    color: #ec008c;
+}
+
+.arrowlistmenu ul li{
+    padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li .opensubheader{ /*Open state CSS for sub menu header*/
+    background: lightblue !important;
+}
+
+.arrowlistmenu ul li .closedsubheader{ /*Closed state CSS for sub menu header*/
+    background: lightgreen !important;
+}
+
+.arrowlistmenu ul li a{
+    color: #A70303;
+    background: url(arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+    display: block;
+    padding: 2px 0;
+    padding-left: 19px; /*link text is indented 19px*/
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #dadada;
+    font-size: 90%;
+}
+
+.arrowlistmenu ul li a:visited{
+    color: #A70303;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+    background-color: #F3F3F3;
+}
+
+.arrowlistmenu ul li a.subexpandable:hover{ /*hover state CSS for sub menu header*/
+    background: lightblue;
+}
+
+.DivBoxShadow {
+ -moz-box-shadow: 0 0 5px 5px #888;
+ -webkit-box-shadow: 0 0 5px 5px#888;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ background:#ffffff;
+ border-radius: 8px;
+ box-shadow: 0 0 5px 5px #888;
+ /*behavior: url(../Template/PIE.htc);*/
+ }
+ 
+ .DivBoxRaius {
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border: solid 1px #88B526;
+ background:#ffffff;
+ border-radius: 5px;
+ /*behavior: url(../Template/PIE.htc);*/
+ }
+
+.section_header
+{
+	font-weight:bold; 	
+	text-align:left;
+	padding:0 10px; 	 
+    height:23px;
+	color:#FFF;
+	background-color:#afc307;
+}
+/*
+โค้ดสี
+สีชมพูเข้ม #e30076
+สีชมพูอ่อน #FFCCFF
+สีฟ้าอ่อน #0078bf
+สีฟ้าเข้ม #2f3e74
+*/

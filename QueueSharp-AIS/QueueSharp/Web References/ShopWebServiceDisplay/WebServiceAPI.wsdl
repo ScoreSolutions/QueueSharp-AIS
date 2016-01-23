@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetCustomerProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerProfileResult" type="tns:TbCustomerShParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbCustomerShParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="TITLE_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="F_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="L_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MOBILE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MOBILE_STATUS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEGMENT_LEVEL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIRTH_DATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CATEGORY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_BALANCE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTACT_CLASS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERVICE_YEAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CHUM_SCORE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PREFER_LANG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_CODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NETWORK_TYPE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_NAME_EN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_DESC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_DESC_TH2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAMPAIGN_DESC_EN2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CORPORATE_TYPE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PA_GROUP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="URL_CAPTURE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="URL_CAPTURE_DATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTACT_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BILLING_SYSTEM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ASSET_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OTHER_INFO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RESPONSE_MSG" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetArBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArBalanceResult" type="tns:TbCustomerShParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AssetID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NetworkType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCampaignResult" type="tns:TbCustomerShParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPAuth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPAuthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LDAPAuthResult" type="tns:LDAPResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LDAPResponsePara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RESULT" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="RESPONSE_MSG" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IS_CALL_GW2" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ShopSendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppointmentTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShopSendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShopSendSMSResult" type="tns:SMSResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SMSResponsePara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RESULT" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR_RESPONSE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CALL_GW2" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckActiveAppointment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckActiveAppointmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckActiveAppointmentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSMSCancelAppointment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartSlot" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSMSCancelAppointmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSMSCancelAppointmentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBlackList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBlackListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckBlackListResult" type="tns:AppointmentCheckBacklistResultPara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AppointmentCheckBacklistResultPara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsBackList" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSG" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NewAppointmentDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiebelCreateActivityConfirm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelCreateActivityConfirmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelCreateActivityConfirmResult" type="tns:SiebelResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiebelResponsePara">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RESULT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ACTIVITY_ID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="APPOINTMENT_JOB_ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CALL_GW2" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiebelCreateActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartSlot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ItemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppointmentChannel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelCreateActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelCreateActivityResult" type="tns:SiebelResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToRegister">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartSlot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelActivityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToRegisterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelUpdateToRegisterResult" type="tns:SiebelResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToComplete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartSlot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelActivityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToCompleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelUpdateToCompleteResult" type="tns:SiebelResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToMissed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartSlot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MissedDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelActivityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToMissedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelUpdateToMissedResult" type="tns:SiebelResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartSlot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CancelDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelActivityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiebelUpdateToCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiebelUpdateToCancelResult" type="tns:SiebelResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSResult" type="tns:SMSResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAppointmentJobStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AppointJobID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ActiveStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAppointmentJobStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAppointmentJobStatusResult" type="tns:SaveAppointmentJobPara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SaveAppointmentJobPara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SaveResult" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentJobPara" type="tns:TbAppointmentJobCenParaDB" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TbAppointmentJobCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SHOP_ABB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MOBILE_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="APP_DATE" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="START_SLOT" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="APPOINTMENT_CHANNEL" type="s1:char" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" type="s1:char" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterItemList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterItemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterItemListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterItemByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterItemByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterItemByIDResult" type="tns:TbItemCenParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbItemCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ITEM_CODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ITEM_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ITEM_NAME_TH" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ITEM_TIME" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ITEM_WAIT" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ITEM_ORDER" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TXT_QUEUE" nillable="true" type="s1:char" />
+          <s:element minOccurs="1" maxOccurs="1" name="COLOR" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Q_TYPE_ID" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="APP_MIN_QUEUE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APP_MAX_QUEUE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TB_ITEM_GROUP_ID" nillable="true" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterCustomerTypeList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterCustomerTypeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterCustomerTypeListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterCustomerTypeByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterCustomerTypeByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterCustomerTypeByIDResult" type="tns:TbCustomertypeCenParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbCustomertypeCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUSTOMERTYPE_CODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUSTOMERTYPE_NAME" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TXT_QUEUE" nillable="true" type="s1:char" />
+          <s:element minOccurs="0" maxOccurs="1" name="MIN_QUEUE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MAX_QUEUE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRIORITY_VALUE" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="COLOR" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="APP" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DEF" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterGroupUserList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterGroupUserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterGroupUserListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterGroupUserByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterGroupUserByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterGroupUserByIDResult" type="tns:TbGroupuserCenParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbGroupuserCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="GROUP_CODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GROUP_NAME" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterSkillList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterSkillListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterSkillListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterSkillByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterSkillByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterSkillByIDResult" type="tns:TbSkillCenParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbSkillCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SKILL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="APPOINTMENT" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" nillable="true" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterHoldReasonList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterHoldReasonListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterHoldReasonListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterHoldReasonByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterHoldReasonByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterHoldReasonByIDResult" type="tns:TbHoldReasonCenParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbHoldReasonCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAME" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUCTIVE" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterLogoutReasonList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterLogoutReasonListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterLogoutReasonListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterLogoutReasonByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterLogoutReasonByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterLogoutReasonByIDResult" type="tns:TbLogoutReasonCenParaDB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TbLogoutReasonCenParaDB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAME" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PRODUCTIVE" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACTIVE_STATUS" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_DATE" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE_BY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPDATE_DATE" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoadImageFromWebConfig">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EventDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TargetType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadImageFromWebConfigResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadImageFromWebConfigResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTransferStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileScheduleID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTransferStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTransferStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppointmentPolicy">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAppointmentPolicyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppointmentPolicyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendCaptureImageFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileByte" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QueueNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="AssignTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="CaptureTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendCaptureImageFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendCaptureImageFileResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadCaptureImageFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadCaptureImageFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadCaptureImageFileResult" type="tns:CaptureImageResponsePara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CaptureImageResponsePara">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CaptureResult" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaptureImage" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCustCaptureIndexFile">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCustCaptureIndexFileResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CreateFailOverDBLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClinetIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SoftwareName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FunctionName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ActiveDB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateFailOverDBLogResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCustomerProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetArBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampaign" />
+  </wsdl:message>
+  <wsdl:message name="GetCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="LDAPAuthSoapIn">
+    <wsdl:part name="parameters" element="tns:LDAPAuth" />
+  </wsdl:message>
+  <wsdl:message name="LDAPAuthSoapOut">
+    <wsdl:part name="parameters" element="tns:LDAPAuthResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShopSendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:ShopSendSMS" />
+  </wsdl:message>
+  <wsdl:message name="ShopSendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:ShopSendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckActiveAppointmentSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckActiveAppointment" />
+  </wsdl:message>
+  <wsdl:message name="CheckActiveAppointmentSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckActiveAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSMSCancelAppointmentSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSMSCancelAppointment" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSMSCancelAppointmentSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSMSCancelAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckBlackListSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckBlackList" />
+  </wsdl:message>
+  <wsdl:message name="CheckBlackListSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckBlackListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiebelCreateActivityConfirmSoapIn">
+    <wsdl:part name="parameters" element="tns:SiebelCreateActivityConfirm" />
+  </wsdl:message>
+  <wsdl:message name="SiebelCreateActivityConfirmSoapOut">
+    <wsdl:part name="parameters" element="tns:SiebelCreateActivityConfirmResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiebelCreateActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:SiebelCreateActivity" />
+  </wsdl:message>
+  <wsdl:message name="SiebelCreateActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:SiebelCreateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToRegisterSoapIn">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToRegister" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToRegisterSoapOut">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToCompleteSoapIn">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToComplete" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToCompleteSoapOut">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToCompleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToMissedSoapIn">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToMissed" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToMissedSoapOut">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToMissedResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToCancel" />
+  </wsdl:message>
+  <wsdl:message name="SiebelUpdateToCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:SiebelUpdateToCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppointmentJobStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAppointmentJobStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppointmentJobStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAppointmentJobStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterItemListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterItemList" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterItemListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterItemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterItemByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterItemByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterItemByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterItemByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterCustomerTypeListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterCustomerTypeList" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterCustomerTypeListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterCustomerTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterCustomerTypeByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterCustomerTypeByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterCustomerTypeByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterCustomerTypeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterGroupUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterGroupUserList" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterGroupUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterGroupUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterGroupUserByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterGroupUserByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterGroupUserByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterGroupUserByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterSkillListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterSkillList" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterSkillListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterSkillListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterSkillByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterSkillByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterSkillByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterSkillByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterHoldReasonListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterHoldReasonList" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterHoldReasonListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterHoldReasonListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterHoldReasonByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterHoldReasonByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterHoldReasonByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterHoldReasonByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterLogoutReasonListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterLogoutReasonList" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterLogoutReasonListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterLogoutReasonListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterLogoutReasonByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterLogoutReasonByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterLogoutReasonByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterLogoutReasonByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadImageFromWebConfigSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadImageFromWebConfig" />
+  </wsdl:message>
+  <wsdl:message name="LoadImageFromWebConfigSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadImageFromWebConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransferStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTransferStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransferStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTransferStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppointmentPolicySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppointmentPolicy" />
+  </wsdl:message>
+  <wsdl:message name="GetAppointmentPolicySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppointmentPolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendCaptureImageFileSoapIn">
+    <wsdl:part name="parameters" element="tns:SendCaptureImageFile" />
+  </wsdl:message>
+  <wsdl:message name="SendCaptureImageFileSoapOut">
+    <wsdl:part name="parameters" element="tns:SendCaptureImageFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadCaptureImageFileSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadCaptureImageFile" />
+  </wsdl:message>
+  <wsdl:message name="LoadCaptureImageFileSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadCaptureImageFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustCaptureIndexFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustCaptureIndexFile" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustCaptureIndexFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustCaptureIndexFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateFailOverDBLogSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateFailOverDBLog" />
+  </wsdl:message>
+  <wsdl:message name="CreateFailOverDBLogSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateFailOverDBLogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceAPISoap">
+    <wsdl:operation name="GetCustomerProfile">
+      <wsdl:input message="tns:GetCustomerProfileSoapIn" />
+      <wsdl:output message="tns:GetCustomerProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArBalance">
+      <wsdl:input message="tns:GetArBalanceSoapIn" />
+      <wsdl:output message="tns:GetArBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaign">
+      <wsdl:input message="tns:GetCampaignSoapIn" />
+      <wsdl:output message="tns:GetCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LDAPAuth">
+      <wsdl:input message="tns:LDAPAuthSoapIn" />
+      <wsdl:output message="tns:LDAPAuthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShopSendSMS">
+      <wsdl:input message="tns:ShopSendSMSSoapIn" />
+      <wsdl:output message="tns:ShopSendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckActiveAppointment">
+      <wsdl:input message="tns:CheckActiveAppointmentSoapIn" />
+      <wsdl:output message="tns:CheckActiveAppointmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMSCancelAppointment">
+      <wsdl:input message="tns:DeleteSMSCancelAppointmentSoapIn" />
+      <wsdl:output message="tns:DeleteSMSCancelAppointmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBlackList">
+      <wsdl:input message="tns:CheckBlackListSoapIn" />
+      <wsdl:output message="tns:CheckBlackListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiebelCreateActivityConfirm">
+      <wsdl:input message="tns:SiebelCreateActivityConfirmSoapIn" />
+      <wsdl:output message="tns:SiebelCreateActivityConfirmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiebelCreateActivity">
+      <wsdl:input message="tns:SiebelCreateActivitySoapIn" />
+      <wsdl:output message="tns:SiebelCreateActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToRegister">
+      <wsdl:input message="tns:SiebelUpdateToRegisterSoapIn" />
+      <wsdl:output message="tns:SiebelUpdateToRegisterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToComplete">
+      <wsdl:input message="tns:SiebelUpdateToCompleteSoapIn" />
+      <wsdl:output message="tns:SiebelUpdateToCompleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToMissed">
+      <wsdl:input message="tns:SiebelUpdateToMissedSoapIn" />
+      <wsdl:output message="tns:SiebelUpdateToMissedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToCancel">
+      <wsdl:input message="tns:SiebelUpdateToCancelSoapIn" />
+      <wsdl:output message="tns:SiebelUpdateToCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSSoapIn" />
+      <wsdl:output message="tns:SendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppointmentJobStatus">
+      <wsdl:input message="tns:UpdateAppointmentJobStatusSoapIn" />
+      <wsdl:output message="tns:UpdateAppointmentJobStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterItemList">
+      <wsdl:input message="tns:GetMasterItemListSoapIn" />
+      <wsdl:output message="tns:GetMasterItemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterItemByID">
+      <wsdl:input message="tns:GetMasterItemByIDSoapIn" />
+      <wsdl:output message="tns:GetMasterItemByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCustomerTypeList">
+      <wsdl:input message="tns:GetMasterCustomerTypeListSoapIn" />
+      <wsdl:output message="tns:GetMasterCustomerTypeListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCustomerTypeByID">
+      <wsdl:input message="tns:GetMasterCustomerTypeByIDSoapIn" />
+      <wsdl:output message="tns:GetMasterCustomerTypeByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterGroupUserList">
+      <wsdl:input message="tns:GetMasterGroupUserListSoapIn" />
+      <wsdl:output message="tns:GetMasterGroupUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterGroupUserByID">
+      <wsdl:input message="tns:GetMasterGroupUserByIDSoapIn" />
+      <wsdl:output message="tns:GetMasterGroupUserByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterSkillList">
+      <wsdl:input message="tns:GetMasterSkillListSoapIn" />
+      <wsdl:output message="tns:GetMasterSkillListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterSkillByID">
+      <wsdl:input message="tns:GetMasterSkillByIDSoapIn" />
+      <wsdl:output message="tns:GetMasterSkillByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterHoldReasonList">
+      <wsdl:input message="tns:GetMasterHoldReasonListSoapIn" />
+      <wsdl:output message="tns:GetMasterHoldReasonListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterHoldReasonByID">
+      <wsdl:input message="tns:GetMasterHoldReasonByIDSoapIn" />
+      <wsdl:output message="tns:GetMasterHoldReasonByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterLogoutReasonList">
+      <wsdl:input message="tns:GetMasterLogoutReasonListSoapIn" />
+      <wsdl:output message="tns:GetMasterLogoutReasonListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterLogoutReasonByID">
+      <wsdl:input message="tns:GetMasterLogoutReasonByIDSoapIn" />
+      <wsdl:output message="tns:GetMasterLogoutReasonByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadImageFromWebConfig">
+      <wsdl:input message="tns:LoadImageFromWebConfigSoapIn" />
+      <wsdl:output message="tns:LoadImageFromWebConfigSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <wsdl:input message="tns:UpdateTransferStatusSoapIn" />
+      <wsdl:output message="tns:UpdateTransferStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointmentPolicy">
+      <wsdl:input message="tns:GetAppointmentPolicySoapIn" />
+      <wsdl:output message="tns:GetAppointmentPolicySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCaptureImageFile">
+      <wsdl:input message="tns:SendCaptureImageFileSoapIn" />
+      <wsdl:output message="tns:SendCaptureImageFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadCaptureImageFile">
+      <wsdl:input message="tns:LoadCaptureImageFileSoapIn" />
+      <wsdl:output message="tns:LoadCaptureImageFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustCaptureIndexFile">
+      <wsdl:input message="tns:UpdateCustCaptureIndexFileSoapIn" />
+      <wsdl:output message="tns:UpdateCustCaptureIndexFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFailOverDBLog">
+      <wsdl:input message="tns:CreateFailOverDBLogSoapIn" />
+      <wsdl:output message="tns:CreateFailOverDBLogSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceAPISoap" type="tns:WebServiceAPISoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomerProfile">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArBalance">
+      <soap:operation soapAction="http://tempuri.org/GetArBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaign">
+      <soap:operation soapAction="http://tempuri.org/GetCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPAuth">
+      <soap:operation soapAction="http://tempuri.org/LDAPAuth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopSendSMS">
+      <soap:operation soapAction="http://tempuri.org/ShopSendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckActiveAppointment">
+      <soap:operation soapAction="http://tempuri.org/CheckActiveAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMSCancelAppointment">
+      <soap:operation soapAction="http://tempuri.org/DeleteSMSCancelAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBlackList">
+      <soap:operation soapAction="http://tempuri.org/CheckBlackList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelCreateActivityConfirm">
+      <soap:operation soapAction="http://tempuri.org/SiebelCreateActivityConfirm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelCreateActivity">
+      <soap:operation soapAction="http://tempuri.org/SiebelCreateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToRegister">
+      <soap:operation soapAction="http://tempuri.org/SiebelUpdateToRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToComplete">
+      <soap:operation soapAction="http://tempuri.org/SiebelUpdateToComplete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToMissed">
+      <soap:operation soapAction="http://tempuri.org/SiebelUpdateToMissed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToCancel">
+      <soap:operation soapAction="http://tempuri.org/SiebelUpdateToCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppointmentJobStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateAppointmentJobStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterItemList">
+      <soap:operation soapAction="http://tempuri.org/GetMasterItemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterItemByID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterItemByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCustomerTypeList">
+      <soap:operation soapAction="http://tempuri.org/GetMasterCustomerTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCustomerTypeByID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterCustomerTypeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterGroupUserList">
+      <soap:operation soapAction="http://tempuri.org/GetMasterGroupUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterGroupUserByID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterGroupUserByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterSkillList">
+      <soap:operation soapAction="http://tempuri.org/GetMasterSkillList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterSkillByID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterSkillByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterHoldReasonList">
+      <soap:operation soapAction="http://tempuri.org/GetMasterHoldReasonList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterHoldReasonByID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterHoldReasonByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterLogoutReasonList">
+      <soap:operation soapAction="http://tempuri.org/GetMasterLogoutReasonList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterLogoutReasonByID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterLogoutReasonByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadImageFromWebConfig">
+      <soap:operation soapAction="http://tempuri.org/LoadImageFromWebConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateTransferStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointmentPolicy">
+      <soap:operation soapAction="http://tempuri.org/GetAppointmentPolicy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCaptureImageFile">
+      <soap:operation soapAction="http://tempuri.org/SendCaptureImageFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCaptureImageFile">
+      <soap:operation soapAction="http://tempuri.org/LoadCaptureImageFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustCaptureIndexFile">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustCaptureIndexFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFailOverDBLog">
+      <soap:operation soapAction="http://tempuri.org/CreateFailOverDBLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceAPISoap12" type="tns:WebServiceAPISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomerProfile">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetArBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampaign">
+      <soap12:operation soapAction="http://tempuri.org/GetCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPAuth">
+      <soap12:operation soapAction="http://tempuri.org/LDAPAuth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopSendSMS">
+      <soap12:operation soapAction="http://tempuri.org/ShopSendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckActiveAppointment">
+      <soap12:operation soapAction="http://tempuri.org/CheckActiveAppointment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMSCancelAppointment">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSMSCancelAppointment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBlackList">
+      <soap12:operation soapAction="http://tempuri.org/CheckBlackList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelCreateActivityConfirm">
+      <soap12:operation soapAction="http://tempuri.org/SiebelCreateActivityConfirm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelCreateActivity">
+      <soap12:operation soapAction="http://tempuri.org/SiebelCreateActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToRegister">
+      <soap12:operation soapAction="http://tempuri.org/SiebelUpdateToRegister" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToComplete">
+      <soap12:operation soapAction="http://tempuri.org/SiebelUpdateToComplete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToMissed">
+      <soap12:operation soapAction="http://tempuri.org/SiebelUpdateToMissed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelUpdateToCancel">
+      <soap12:operation soapAction="http://tempuri.org/SiebelUpdateToCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppointmentJobStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAppointmentJobStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterItemList">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterItemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterItemByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterItemByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCustomerTypeList">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterCustomerTypeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCustomerTypeByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterCustomerTypeByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterGroupUserList">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterGroupUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterGroupUserByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterGroupUserByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterSkillList">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterSkillList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterSkillByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterSkillByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterHoldReasonList">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterHoldReasonList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterHoldReasonByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterHoldReasonByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterLogoutReasonList">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterLogoutReasonList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterLogoutReasonByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterLogoutReasonByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadImageFromWebConfig">
+      <soap12:operation soapAction="http://tempuri.org/LoadImageFromWebConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTransferStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointmentPolicy">
+      <soap12:operation soapAction="http://tempuri.org/GetAppointmentPolicy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCaptureImageFile">
+      <soap12:operation soapAction="http://tempuri.org/SendCaptureImageFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCaptureImageFile">
+      <soap12:operation soapAction="http://tempuri.org/LoadCaptureImageFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustCaptureIndexFile">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustCaptureIndexFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFailOverDBLog">
+      <soap12:operation soapAction="http://tempuri.org/CreateFailOverDBLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceAPI">
+    <wsdl:port name="WebServiceAPISoap" binding="tns:WebServiceAPISoap">
+      <soap:address location="http://172.16.59.184/ShopWebService/WebServiceAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceAPISoap12" binding="tns:WebServiceAPISoap12">
+      <soap12:address location="http://172.16.59.184/ShopWebService/WebServiceAPI.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

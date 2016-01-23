@@ -1,0 +1,86 @@
+select Shop, shop_code,TB2.[Date], TB1.item_name,Regis,Serve,Misscall,Cancel,InComplete
+,WT_With_KPI,HT_With_KPI
+,WT_With_KPI_Percen,(100 - WT_With_KPI_Percen) as WT_Over_KPI_Percen
+,HT_With_KPI_Percen,(100 - HT_With_KPI_Percen) as HT_Over_KPI_Percen
+,Misscall_Percen,AVG_HT, 
+case when (serve+cancel) =0 then 0 else SUM_WT/(serve+cancel) end AVG_WT,
+MAX_WT,MAX_HT,SUM_WT,SUM_HT,master_itemid
+from 
+(
+select ID,item_name,item_time as Stardard_HT,item_wait as Stardard_WT,item_order  from TB_ITEM where active_status = 1
+) as TB1
+left join
+(
+select  @ShopName as Shop,'' as Segment,TB1.DD as [Date],'' as [Time],@ShopCode as Shop_code,
+item_name,Regis,Serve,Misscall,Cancel,Incomplete,WT_With_KPI,HT_With_KPI
+,case when Serve = 0 then 0 else 
+convert(int,round(((WT_With_KPI * 100) / cast(Serve as money)),0)) end as WT_With_KPI_Percen
+,case when Serve = 0 then 0 else 
+convert(int,round((((Serve - WT_With_KPI) * 100) / cast(Serve as money)),0)) end as WT_Over_KPI_Percen
+,case when Serve = 0 then 0 else 
+convert(int,round(((HT_With_KPI * 100) / cast(Serve as money)),0)) end as HT_With_KPI_Percen
+,case when Serve = 0 then 0 else 
+convert(int,round((((Serve - HT_With_KPI) * 100) / cast(Serve as money)),0)) end as HT_Over_KPI_Percen
+,case when Serve = 0 then 0 else 
+convert(int,round(((Misscall * 100) / cast(Regis as money)),0)) end as Misscall_Percen
+,MAX_WT,MAX_HT,AVG_HT,SUM_WT,SUM_HT,master_itemid
+from (
+      select CONVERT(varchar(8),service_date,112) as DD,item_id,y.item_name
+      ,count(1) as Regis 
+      ,sum(case when status = 3 then 1 else 0 end) as Serve
+      ,sum(case when status = 8 then 1 else 0 end) as Misscall  
+      ,sum(case when status = 5 then 1 else 0 end) as Cancel
+      ,sum(case when (status = 1 or status = 2 or status = 4) then 1 else 0 end) as Incomplete
+      ,sum(case when status = 4 then 1 else 0 end) as NotComfirm
+      ,sum(case when status = 2 then 1 else 0 end) as NotEnd
+      ,sum(
+      case when status = 3 then
+		case when DATEDIFF(SECOND,assign_time,call_time) <= item_wait * 60 then 1
+      else 0 end else 0 end) as WT_With_KPI
+      ,sum(case when status = 3 then
+            case when DATEDIFF(SECOND,start_time,end_time) <= item_time * 60 then 1 else 0 end
+      else 0 end) as HT_With_KPI, y.master_itemid
+      from TB_COUNTER_QUEUE_HISTORY X 
+      left join TB_ITEM Y on X.item_id = Y.id
+      where convert(varchar(8),service_date,112) between  convert(varchar(8),@ST,112)  and  convert(varchar(8),@ET,112)  
+		and CONVERT(varchar(5),service_date,114) >=  @STT  
+		and CONVERT(varchar(5),service_date,114) <  @ETT 
+        and user_id <> 1 
+        group by CONVERT(varchar(8),service_date,112),item_id,y.item_name,y.master_itemid
+      ) as TB1 
+left join
+---------- Max WT ---------
+(
+      select CONVERT(varchar(8),service_date,112) as DD,item_id
+      ,right('0'+convert(varchar(5),(MAX(DATEDIFF(second,assign_time,call_time))/3600)),2) +  ':' +
+      right('0'+convert(varchar(5),(MAX(DATEDIFF(second,assign_time,call_time))%3600)/60),2) +  ':' +
+      right('0'+convert(varchar(5),(MAX(DATEDIFF(second,assign_time,call_time))%3600)%60),2) as MAX_WT,
+      SUM(DATEDIFF(second,assign_time,call_time)) SUM_WT
+      from TB_COUNTER_QUEUE_HISTORY 
+      where   convert(varchar(8),service_date,112) between convert(varchar(8),@ST,112) and convert(varchar(8),@ET,112)  
+	  and CONVERT(varchar(5),service_date,114) >=  @STT 
+	  and CONVERT(varchar(5),service_date,114) < @ETT 
+      and user_id <> 1 
+      and call_time is not null and assign_time < call_time and assign_time <> call_time
+      group by CONVERT(varchar(8),service_date,112),item_id
+) as TB2 on tb1.DD = tb2.DD and tb1.item_id = tb2.item_id 
+left join
+---------- Max HT ---------
+(
+      select CONVERT(varchar(8),service_date,112) as DD,item_id
+      ,right('0'+convert(varchar(5),(MAX(DATEDIFF(second,start_time,end_time))/3600)),2) +  ':' +
+      right('0'+convert(varchar(5),(MAX(DATEDIFF(second,start_time,end_time))%3600)/60),2) + ':' +
+      right('0'+convert(varchar(5),(MAX(DATEDIFF(second,start_time,end_time))%3600)%60),2) as MAX_HT
+      ,right('0'+convert(varchar(5),(avg(DATEDIFF(second,start_time,end_time))/3600)),2) + ':' +
+      right('0'+convert(varchar(5),(avg(DATEDIFF(second,start_time,end_time))%3600)/60),2) + ':' +
+      right('0'+convert(varchar(5),(avg(DATEDIFF(second,start_time,end_time))%3600)%60),2) as AVG_HT,
+      SUM(DATEDIFF(second,start_time,end_time)) SUM_HT
+      from TB_COUNTER_QUEUE_HISTORY 
+      where  convert(varchar(8),service_date,112) between convert(varchar(8),@ST,112) and convert(varchar(8),@ET,112) 
+      and CONVERT(varchar(5),service_date,114) >= @STT  
+      and CONVERT(varchar(5),service_date,114) < @ETT 
+      and status = 3 and user_id <> 1 
+      group by CONVERT(varchar(8),service_date,112),item_id
+) as TB3 on tb1.DD = tb3.DD and tb1.item_id = tb3.item_id 
+) TB2 on tb1.item_name = tb2.item_name
+where tb2.Date is not null

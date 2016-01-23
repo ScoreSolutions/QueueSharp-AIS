@@ -1,0 +1,12 @@
+﻿Version 0.0.0.4
+แก้ไขกรณีการคิวรี่ข้อมูลที่มี Backlist มากเกินไปจนเกิด Query Timeout
+
+Version 0.0.0.5
+แก้ไขหลายอย่าง
+แก้ไขให้มีการเก็บข้อมูลเวลาที่ End Service ให้เก็บที่ TB_FILTER_DATA
+แก้ไขให้มีการเก็บเวลาที่ ATSR โทรออกให้เก็บที่ TB_FILTER_DATA
+แก้ไขการคำนวณ TARGET ให้เป็น (Target* %Service)/(จำนวนวัน*จำนวนชั่วโมง)
+
+Version 1.0.0.0
+แก้ไข Defect ของ CSI 12 ข้อ
+เพิ่มเติม NPS Score

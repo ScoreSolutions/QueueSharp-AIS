@@ -1,0 +1,1 @@
+﻿CurrentDate=27/05/2558&CurrentTime=10:11&TextService_th_1= &TextService_en_1= &TextService_th_2= &TextService_en_2= &TextService_th_3= &TextService_en_3= &TextService_th_4= &TextService_en_4= &Q1_1= &C1_1= &QTime1_5= &Q2_1= &C2_1= &QTime2_5= &Q3_1= &C3_1= &QTime3_5= &Q4_1= &C4_1= &QTime4_5= 
