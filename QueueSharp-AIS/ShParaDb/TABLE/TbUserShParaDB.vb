@@ -6,16 +6,16 @@ Imports System.Linq.Expressions
 
 Namespace TABLE
     'Represents a transaction for TB_USER table Parameter.
-    '[Create by  on Febuary, 23 2012]
+    '[Create by  on March, 11 2016]
 
     <Table(Name:="TB_USER")>  _
     Public Class TbUserShParaDB
 
         'Generate Field List
         Dim _ID As Long = 0
-        Dim _CREATE_BY As  System.Nullable(Of Long)  = 0
+        Dim _CREATE_BY As  String  = ""
         Dim _CREATE_DATE As  System.Nullable(Of DateTime)  = New DateTime(1,1,1)
-        Dim _UPDATE_BY As  System.Nullable(Of Long)  = 0
+        Dim _UPDATE_BY As  String  = ""
         Dim _UPDATE_DATE As  System.Nullable(Of DateTime)  = New DateTime(1,1,1)
         Dim _TITLE_ID As  System.Nullable(Of Long)  = 0
         Dim _USER_CODE As  String  = ""
@@ -30,8 +30,6 @@ Namespace TABLE
         Dim _ITEM_ID As  System.Nullable(Of Long)  = 0
         Dim _IP_ADDRESS As  String  = ""
         Dim _CHECK_UPDATE As  System.Nullable(Of DateTime)  = New DateTime(1,1,1)
-        Dim _MSREPL_TRAN_VERSION As String = ""
-        Dim _ROWGUID As String = ""
 
         'Generate Field Property 
         <Column(Storage:="_ID", DbType:="Int NOT NULL ",CanBeNull:=false)>  _
@@ -43,12 +41,12 @@ Namespace TABLE
                _ID = value
             End Set
         End Property 
-        <Column(Storage:="_CREATE_BY", DbType:="Int")>  _
-        Public Property CREATE_BY() As  System.Nullable(Of Long) 
+        <Column(Storage:="_CREATE_BY", DbType:="VarChar(50)")>  _
+        Public Property CREATE_BY() As  String 
             Get
                 Return _CREATE_BY
             End Get
-            Set(ByVal value As  System.Nullable(Of Long) )
+            Set(ByVal value As  String )
                _CREATE_BY = value
             End Set
         End Property 
@@ -61,12 +59,12 @@ Namespace TABLE
                _CREATE_DATE = value
             End Set
         End Property 
-        <Column(Storage:="_UPDATE_BY", DbType:="Int")>  _
-        Public Property UPDATE_BY() As  System.Nullable(Of Long) 
+        <Column(Storage:="_UPDATE_BY", DbType:="VarChar(50)")>  _
+        Public Property UPDATE_BY() As  String 
             Get
                 Return _UPDATE_BY
             End Get
-            Set(ByVal value As  System.Nullable(Of Long) )
+            Set(ByVal value As  String )
                _UPDATE_BY = value
             End Set
         End Property 
@@ -142,7 +140,7 @@ Namespace TABLE
                _USERNAME = value
             End Set
         End Property 
-        <Column(Storage:="_PASSWORD", DbType:="VarChar(20)")>  _
+        <Column(Storage:="_PASSWORD", DbType:="VarChar(200)")>  _
         Public Property PASSWORD() As  String 
             Get
                 Return _PASSWORD
@@ -194,24 +192,6 @@ Namespace TABLE
             End Get
             Set(ByVal value As  System.Nullable(Of DateTime) )
                _CHECK_UPDATE = value
-            End Set
-        End Property 
-        <Column(Storage:="_MSREPL_TRAN_VERSION", DbType:="UNIQUEIDENTIFIER NOT NULL ",CanBeNull:=false)>  _
-        Public Property MSREPL_TRAN_VERSION() As String
-            Get
-                Return _MSREPL_TRAN_VERSION
-            End Get
-            Set(ByVal value As String)
-               _MSREPL_TRAN_VERSION = value
-            End Set
-        End Property 
-        <Column(Storage:="_ROWGUID", DbType:="UNIQUEIDENTIFIER NOT NULL ",CanBeNull:=false)>  _
-        Public Property ROWGUID() As String
-            Get
-                Return _ROWGUID
-            End Get
-            Set(ByVal value As String)
-               _ROWGUID = value
             End Set
         End Property 
 

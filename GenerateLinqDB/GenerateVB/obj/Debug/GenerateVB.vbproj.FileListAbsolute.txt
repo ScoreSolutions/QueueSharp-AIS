@@ -34,3 +34,12 @@ D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateVB\obj\Debug\Gener
 D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateVB\obj\Debug\GenerateVB.dll
 D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateVB\obj\Debug\GenerateVB.xml
 D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateVB\obj\Debug\GenerateVB.pdb
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\bin\Debug\GenerateVB.dll
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\bin\Debug\GenerateVB.pdb
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\bin\Debug\GenerateVB.xml
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\obj\Debug\GenerateVB.Resources.resources
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\obj\Debug\GenerateVB.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\obj\Debug\GenerateVB.dll
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\obj\Debug\GenerateVB.xml
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateVB\obj\Debug\GenerateVB.pdb

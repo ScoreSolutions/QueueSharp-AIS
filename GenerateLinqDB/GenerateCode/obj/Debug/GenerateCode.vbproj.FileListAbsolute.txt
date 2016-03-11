@@ -58,3 +58,18 @@ D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateCode\obj\Debug\Res
 D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateCode\obj\Debug\GenerateCode.GenerateCode.resources
 D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateCode\obj\Debug\GenerateCode.Resources.resources
 D:\My Documents\ScoreSolutions\GenerateLinqDB\LinqLib\GenerateCode\obj\Debug\GenerateCode.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\GenerateCode.exe
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\GenerateCode.xml
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\GenerateCode.pdb
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateCode.exe
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateCode.pdb
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateCode.xml
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateC.dll
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateVB.dll
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateC.pdb
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateVB.pdb
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\bin\Debug\GenerateVB.xml
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\GenerateCode.GenerateCode.resources
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\GenerateCode.Resources.resources
+D:\MyProject\QueueSharp-AIS\GenerateLinqDB\GenerateCode\obj\Debug\GenerateCode.vbproj.GenerateResource.Cache

@@ -11,7 +11,7 @@ Imports ShParaDB.Common.Utilities
 
 Namespace TABLE
     'Represents a transaction for TB_USER table ShLinqDB.
-    '[Create by  on Febuary, 23 2012]
+    '[Create by  on March, 11 2016]
     Public Class TbUserShLinqDB
         Public sub TbUserShLinqDB()
 
@@ -49,9 +49,9 @@ Namespace TABLE
 
         'Generate Field List
         Dim _ID As Long = 0
-        Dim _CREATE_BY As  System.Nullable(Of Long)  = 0
+        Dim _CREATE_BY As  String  = ""
         Dim _CREATE_DATE As  System.Nullable(Of DateTime)  = New DateTime(1,1,1)
-        Dim _UPDATE_BY As  System.Nullable(Of Long)  = 0
+        Dim _UPDATE_BY As  String  = ""
         Dim _UPDATE_DATE As  System.Nullable(Of DateTime)  = New DateTime(1,1,1)
         Dim _TITLE_ID As  System.Nullable(Of Long)  = 0
         Dim _USER_CODE As  String  = ""
@@ -77,12 +77,12 @@ Namespace TABLE
                _ID = value
             End Set
         End Property 
-        <Column(Storage:="_CREATE_BY", DbType:="Int")>  _
-        Public Property CREATE_BY() As  System.Nullable(Of Long) 
+        <Column(Storage:="_CREATE_BY", DbType:="VarChar(50)")>  _
+        Public Property CREATE_BY() As  String 
             Get
                 Return _CREATE_BY
             End Get
-            Set(ByVal value As  System.Nullable(Of Long) )
+            Set(ByVal value As  String )
                _CREATE_BY = value
             End Set
         End Property 
@@ -95,12 +95,12 @@ Namespace TABLE
                _CREATE_DATE = value
             End Set
         End Property 
-        <Column(Storage:="_UPDATE_BY", DbType:="Int")>  _
-        Public Property UPDATE_BY() As  System.Nullable(Of Long) 
+        <Column(Storage:="_UPDATE_BY", DbType:="VarChar(50)")>  _
+        Public Property UPDATE_BY() As  String 
             Get
                 Return _UPDATE_BY
             End Get
-            Set(ByVal value As  System.Nullable(Of Long) )
+            Set(ByVal value As  String )
                _UPDATE_BY = value
             End Set
         End Property 
@@ -176,7 +176,7 @@ Namespace TABLE
                _USERNAME = value
             End Set
         End Property 
-        <Column(Storage:="_PASSWORD", DbType:="VarChar(20)")>  _
+        <Column(Storage:="_PASSWORD", DbType:="VarChar(200)")>  _
         Public Property PASSWORD() As  String 
             Get
                 Return _PASSWORD
@@ -230,15 +230,14 @@ Namespace TABLE
                _CHECK_UPDATE = value
             End Set
         End Property 
-        
 
 
         'Clear All Data
         Private Sub ClearData()
             _ID = 0
-            _CREATE_BY = 0
+            _CREATE_BY = ""
             _CREATE_DATE = New DateTime(1,1,1)
-            _UPDATE_BY = 0
+            _UPDATE_BY = ""
             _UPDATE_DATE = New DateTime(1,1,1)
             _TITLE_ID = 0
             _USER_CODE = ""
@@ -281,7 +280,7 @@ Namespace TABLE
         '/// <returns>true if insert data successfully; otherwise, false.</returns>
         Public Function InsertData(LoginName As String,trans As SQLTransaction) As Boolean
             If trans IsNot Nothing Then 
-                _id = DB.GetNextID("id",tableName, trans)
+                _ID = DB.GetNextID("ID",tableName, trans)
                 _CREATE_BY = LoginName
                 _CREATE_DATE = DateTime.Now
                 Return doInsert(trans)
@@ -300,7 +299,7 @@ Namespace TABLE
             If trans IsNot Nothing Then 
                 _UPDATE_BY = LoginName
                 _UPDATE_DATE = DateTime.Now
-                Return doUpdate("id = " & DB.SetDouble(_id) & " ", trans)
+                Return doUpdate("ID = " & DB.SetDouble(_ID), trans)
             Else 
                 _error = "Transaction Is not null"
                 Return False
@@ -323,9 +322,9 @@ Namespace TABLE
         '/// Returns an indication whether the current data is deleted from TB_USER table successfully.
         '/// <param name=trans>The System.Data.SQLClient.SQLTransaction used by this System.Data.SQLClient.SQLCommand.</param>
         '/// <returns>true if delete data successfully; otherwise, false.</returns>
-        Public Function DeleteByPK(cPK As Long, trans As SQLTransaction) As Boolean
+        Public Function DeleteByPK(cID As Integer, trans As SQLTransaction) As Boolean
             If trans IsNot Nothing Then 
-                Return doDelete("id = " & cPK, trans)
+                Return doDelete("ID = " & DB.SetDouble(cID), trans)
             Else 
                 _error = "Transaction Is not null"
                 Return False
@@ -337,8 +336,8 @@ Namespace TABLE
         '/// <param name=cid>The id key.</param>
         '/// <param name=trans>The System.Data.SQLClient.SQLTransaction used by this System.Data.SQLClient.SQLCommand.</param>
         '/// <returns>true if data is retrieved successfully; otherwise, false.</returns>
-        Public Function ChkDataByPK(cid As Integer, trans As SQLTransaction) As Boolean
-            Return doChkData("id = " & DB.SetDouble(cid) & " ", trans)
+        Public Function ChkDataByPK(cID As Integer, trans As SQLTransaction) As Boolean
+            Return doChkData("ID = " & DB.SetDouble(cID), trans)
         End Function
 
 
@@ -346,8 +345,8 @@ Namespace TABLE
         '/// <param name=cid>The id key.</param>
         '/// <param name=trans>The System.Data.SQLClient.SQLTransaction used by this System.Data.SQLClient.SQLCommand.</param>
         '/// <returns>true if data is retrieved successfully; otherwise, false.</returns>
-        Public Function GetDataByPK(cid As Integer, trans As SQLTransaction) As TbUserShLinqDB
-            Return doGetData("id = " & DB.SetDouble(cid) & " ", trans)
+        Public Function GetDataByPK(cID As Integer, trans As SQLTransaction) As TbUserShLinqDB
+            Return doGetData("ID = " & DB.SetDouble(cID), trans)
         End Function
 
 
@@ -355,25 +354,8 @@ Namespace TABLE
         '/// <param name=cid>The id key.</param>
         '/// <param name=trans>The System.Data.SQLClient.SQLTransaction used by this System.Data.SQLClient.SQLCommand.</param>
         '/// <returns>true if data is retrieved successfully; otherwise, false.</returns>
-        Public Function GetParameter(cid As Integer, trans As SQLTransaction) As TbUserShParaDB
-            Return doMappingParameter("id = " & DB.SetDouble(cid) & " ", trans)
-        End Function
-
-
-        '/// Returns an indication whether the record of TB_USER by specified ROWGUID key is retrieved successfully.
-        '/// <param name=cROWGUID>The ROWGUID key.</param>
-        '/// <param name=trans>The System.Data.SQLClient.SQLTransaction used by this System.Data.SQLClient.SQLCommand.</param>
-        '/// <returns>true if data is retrieved successfully; otherwise, false.</returns>
-        Public Function ChkDataByROWGUID(cROWGUID As String, trans As SQLTransaction) As Boolean
-            Return doChkData("ROWGUID = " & DB.SetString(cROWGUID) & " ", trans)
-        End Function
-
-        '/// Returns an duplicate data record of TB_USER by specified ROWGUID key is retrieved successfully.
-        '/// <param name=cROWGUID>The ROWGUID key.</param>
-        '/// <param name=trans>The System.Data.SQLClient.SQLTransaction used by this System.Data.SQLClient.SQLCommand.</param>
-        '/// <returns>true if data is retrieved successfully; otherwise, false.</returns>
-        Public Function ChkDuplicateByROWGUID(cROWGUID As String, cid As Integer, trans As SQLTransaction) As Boolean
-            Return doChkData("ROWGUID = " & DB.SetString(cROWGUID) & " " & " And id <> " & DB.SetDouble(cid) & " ", trans)
+        Public Function GetParameter(cID As Integer, trans As SQLTransaction) As TbUserShParaDB
+            Return doMappingParameter("ID = " & DB.SetDouble(cID), trans)
         End Function
 
 
@@ -404,15 +386,14 @@ Namespace TABLE
                     _information = MessageResources.MSGIN001
                 Catch ex As ApplicationException
                     ret = false
-                    _error = ex.Message
+                    _error = ex.Message & "ApplicationException :" & ex.ToString() & "### SQL:" & SqlInsert
                 Catch ex As Exception
-                    ex.ToString()
                     ret = False
-                    _error = MessageResources.MSGEC101
+                    _error = MessageResources.MSGEC101 & " Exception :" & ex.ToString() & "### SQL: " & SqlInsert
                 End Try
             Else
                 ret = False
-                _error = MessageResources.MSGEN002
+                _error = MessageResources.MSGEN002 & "### SQL: " & SqlInsert
             End If
 
             Return ret
@@ -425,9 +406,9 @@ Namespace TABLE
         '/// <returns>true if update data successfully; otherwise, false.</returns>
         Private Function doUpdate(whText As String, trans As SQLTransaction) As Boolean
             Dim ret As Boolean = True
+            Dim tmpWhere As String = " Where " & whText
             If _haveData = True Then
                 If whText.Trim() <> ""
-                    Dim tmpWhere As String = " Where " & whText
                     Try
 
                         ret = (DB.ExecuteNonQuery(SqlUpdate & tmpWhere, trans) > 0)
@@ -437,19 +418,18 @@ Namespace TABLE
                         _information = MessageResources.MSGIU001
                     Catch ex As ApplicationException
                         ret = False
-                        _error = ex.Message
+                        _error = ex.Message & "ApplicationException :" & ex.ToString() & "### SQL:" & SqlUpdate & tmpWhere
                     Catch ex As Exception
-                        ex.ToString()
                         ret = False
-                        _error = MessageResources.MSGEC102
+                        _error = MessageResources.MSGEC102 & " Exception :" & ex.ToString() & "### SQL: " & SqlUpdate & tmpWhere
                     End Try
                 Else
                     ret = False
-                    _error = MessageResources.MSGEU003
+                    _error = MessageResources.MSGEU003 & "### SQL: " & SqlUpdate & tmpWhere
                 End If
             Else
                 ret = False
-                _error = MessageResources.MSGEU002
+                _error = MessageResources.MSGEU002 & "### SQL: " & SqlUpdate & tmpWhere
             End If
 
             Return ret
@@ -462,9 +442,9 @@ Namespace TABLE
         '/// <returns>true if delete data successfully; otherwise, false.</returns>
         Private Function doDelete(whText As String, trans As SQLTransaction) As Boolean
             Dim ret As Boolean = True
+            Dim tmpWhere As String = " Where " & whText
             If doChkData(whText, trans) = True Then
                 If whText.Trim() <> ""
-                    Dim tmpWhere As String = " Where " & whText
                     Try
                         ret = (DB.ExecuteNonQuery(SqlDelete & tmpWhere, trans) > 0)
                         If ret = False Then
@@ -473,19 +453,18 @@ Namespace TABLE
                         _information = MessageResources.MSGID001
                     Catch ex As ApplicationException
                         ret = False
-                        _error = ex.Message
+                        _error = ex.Message & "ApplicationException :" & ex.ToString() & "### SQL:" & SqlDelete & tmpWhere
                     Catch ex As Exception
-                        ex.ToString()
                         ret = False
-                        _error = MessageResources.MSGEC103
+                        _error = MessageResources.MSGEC103 & " Exception :" & ex.ToString() & "### SQL: " & SqlDelete & tmpWhere
                     End Try
                 Else
                     ret = False
-                    _error = MessageResources.MSGED003
+                    _error = MessageResources.MSGED003 & "### SQL: " & SqlDelete & tmpWhere
                 End If
             Else
                 ret = False
-                _error = MessageResources.MSGEU002
+                _error = MessageResources.MSGEU002 & "### SQL: " & SqlDelete & tmpWhere
             End If
 
             Return ret
@@ -498,19 +477,19 @@ Namespace TABLE
         '/// <returns>true if data is retrieved successfully; otherwise, false.</returns>
         Private Function doChkData(whText As String, trans As SQLTransaction) As Boolean
             Dim ret As Boolean = True
+            Dim tmpWhere As String = " WHERE " & whText
             ClearData()
             _haveData  = False
             If whText.Trim() <> "" Then
-                Dim tmpWhere As String = " WHERE " & whText
                 Dim Rdr As SQLDataReader
                 Try
                     Rdr = DB.ExecuteReader(SqlSelect() & tmpWhere, trans)
                     If Rdr.Read() Then
                         _haveData = True
                         If Convert.IsDBNull(Rdr("id")) = False Then _id = Convert.ToInt32(Rdr("id"))
-                        If Convert.IsDBNull(Rdr("create_by")) = False Then _create_by = Convert.ToInt32(Rdr("create_by"))
+                        If Convert.IsDBNull(Rdr("create_by")) = False Then _create_by = Rdr("create_by").ToString()
                         If Convert.IsDBNull(Rdr("create_date")) = False Then _create_date = Convert.ToDateTime(Rdr("create_date"))
-                        If Convert.IsDBNull(Rdr("update_by")) = False Then _update_by = Convert.ToInt32(Rdr("update_by"))
+                        If Convert.IsDBNull(Rdr("update_by")) = False Then _update_by = Rdr("update_by").ToString()
                         If Convert.IsDBNull(Rdr("update_date")) = False Then _update_date = Convert.ToDateTime(Rdr("update_date"))
                         If Convert.IsDBNull(Rdr("title_id")) = False Then _title_id = Convert.ToInt32(Rdr("title_id"))
                         If Convert.IsDBNull(Rdr("user_code")) = False Then _user_code = Rdr("user_code").ToString()
@@ -525,8 +504,6 @@ Namespace TABLE
                         If Convert.IsDBNull(Rdr("item_id")) = False Then _item_id = Convert.ToInt32(Rdr("item_id"))
                         If Convert.IsDBNull(Rdr("ip_address")) = False Then _ip_address = Rdr("ip_address").ToString()
                         If Convert.IsDBNull(Rdr("check_update")) = False Then _check_update = Convert.ToDateTime(Rdr("check_update"))
-                        'If Convert.IsDBNull(Rdr("msrepl_tran_version")) = False Then _msrepl_tran_version = Rdr("msrepl_tran_version").ToString()
-                        'If Convert.IsDBNull(Rdr("rowguid")) = False Then _rowguid = Rdr("rowguid").ToString()
                     Else
                         ret = False
                         _error = MessageResources.MSGEV002
@@ -536,10 +513,7 @@ Namespace TABLE
                 Catch ex As Exception
                     ex.ToString()
                     ret = False
-                    _error = MessageResources.MSGEC104
-                    If Rdr IsNot Nothing And Rdr.IsClosed=False Then
-                        Rdr.Close()
-                    End If
+                    _error = MessageResources.MSGEC104 & " #### " & ex.ToString()
                 End Try
             Else
                 ret = False
@@ -565,9 +539,9 @@ Namespace TABLE
                     If Rdr.Read() Then
                         _haveData = True
                         If Convert.IsDBNull(Rdr("id")) = False Then _id = Convert.ToInt32(Rdr("id"))
-                        If Convert.IsDBNull(Rdr("create_by")) = False Then _create_by = Convert.ToInt32(Rdr("create_by"))
+                        If Convert.IsDBNull(Rdr("create_by")) = False Then _create_by = Rdr("create_by").ToString()
                         If Convert.IsDBNull(Rdr("create_date")) = False Then _create_date = Convert.ToDateTime(Rdr("create_date"))
-                        If Convert.IsDBNull(Rdr("update_by")) = False Then _update_by = Convert.ToInt32(Rdr("update_by"))
+                        If Convert.IsDBNull(Rdr("update_by")) = False Then _update_by = Rdr("update_by").ToString()
                         If Convert.IsDBNull(Rdr("update_date")) = False Then _update_date = Convert.ToDateTime(Rdr("update_date"))
                         If Convert.IsDBNull(Rdr("title_id")) = False Then _title_id = Convert.ToInt32(Rdr("title_id"))
                         If Convert.IsDBNull(Rdr("user_code")) = False Then _user_code = Rdr("user_code").ToString()
@@ -582,8 +556,6 @@ Namespace TABLE
                         If Convert.IsDBNull(Rdr("item_id")) = False Then _item_id = Convert.ToInt32(Rdr("item_id"))
                         If Convert.IsDBNull(Rdr("ip_address")) = False Then _ip_address = Rdr("ip_address").ToString()
                         If Convert.IsDBNull(Rdr("check_update")) = False Then _check_update = Convert.ToDateTime(Rdr("check_update"))
-
-                        'Generate Item For Child Table
                     Else
                         _error = MessageResources.MSGEV002
                     End If
@@ -591,10 +563,7 @@ Namespace TABLE
                     Rdr.Close()
                 Catch ex As Exception
                     ex.ToString()
-                    _error = MessageResources.MSGEC104
-                    If Rdr IsNot Nothing And Rdr.IsClosed=False Then
-                        Rdr.Close()
-                    End If
+                    _error = MessageResources.MSGEC104 & " #### " & ex.ToString()
                 End Try
             Else
                 _error = MessageResources.MSGEV001
@@ -619,9 +588,9 @@ Namespace TABLE
                     If Rdr.Read() Then
                         _haveData = True
                         If Convert.IsDBNull(Rdr("id")) = False Then ret.id = Convert.ToInt32(Rdr("id"))
-                        If Convert.IsDBNull(Rdr("create_by")) = False Then ret.create_by = Convert.ToInt32(Rdr("create_by"))
+                        If Convert.IsDBNull(Rdr("create_by")) = False Then ret.create_by = Rdr("create_by").ToString()
                         If Convert.IsDBNull(Rdr("create_date")) = False Then ret.create_date = Convert.ToDateTime(Rdr("create_date"))
-                        If Convert.IsDBNull(Rdr("update_by")) = False Then ret.update_by = Convert.ToInt32(Rdr("update_by"))
+                        If Convert.IsDBNull(Rdr("update_by")) = False Then ret.update_by = Rdr("update_by").ToString()
                         If Convert.IsDBNull(Rdr("update_date")) = False Then ret.update_date = Convert.ToDateTime(Rdr("update_date"))
                         If Convert.IsDBNull(Rdr("title_id")) = False Then ret.title_id = Convert.ToInt32(Rdr("title_id"))
                         If Convert.IsDBNull(Rdr("user_code")) = False Then ret.user_code = Rdr("user_code").ToString()
@@ -636,10 +605,6 @@ Namespace TABLE
                         If Convert.IsDBNull(Rdr("item_id")) = False Then ret.item_id = Convert.ToInt32(Rdr("item_id"))
                         If Convert.IsDBNull(Rdr("ip_address")) = False Then ret.ip_address = Rdr("ip_address").ToString()
                         If Convert.IsDBNull(Rdr("check_update")) = False Then ret.check_update = Convert.ToDateTime(Rdr("check_update"))
-                        If Convert.IsDBNull(Rdr("msrepl_tran_version")) = False Then ret.msrepl_tran_version = Rdr("msrepl_tran_version").ToString()
-                        If Convert.IsDBNull(Rdr("rowguid")) = False Then ret.rowguid = Rdr("rowguid").ToString()
-
-                        'Generate Item For Child Table
 
                     Else
                         _error = MessageResources.MSGEV002
@@ -648,10 +613,7 @@ Namespace TABLE
                     Rdr.Close()
                 Catch ex As Exception
                     ex.ToString()
-                    _error = MessageResources.MSGEC104
-                    If Rdr IsNot Nothing And Rdr.IsClosed=False Then
-                        Rdr.Close()
-                    End If
+                    _error = MessageResources.MSGEC104 & " #### " & ex.ToString()
                 End Try
             Else
                 _error = MessageResources.MSGEV001
@@ -666,12 +628,12 @@ Namespace TABLE
         Private ReadOnly Property SqlInsert() As String 
             Get
                 Dim Sql As String=""
-                Sql += "INSERT INTO " & TableName & " (ID, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, TITLE_ID, USER_CODE, FNAME, LNAME, POSITION, GROUP_ID, USERNAME, PASSWORD, ACTIVE_STATUS, COUNTER_ID, ITEM_ID, IP_ADDRESS, CHECK_UPDATE)"
+                Sql += "INSERT INTO " & tableName  & " (ID, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, TITLE_ID, USER_CODE, FNAME, LNAME, POSITION, GROUP_ID, USERNAME, PASSWORD, ACTIVE_STATUS, COUNTER_ID, ITEM_ID, IP_ADDRESS, CHECK_UPDATE)"
                 Sql += " VALUES("
                 sql += DB.SetDouble(_ID) & ", "
-                sql += DB.SetDouble(_CREATE_BY) & ", "
+                sql += DB.SetString(_CREATE_BY) & ", "
                 sql += DB.SetDateTime(_CREATE_DATE) & ", "
-                sql += DB.SetDouble(_UPDATE_BY) & ", "
+                sql += DB.SetString(_UPDATE_BY) & ", "
                 sql += DB.SetDateTime(_UPDATE_DATE) & ", "
                 sql += DB.SetDouble(_TITLE_ID) & ", "
                 sql += DB.SetString(_USER_CODE) & ", "
@@ -685,7 +647,7 @@ Namespace TABLE
                 sql += DB.SetDouble(_COUNTER_ID) & ", "
                 sql += DB.SetDouble(_ITEM_ID) & ", "
                 sql += DB.SetString(_IP_ADDRESS) & ", "
-                Sql += DB.SetDateTime(_CHECK_UPDATE) & ""
+                sql += DB.SetDateTime(_CHECK_UPDATE)
                 sql += ")"
                 Return sql
             End Get
@@ -697,10 +659,9 @@ Namespace TABLE
             Get
                 Dim Sql As String = ""
                 Sql += "UPDATE " & tableName & " SET "
-                Sql += "ID = " & DB.SetDouble(_ID) & ", "
-                Sql += "CREATE_BY = " & DB.SetDouble(_CREATE_BY) & ", "
+                Sql += "CREATE_BY = " & DB.SetString(_CREATE_BY) & ", "
                 Sql += "CREATE_DATE = " & DB.SetDateTime(_CREATE_DATE) & ", "
-                Sql += "UPDATE_BY = " & DB.SetDouble(_UPDATE_BY) & ", "
+                Sql += "UPDATE_BY = " & DB.SetString(_UPDATE_BY) & ", "
                 Sql += "UPDATE_DATE = " & DB.SetDateTime(_UPDATE_DATE) & ", "
                 Sql += "TITLE_ID = " & DB.SetDouble(_TITLE_ID) & ", "
                 Sql += "USER_CODE = " & DB.SetString(_USER_CODE) & ", "
@@ -714,7 +675,7 @@ Namespace TABLE
                 Sql += "COUNTER_ID = " & DB.SetDouble(_COUNTER_ID) & ", "
                 Sql += "ITEM_ID = " & DB.SetDouble(_ITEM_ID) & ", "
                 Sql += "IP_ADDRESS = " & DB.SetString(_IP_ADDRESS) & ", "
-                Sql += "CHECK_UPDATE = " & DB.SetDateTime(_CHECK_UPDATE) & ""
+                Sql += "CHECK_UPDATE = " & DB.SetDateTime(_CHECK_UPDATE) + ""
                 Return Sql
             End Get
         End Property
@@ -732,7 +693,7 @@ Namespace TABLE
         'Get Select Statement for table TB_USER
         Private ReadOnly Property SqlSelect() As String
             Get
-                Dim Sql As String = "SELECT * FROM " & tableName
+                Dim Sql As String = "SELECT ID, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, TITLE_ID, USER_CODE, FNAME, LNAME, POSITION, GROUP_ID, USERNAME, PASSWORD, ACTIVE_STATUS, COUNTER_ID, ITEM_ID, IP_ADDRESS, CHECK_UPDATE FROM " & tableName
                 Return Sql
             End Get
         End Property
